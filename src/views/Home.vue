@@ -2,6 +2,7 @@
 import Theme from '@/components/Theme.vue'
 import Lang from '@/components/Lang.vue'
 import Avatar from '@/components/Avatar.vue'
+import MainInfo from '@/components/MainInfo.vue';
 </script>
 <template>
 	<div class="ThemeLang">
@@ -10,21 +11,27 @@ import Avatar from '@/components/Avatar.vue'
 	</div>
 	<div class="MainInfo">
 		<Avatar class="Avatar" />
-
+		<MainInfo class="MainInfoText" />
 	</div>
 </template>
 <style>
+
+p, h1, h2, h3 {
+    margin: 3px;
+    padding: 0;
+}
+
 .ThemeLang {
 	position: fixed;
 	top: 1vh;
 	right: 0vw;
 	.Theme {
 		position: absolute;
-		right: 1rem;
+		right: 1vw;
 	}
 	.Lang {
 		position: absolute;
-		right: 5rem;
+		right: 6vw;
 	}
 }
 
@@ -37,11 +44,17 @@ import Avatar from '@/components/Avatar.vue'
 	border-radius: 4rem;
 	overflow: auto;
 	.Avatar {
-		position: absolute;
-		left: 0px;
+		position: relative;
 		height: 15rem;
 		border-radius: 4rem;
 		padding: 5px;
+	}
+	.MainInfoText {
+		position:absolute;
+		top: 0px;
+		left: 20rem;
+		width: 25vw;
+		font-family: "Times New Roman", Times, serif;
 	}
 }
 

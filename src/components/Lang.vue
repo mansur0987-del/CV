@@ -8,7 +8,7 @@ const store = Store()
 const {lang} = storeToRefs(store)
 
 const toggleLang = () => {
-	lang.value = (lang.value === 'eng' ? 'rus' : 'eng')
+	lang.value = (lang.value === 'eng' ? 'рус' : 'eng')
 }
 
 </script>
