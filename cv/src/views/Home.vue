@@ -28,18 +28,12 @@ import Avatar from '@/components/Avatar.vue'
 	}
 }
 
-.dark {
-	.MainInfo {
-		background-color:rgb(77, 77, 77);
-	}
-}
-
 .MainInfo {
 	position: fixed;
 	left: 25vw;
 	height: 95vh;
 	width: 50vw;
-	background-color:rgb(244, 249, 253);
+	background-color:#fce8d0;;
 	border-radius: 4rem;
 	overflow: auto;
 	.Avatar {
@@ -48,6 +42,12 @@ import Avatar from '@/components/Avatar.vue'
 		height: 15rem;
 		border-radius: 4rem;
 		padding: 5px;
+	}
+}
+
+.dark {
+	.MainInfo {
+		background-color:rgb(77, 77, 77);
 	}
 }
 </style>
