@@ -27,11 +27,11 @@ p, h1, h2, h3 {
 	right: 0vw;
 	.Theme {
 		position: absolute;
-		right: 1vw;
+		right: 10px;
 	}
 	.Lang {
 		position: absolute;
-		right: 6vw;
+		right: 80px;
 	}
 }
 
@@ -41,19 +41,19 @@ p, h1, h2, h3 {
 	height: 95vh;
 	width: 50vw;
 	background-color:#fce8d0;;
-	border-radius: 4rem;
+	border-radius: 2rem;
 	overflow: auto;
 	.Avatar {
 		position: relative;
 		height: 15rem;
-		border-radius: 4rem;
+		border-radius: 2rem;
 		padding: 5px;
 	}
 	.MainInfoText {
 		position:absolute;
 		top: 0px;
-		left: 20rem;
-		width: 25vw;
+		left: 250px;
+		width: 30vw;
 		font-family: "Times New Roman", Times, serif;
 	}
 }
