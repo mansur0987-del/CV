@@ -4,6 +4,7 @@ import Lang from '@/components/Lang.vue'
 import Avatar from '@/components/Avatar.vue'
 import MainInfo from '@/components/MainInfo.vue';
 import AboutMe from '@/components/AboutMe.vue';
+import Study from '@/components/Study.vue';
 </script>
 <template>
 	<div class="ThemeLang">
@@ -12,26 +13,31 @@ import AboutMe from '@/components/AboutMe.vue';
 	</div>
 
 	<div class="MainInfo">
-		<Avatar class="Avatar" />
-		<MainInfo class="MainInfoText" />
+		<div class="LeftBar">
+			<Avatar class="Avatar" />
+			<MainInfo class="MainInfoText" />
+		</div>
+		<div class="MainBar">
+			<AboutMe class="AboutMe"/>
+			<Study class="Study"/>
+		</div>
 
-		<AboutMe class="AboutMe"/>
+
 	</div>
-
-
 
 </template>
 <style>
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
     margin: 3px;
     padding: 0;
 }
 
 .ThemeLang {
 	position: fixed;
-	top: 1vh;
-	right: 0vw;
+	top: 2vh;
+	right: 2vw;
+	z-index: 1;
 	.Theme {
 		position: absolute;
 		right: 10px;
@@ -44,32 +50,51 @@ p, h1, h2, h3 {
 
 .MainInfo {
 	position: fixed;
-	left: 15vw;
-	height: 95vh;
-	width: 60vw;
+	left: 1vw;
+	height: 98vh;
+	width: 98vw;
 	background-color:#fce8d0;;
 	border-radius: 2rem;
 	overflow: auto;
-	.Avatar {
-		position: relative;
-		height: 15rem;
-		border-radius: 2rem;
-		padding: 20px;
-
-	}
-	.MainInfoText {
-		position:absolute;
-		top: 20px;
-		left: 280px;
-		width: 39vw;
-		font-family: "Times New Roman", Times, serif;
-	}
-	.AboutMe {
+	z-index: 0;
+	.LeftBar {
 		position: absolute;
-		left: 20px;
-		font-family: "Times New Roman", Times, serif;
-		word-wrap: break-word;
+		padding: 20px;
+		height: 100ex;
+		.Avatar {
+			height: 15rem;
+			border-radius: 2rem;
+		}
+		.MainInfoText {
+			position:sticky;
+			top: 10px;
+			width: 220px;
+			font-family: "Times New Roman", Times, serif;
+		}
 	}
+
+	.MainBar {
+		position: absolute;
+		left: 280px;
+		width: 60rem;
+		max-width: fit-content;
+		.AboutMe {
+			/*position: absolute;*/
+			top: 20px;
+			left: 280px;
+			font-family: "Times New Roman", Times, serif;
+			word-wrap: break-word;
+		}
+		.Study {
+			/*position: absolute;*/
+			left: 280px;
+			padding-top: 20px;
+			width: fit-content;
+			max-width: fit-content;
+			z-index: 1;
+		}
+	}
+
 }
 
 .dark {

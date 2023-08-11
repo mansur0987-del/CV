@@ -39,7 +39,7 @@ watch(lang, (newLang) => {
 
 </script>
 <template>
-	<el-button @click="toggleDark()">
+	<el-button @click="toggleDark()" type="info" plain>
 		<i inline-block align-middle i="dark:carbon-moon carbon-sun" />
 		<span class="ml-2">{{ isDark ? theme.dark : theme.light }}</span>
 	</el-button>
