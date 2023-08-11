@@ -54,17 +54,19 @@ p, h1, h2, h3 {
 		position: relative;
 		height: 15rem;
 		border-radius: 2rem;
-		padding: 5px;
+		padding: 20px;
+
 	}
 	.MainInfoText {
 		position:absolute;
-		top: 0px;
-		left: 250px;
-		width: 41vw;
+		top: 20px;
+		left: 280px;
+		width: 39vw;
 		font-family: "Times New Roman", Times, serif;
 	}
 	.AboutMe {
-		position: relative;
+		position: absolute;
+		left: 20px;
 		font-family: "Times New Roman", Times, serif;
 		word-wrap: break-word;
 	}
