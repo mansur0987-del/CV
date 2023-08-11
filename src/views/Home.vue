@@ -3,16 +3,23 @@ import Theme from '@/components/Theme.vue'
 import Lang from '@/components/Lang.vue'
 import Avatar from '@/components/Avatar.vue'
 import MainInfo from '@/components/MainInfo.vue';
+import AboutMe from '@/components/AboutMe.vue';
 </script>
 <template>
 	<div class="ThemeLang">
 		<Theme class="Theme"/>
 		<Lang class="Lang"/>
 	</div>
+
 	<div class="MainInfo">
 		<Avatar class="Avatar" />
 		<MainInfo class="MainInfoText" />
+
+		<AboutMe class="AboutMe"/>
 	</div>
+
+
+
 </template>
 <style>
 
@@ -37,9 +44,9 @@ p, h1, h2, h3 {
 
 .MainInfo {
 	position: fixed;
-	left: 25vw;
+	left: 15vw;
 	height: 95vh;
-	width: 50vw;
+	width: 60vw;
 	background-color:#fce8d0;;
 	border-radius: 2rem;
 	overflow: auto;
@@ -53,8 +60,13 @@ p, h1, h2, h3 {
 		position:absolute;
 		top: 0px;
 		left: 250px;
-		width: 30vw;
+		width: 41vw;
 		font-family: "Times New Roman", Times, serif;
+	}
+	.AboutMe {
+		position: relative;
+		font-family: "Times New Roman", Times, serif;
+		word-wrap: break-word;
 	}
 }
 

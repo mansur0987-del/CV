@@ -36,7 +36,7 @@ const mainInfoRus : MainInfo = {
 	github: 'https://github.com/mansur0987-del/',
 }
 
-const mainInfo = ref<MainInfo>(mainInfoEng)
+const mainInfo = ref<MainInfo>(lang.value === 'eng' ? mainInfoEng : mainInfoRus)
 
 watch(lang, (newLang) => {
 	if (newLang !== 'eng') {
