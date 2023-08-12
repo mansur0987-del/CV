@@ -62,18 +62,21 @@ p, h1, h2, h3, h4 {
 	.LeftBar {
 		position: absolute;
 		padding: 20px;
-		height: 110rem;
+		min-height: 400%;
 		.Avatar {
 			height: 17.5rem;
 			border-radius: 2rem;
 		}
 		.MainInfoText {
+			position: -webkit-sticky;
 			position:sticky;
 			top: 10px;
 			width: 220px;
 			font-family: "Times New Roman", Times, serif;
 		}
 	}
+
+
 
 	.MainBar {
 		position: absolute;
