@@ -2,7 +2,7 @@
 
 </script>
 <template>
-	<img src="/src/assets/avatar.jpeg" />
+	<img src="/avatar.jpeg" />
 </template>
 <style>
 </style>
