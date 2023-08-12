@@ -71,7 +71,7 @@ p, h1, h2, h3, h4 {
 		position: -webkit-sticky;
 		position:sticky;
 		top: 10px;
-		left: 1vw;
+		padding-left: 1vw;
 		width: 220px;
 		font-family: "Times New Roman", Times, serif;
 	}
