@@ -16,8 +16,8 @@ import Experience from '@/components/Experience.vue';
 	<div class="MainInfo">
 		<div class="LeftBar">
 			<Avatar class="Avatar" />
-			<MainInfo class="MainInfoText" />
 		</div>
+		<MainInfo class="MainInfoText" />
 		<div class="MainBar">
 			<AboutMe class="AboutMe"/>
 			<Experience class="Experience"/>
@@ -60,26 +60,25 @@ p, h1, h2, h3, h4 {
 	overflow: auto;
 	z-index: 0;
 	.LeftBar {
-		position: absolute;
 		padding: 20px;
-		min-height: 400%;
 		.Avatar {
 			height: 17.5rem;
 			border-radius: 2rem;
 		}
-		.MainInfoText {
-			position: -webkit-sticky;
-			position:sticky;
-			top: 10px;
-			width: 220px;
-			font-family: "Times New Roman", Times, serif;
-		}
 	}
 
-
+	.MainInfoText {
+		position: -webkit-sticky;
+		position:sticky;
+		top: 10px;
+		left: 1vw;
+		width: 220px;
+		font-family: "Times New Roman", Times, serif;
+	}
 
 	.MainBar {
 		position: absolute;
+		top: 0px;
 		left: 280px;
 		width: 60rem;
 		max-width: fit-content;
