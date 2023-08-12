@@ -22,67 +22,66 @@ const studysRus: {
 	study: Study[]
 } = {
 	name: 'Образование',
-	study: []
+	study:
+	[
+		{
+			start_date: '2012',
+			end_date: '2016',
+			name: 'Московская Государственная юридическая академия им. О.Е. Кутафина',
+			location: 'Москва',
+			profession: 'Юриспруденция',
+			lvl: 'Бакалавр'
+		},
+		{
+			start_date: '2016',
+			end_date: '2019',
+			name: 'Московская Государственная юридическая академия им. О.Е. Кутафина',
+			location: 'Москва',
+			profession: 'Юриспруденция',
+			lvl: 'Магистр'
+		},
+		{
+			start_date: '2021',
+			end_date: 'н.в.',
+			name: '42 (École 42)',
+			location: 'Москва, Ереван',
+			profession: 'Архитектор по цифровым технологиям, Общее компьютерное программирование | программист'
+		}
+	]
 }
-studysRus.study.push({
-	start_date: '2012',
-	end_date: '2016',
-	name: 'Московская Государственная юридическая академия им. О.Е. Кутафина',
-	location: 'Москва',
-	profession: 'Юриспруденция',
-	lvl: 'Бакалавр'
-})
-
-studysRus.study.push({
-	start_date: '2016',
-	end_date: '2019',
-	name: 'Московская Государственная юридическая академия им. О.Е. Кутафина',
-	location: 'Москва',
-	profession: 'Юриспруденция',
-	lvl: 'Магистр'
-})
-
-studysRus.study.push({
-	start_date: '2021',
-	end_date: 'н.в.',
-	name: '42 (École 42)',
-	location: 'Москва, Ереван',
-	profession: 'Архитектор по цифровым технологиям, Общее компьютерное программирование | программист'
-})
 
 const studysEng: {
 	name: string
 	study: Study[]
 } = {
 	name: 'Education',
-	study: []
+	study:
+	[
+		{
+			start_date: '2012',
+			end_date: '2016',
+			name: 'Kutafin Moscow State Law University (MSAL)',
+			location: 'Moscow',
+			profession: 'Lawyer',
+			lvl: 'Bachelor of Science'
+		},
+		{
+			start_date: '2016',
+			end_date: '2019',
+			name: 'Kutafin Moscow State Law University (MSAL)',
+			location: 'Moscow',
+			profession: 'Lawyer',
+			lvl: 'Master of Science'
+		},
+		{
+			start_date: '2021',
+			end_date: 'present',
+			name: '42 (École 42)',
+			location: 'Moscow, Yerevan',
+			profession: 'Digital Technology Architect, General Computer Programming | Programmer'
+		}
+	]
 }
-
-studysEng.study.push({
-	start_date: '2012',
-	end_date: '2016',
-	name: 'Kutafin Moscow State Law University (MSAL)',
-	location: 'Moscow',
-	profession: 'Lawyer',
-	lvl: 'Bachelor of Science'
-})
-
-studysEng.study.push({
-	start_date: '2016',
-	end_date: '2019',
-	name: 'Kutafin Moscow State Law University (MSAL)',
-	location: 'Moscow',
-	profession: 'Lawyer',
-	lvl: 'Master of Science'
-})
-
-studysEng.study.push({
-	start_date: '2021',
-	end_date: 'present',
-	name: '42 (École 42)',
-	location: 'Moscow, Yerevan',
-	profession: 'Digital Technology Architect, General Computer Programming | Programmer'
-})
 
 const studys = ref<{
 	name: string,

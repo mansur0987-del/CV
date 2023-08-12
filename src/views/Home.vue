@@ -5,6 +5,7 @@ import Avatar from '@/components/Avatar.vue'
 import MainInfo from '@/components/MainInfo.vue';
 import AboutMe from '@/components/AboutMe.vue';
 import Study from '@/components/Study.vue';
+import Experience from '@/components/Experience.vue';
 </script>
 <template>
 	<div class="ThemeLang">
@@ -19,6 +20,7 @@ import Study from '@/components/Study.vue';
 		</div>
 		<div class="MainBar">
 			<AboutMe class="AboutMe"/>
+			<Experience class="Experience"/>
 			<Study class="Study"/>
 		</div>
 
@@ -60,9 +62,9 @@ p, h1, h2, h3, h4 {
 	.LeftBar {
 		position: absolute;
 		padding: 20px;
-		height: 100ex;
+		height: 110rem;
 		.Avatar {
-			height: 15rem;
+			height: 17.5rem;
 			border-radius: 2rem;
 		}
 		.MainInfoText {
@@ -79,18 +81,21 @@ p, h1, h2, h3, h4 {
 		width: 60rem;
 		max-width: fit-content;
 		.AboutMe {
-			/*position: absolute;*/
-			top: 20px;
-			left: 280px;
+			padding-top: 15px;
 			font-family: "Times New Roman", Times, serif;
 			word-wrap: break-word;
 		}
-		.Study {
-			/*position: absolute;*/
-			left: 280px;
+		.Experience {
 			padding-top: 20px;
+			font-family: "Times New Roman", Times, serif;
+			word-wrap: break-word;
 			width: fit-content;
 			max-width: fit-content;
+			z-index: 1;
+		}
+		.Study {
+			padding-top: 20px;
+			font-family: "Times New Roman", Times, serif;
 			z-index: 1;
 		}
 	}
