@@ -124,7 +124,8 @@ div {
 	overflow: auto;
 	z-index: 0;
 	.LeftBar {
-		padding: 20px;
+		padding-top: 2vh;
+		padding-left: 1vw;
 		.Avatar {
 			width: 20vw;
 			border-radius: 2rem;
@@ -134,7 +135,7 @@ div {
 	.MainInfoText {
 		position: -webkit-sticky;
 		position:sticky;
-		top: 10px;
+		top: 1vh;
 		padding-left: 1vw;
 		width: 20vw;
 		font-family: "Times New Roman", Times, serif;
@@ -152,7 +153,7 @@ div {
 			word-wrap: break-word;
 		}
 		.Experience {
-			padding-top: 20px;
+			padding-top: 2vh;
 			font-family: "Times New Roman", Times, serif;
 			word-wrap: break-word;
 			width: fit-content;
@@ -160,7 +161,7 @@ div {
 			z-index: 1;
 		}
 		.Study {
-			padding-top: 20px;
+			padding-top: 2vh;
 			font-family: "Times New Roman", Times, serif;
 			z-index: 1;
 		}
