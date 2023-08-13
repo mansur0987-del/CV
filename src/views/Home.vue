@@ -62,7 +62,7 @@ p, h1, h2, h3, h4 {
 	.LeftBar {
 		padding: 20px;
 		.Avatar {
-			height: 17.5rem;
+			width: 15vw;
 			border-radius: 2rem;
 		}
 	}
@@ -72,15 +72,15 @@ p, h1, h2, h3, h4 {
 		position:sticky;
 		top: 10px;
 		padding-left: 1vw;
-		width: 220px;
+		width: 15vw;
 		font-family: "Times New Roman", Times, serif;
 	}
 
 	.MainBar {
 		position: absolute;
 		top: 0px;
-		left: 280px;
-		width: 60rem;
+		left: 20vw;
+		width: 65vw;
 		max-width: fit-content;
 		.AboutMe {
 			padding-top: 15px;
