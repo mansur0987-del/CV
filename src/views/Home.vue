@@ -77,6 +77,28 @@ div {
 	}
 }
 
+@media screen and (max-width: 400px) {
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	h2 {
+		font-size: 1rem
+	}
+
+	h3 {
+		font-size: 0.8rem;
+	}
+
+	h4 {
+		font-size: 0.6rem;
+	}
+
+	div {
+		font-size: 0.4rem;
+	}
+}
+
 .ThemeLang {
 	position: fixed;
 	top: 2vh;
@@ -104,7 +126,7 @@ div {
 	.LeftBar {
 		padding: 20px;
 		.Avatar {
-			width: 15vw;
+			width: 20vw;
 			border-radius: 2rem;
 		}
 	}
@@ -114,15 +136,15 @@ div {
 		position:sticky;
 		top: 10px;
 		padding-left: 1vw;
-		width: 15vw;
+		width: 20vw;
 		font-family: "Times New Roman", Times, serif;
 	}
 
 	.MainBar {
 		position: absolute;
 		top: 0px;
-		left: 20vw;
-		width: 65vw;
+		left: 25vw;
+		width: 60vw;
 		max-width: fit-content;
 		.AboutMe {
 			padding-top: 15px;
