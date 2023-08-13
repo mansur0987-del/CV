@@ -35,6 +35,48 @@ p, h1, h2, h3, h4 {
     padding: 0;
 }
 
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.6rem
+}
+
+h3 {
+	font-size: 1.4rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+
+div {
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+	h1 {
+		font-size: 1.3rem;
+	}
+
+	h2 {
+		font-size: 1.1rem
+	}
+
+	h3 {
+		font-size: 0.9rem;
+	}
+
+	h4 {
+		font-size: 0.7rem;
+	}
+
+	div {
+		font-size: 0.5rem;
+	}
+}
+
 .ThemeLang {
 	position: fixed;
 	top: 2vh;
