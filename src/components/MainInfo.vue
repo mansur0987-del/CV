@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { Store } from '@/stores/store'
+import { Store, type MainInfo } from '@/stores/store'
 import { storeToRefs } from "pinia";
 import { ref, watch } from 'vue';
-import { type MainInfo } from '@/interfaces/MainInfo'
 import {ElDivider} from 'element-plus'
 
 
@@ -10,40 +9,14 @@ const store = Store()
 
 const {lang} = storeToRefs(store)
 
-const mainInfoEng : MainInfo = {
-	name: 'Mansur Kakushkin',
-	position: 'Frontend developer',
-	date: 'April 1st, 1994 (29 y.o.)',
-	locate: 'Yerevan, Armenia',
-	email: 'Email: Kakushkin.mansur@gmail.com',
-	titleLang: 'Languages:',
-	lang1: 'Russian (native)',
-	lang2: 'English (B1)',
-	linkdin: 'https://www.linkedin.com/in/mansur-kakushkin-00a399235',
-	github: 'https://github.com/mansur0987-del',
-}
-
-const mainInfoRus : MainInfo = {
-	name: 'Какушкин Мансур Наилевич',
-	position: 'Фронтенд разработчик',
-	date: '01.04.1994 (29 лет)',
-	locate: 'Ереван, Армения',
-	email: 'Эл. почта: Kakushkin.mansur@gmail.com',
-	titleLang: 'Языки:',
-	lang1: 'Русский (родной)',
-	lang2: 'Английский (B1)',
-	linkdin: 'https://www.linkedin.com/in/mansur-kakushkin-00a399235/',
-	github: 'https://github.com/mansur0987-del/',
-}
-
-const mainInfo = ref<MainInfo>(lang.value === 'eng' ? mainInfoEng : mainInfoRus)
+const mainInfo = ref<MainInfo>(lang.value === 'eng' ? store.mainInfoEng : store.mainInfoRus)
 
 watch(lang, (newLang) => {
 	if (newLang !== 'eng') {
-		mainInfo.value = mainInfoRus
+		mainInfo.value = store.mainInfoRus
 	}
 	else {
-		mainInfo.value = mainInfoEng
+		mainInfo.value = store.mainInfoEng
 	}
 })
 

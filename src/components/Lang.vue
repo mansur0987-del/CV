@@ -16,7 +16,7 @@ const toggleLang = () => {
 </script>
 <template>
 	<el-button @click="toggleLang()" type="info" plain>
-		{{ lang }}
+		{{ lang === 'eng' ? 'рус' : 'eng' }}
 	</el-button>
 </template>
 <style>
