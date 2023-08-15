@@ -14,9 +14,7 @@ import Experience from '@/components/Experience.vue';
 	</div>
 
 	<div class="MainInfo">
-		<div class="LeftBar">
-			<Avatar class="Avatar" />
-		</div>
+		<Avatar class="Avatar" />
 		<MainInfo class="MainInfoText" />
 		<div class="MainBar">
 			<AboutMe class="AboutMe"/>
@@ -99,6 +97,10 @@ div {
 	}
 }
 
+ul {
+	padding-inline-start: 2vw;
+}
+
 .ThemeLang {
 	position: fixed;
 	top: 2vh;
@@ -123,55 +125,52 @@ div {
 	border-radius: 2rem;
 	overflow: auto;
 	z-index: 0;
-	.LeftBar {
-		padding-top: 2vh;
-		padding-left: 1vw;
-		.Avatar {
-			width: 20vw;
-			border-radius: 2rem;
-		}
-	}
-
-	.MainInfoText {
-		position: -webkit-sticky;
-		position:sticky;
-		top: 1vh;
-		padding-left: 1vw;
-		width: 20vw;
-		font-family: "Times New Roman", Times, serif;
-	}
-
-	.MainBar {
-		position: absolute;
-		top: 0px;
-		left: 25vw;
-		width: 60vw;
-		max-width: fit-content;
-		.AboutMe {
-			padding-top: 15px;
-			font-family: "Times New Roman", Times, serif;
-			word-wrap: break-word;
-		}
-		.Experience {
-			padding-top: 2vh;
-			font-family: "Times New Roman", Times, serif;
-			word-wrap: break-word;
-			width: fit-content;
-			max-width: fit-content;
-			z-index: 1;
-		}
-		.Study {
-			padding-top: 2vh;
-			font-family: "Times New Roman", Times, serif;
-			z-index: 1;
-		}
-	}
-
 }
 
-.dark {
-	.MainInfo {
-		background-color:rgb(77, 77, 77);
-	}
+.Avatar {
+	padding-top: 2vh;
+	padding-left: 1vw;
+	width: 20vw;
+	border-radius: 2rem;
+}
+
+.MainInfoText {
+	position: -webkit-sticky;
+	position:sticky;
+	top: 1vh;
+	padding-left: 1vw;
+	width: 20vw;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.MainBar {
+	position: absolute;
+	top: 0px;
+	left: 25vw;
+	width: 60vw;
+	max-width: fit-content;
+}
+
+.AboutMe {
+	padding-top: 15px;
+	font-family: "Times New Roman", Times, serif;
+	word-wrap: break-word;
+}
+.Experience {
+	padding-top: 2vh;
+	font-family: "Times New Roman", Times, serif;
+	word-wrap: break-word;
+	width: fit-content;
+	max-width: fit-content;
+	z-index: 1;
+}
+.Study {
+	padding-top: 2vh;
+	font-family: "Times New Roman", Times, serif;
+	z-index: 1;
+}
+
+.dark .MainInfo {
+	background-color:rgb(77, 77, 77);
 }
 </style>
