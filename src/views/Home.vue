@@ -80,6 +80,7 @@ ul {
 .MainInfo {
 	position: fixed;
 	left: 1vw;
+	top: 1vh;
 	bottom: 2vh;
 	height: 98vh;
 	width: 98vw;
@@ -174,6 +175,7 @@ ul {
 
 	.MainInfo {
 		height: 90vh;
+		top: 2vh;
 	}
 
 	.MainBar {
