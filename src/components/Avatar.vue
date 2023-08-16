@@ -1,8 +1,11 @@
 <script setup lang="ts">
 
+const url: string = '/src/assets/avatar.jpeg'
+
+
 </script>
 <template>
-	<img src="@/assets/avatar.jpeg" />
+	<img :src=url />
 </template>
 <style>
 </style>
