@@ -106,14 +106,14 @@ ul {
 	top: 2vh;
 	right: 2vw;
 	z-index: 1;
-	.Theme {
-		position: absolute;
-		right: 10px;
-	}
-	.Lang {
-		position: absolute;
-		right: 80px;
-	}
+}
+.Theme {
+	position: absolute;
+	right: 10px;
+}
+.Lang {
+	position: absolute;
+	right: 80px;
 }
 
 .MainInfo {
