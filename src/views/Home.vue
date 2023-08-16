@@ -176,6 +176,7 @@ ul {
 	.MainInfo {
 		height: 90vh;
 		top: 2vh;
+		bottom: 3vh;
 	}
 
 	.MainBar {
