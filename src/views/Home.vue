@@ -193,6 +193,10 @@ ul {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
+
+	.el-carousel {
+		--el-carousel-indicator-width: 3vw;
+	}
 }
 
 </style>
