@@ -444,12 +444,12 @@ export const Store = defineStore('main_store', () => {
           'Frontend: Vue.js.',
         ],
         screen: [
-          '/src/assets/ft_tr1.png',
-          '/src/assets/ft_tr1.1.png',
-          '/src/assets/ft_tr2.png',
-          '/src/assets/ft_tr3.png',
-          '/src/assets/ft_tr4.png',
-          '/src/assets/ft_tr5.png'
+          './ft_tr1.png',
+          './ft_tr1.1.png',
+          './ft_tr2.png',
+          './ft_tr3.png',
+          './ft_tr4.png',
+          './ft_tr5.png'
         ]
       },
       {
@@ -484,12 +484,12 @@ export const Store = defineStore('main_store', () => {
           'Frontend: Vue.js.',
         ],
         screen: [
-          '/src/assets/ft_tr1.png',
-          '/src/assets/ft_tr1.1.png',
-          '/src/assets/ft_tr2.png',
-          '/src/assets/ft_tr3.png',
-          '/src/assets/ft_tr4.png',
-          '/src/assets/ft_tr5.png'
+          './ft_tr1.png',
+          './ft_tr1.1.png',
+          './ft_tr2.png',
+          './ft_tr3.png',
+          './ft_tr4.png',
+          './ft_tr5.png'
         ]
       },
       {

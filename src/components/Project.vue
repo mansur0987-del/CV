@@ -31,9 +31,9 @@ watch(lang, (newLang) => {
 					{{ str }}
 				</p>
 				<a :href="project.link"> {{project.link}}</a>
-				<el-carousel type="card" height="30vh" width="30vw" v-if="project.screen.length">
+				<el-carousel type="card" height="calc(2em * 6)" width="calc(2em * 13)" v-if="project.screen.length">
 					<el-carousel-item v-for="screen in project.screen" :key="screen">
-						<img :src="screen" style="height:30vh; width: 30vw" justify="center"/>
+						<img :src="screen" style="height:calc(2em * 6); width: calc(2em * 13)" justify="center"/>
 					</el-carousel-item>
 				</el-carousel>
 			</el-collapse-item>
