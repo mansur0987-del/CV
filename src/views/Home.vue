@@ -28,9 +28,11 @@ import Experience from '@/components/Experience.vue';
 </template>
 <style>
 
-p, h1, h2, h3, h4 {
-    margin: 3px;
-    padding: 0;
+p, h1, h2, h3, h4, ul {
+	margin: 0px;
+    margin-top: 0.2vh;
+    padding: 0px;
+	text-align:justify;
 }
 
 h1 {
@@ -51,50 +53,6 @@ h4 {
 
 div {
 	font-size: 1rem;
-}
-
-@media screen and (max-width: 680px) {
-	h1 {
-		font-size: 1.3rem;
-	}
-
-	h2 {
-		font-size: 1.1rem
-	}
-
-	h3 {
-		font-size: 0.9rem;
-	}
-
-	h4 {
-		font-size: 0.7rem;
-	}
-
-	div {
-		font-size: 0.5rem;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	h1 {
-		font-size: 1.2rem;
-	}
-
-	h2 {
-		font-size: 1rem
-	}
-
-	h3 {
-		font-size: 0.8rem;
-	}
-
-	h4 {
-		font-size: 0.6rem;
-	}
-
-	div {
-		font-size: 0.4rem;
-	}
 }
 
 ul {
@@ -124,6 +82,7 @@ ul {
 	background-color:#fce8d0;;
 	border-radius: 2rem;
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	z-index: 0;
 }
 
@@ -173,4 +132,31 @@ ul {
 .dark .MainInfo {
 	background-color:rgb(77, 77, 77);
 }
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	h2 {
+		font-size: 1rem
+	}
+
+	h3 {
+		font-size: 0.8rem;
+	}
+
+	h4 {
+		font-size: 0.6rem;
+	}
+
+	div {
+		font-size: 0.4rem;
+	}
+
+	.MainBar {
+		width: 70vw;
+	}
+}
+
 </style>

@@ -28,10 +28,10 @@ watch(lang, (newLang) => {
 			<el-timeline-item v-for="(exp) in Experiences.exp" style="padding-inline-start: 0px"
 			:timestamp="exp.start_date + ' - ' + exp.end_date" placement="top">
 				<el-card>
-					<h2> {{ exp.company }}</h2>
+					<h4> {{ exp.position }} </h4>
+					<p>{{ exp.company }}</p>
 					<a :href="exp.site"> {{exp.site}}</a>
 					<p>{{ exp.location }}</p>
-					<p>{{ exp.position }}</p>
 					<p>{{ exp.responsibility_name }}</p>
 					<ul>
 						<li v-for="res in exp.responsibility">

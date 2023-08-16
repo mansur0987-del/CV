@@ -28,18 +28,20 @@ watch(lang, (newLang) => {
 		<p>
 			{{ aboutMe.main }}
 		</p>
-		<li v-for="project in aboutMe.projects">
-			{{ project.info }}
-			<p>
-				{{ project.patent }}
-			</p>
-			<p>
-				{{ project.addit }}
-			</p>
-			<p>
-				{{ project.result }}
-			</p>
-		</li>
+		<ul v-for="project in aboutMe.projects">
+			<li>
+				{{ project.info }}
+				<p>
+					{{ project.patent }}
+				</p>
+				<p>
+					{{ project.addit }}
+				</p>
+				<p>
+					{{ project.result }}
+				</p>
+			</li>
+		</ul>
 	</div>
 </template>
 
