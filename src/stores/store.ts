@@ -137,25 +137,23 @@ export const Store = defineStore('main_store', () => {
   const aboutMeEng: AboutMe = {
     title: "About me",
     main: "I have five years of experience as a systems analyst. \
-    Developed services for automating legal and financial processes with my team",
+    I have developed services for automating legal and financial processes with my team",
     projects: [
       {
-        info: "Creation of a system for automated formation of a legal opinion.",
-        patent: "Patent: RU2732071C1",
+        info: "Developed a system for automated formation of a legal opinion.",
+        patent: "Obtained a patent: RU2732071C1.",
         addit: "Registered in the register of domestic software on 17.06.2022 №2022661214.",
-        result: "Optimization of time and human resources more than 5 times. Elimination of \
-        errors due to human factor."
+        result: "Optimized time and human resources more than 5 times. Eliminated errors due to human factor."
       },
       {
-        info: "Creation of a system for automated interaction between the broker's internal \
+        info: "Developed a system for automated interaction between the broker’s internal \
         services and external systems of banks and the National Settlement Depository (NSD).",
-        result: "Optimization of time and human resources by more than 2 times."
+        result: "Optimized time and human resources by more than 2 times."
       },
       {
-        info: "Implementation of a system for semi-automated document generation into the \
-        internal system circuits of a large business.",
-        result: "Optimization of time and human resources more than 3 times. Minimization \
-        of errors due to human factor."
+        info: "Implemented a system for semi-automated document generation into the internal \
+        system circuits of a large business.",
+        result: "Optimized time and human resources more than 3 times. Minimized errors due to human factor."
       }
     ]
   }
@@ -318,15 +316,15 @@ export const Store = defineStore('main_store', () => {
             Successfully implemented and integrated the service with internal services of all Customers.",
             'Generated data exports from the service database for further analytics and reporting on the system operation.',
             'Identified service defects (described the scenario and hypothesis of occurrence with subsequent prioritization and task assignment). \
-            Identified and resolved 15 critical defects that blocked the work.',
+            Identified and resolved 15 critical defects that were blocking the work.',
             'Prepared technical documentation to extend the service functionality and tested the work results.\
             Added 4 features that simplified the work for the service user and administrator.',
-            "Coordinated implementation tasks and milestones with Customers and development team (priorities, deadlines)."
+            "Independently produced new service releases in the Customer's internal circuit."
           ]
           },{
             name: 'Project Management:',
             description: [
-              'Coordinated implementation tasks and milestones with Customers and development team (priorities, deadlines).'
+              'Coordinated tasks implementation and milestones with Customers and the development team (priorities, deadlines).'
             ]
           }
         ],
@@ -344,15 +342,15 @@ export const Store = defineStore('main_store', () => {
           name: 'Analytics:',
           description: [
             'Created and coordinated project documentation with Customers.',
-            'Designed and coordinated with the customer and the development team the \
+            'Designed and coordinated with the Customer and the development team the \
             internal architecture of the service, implementation terms and costs, integration interactions and design.',
-            'Tested the ready functionality, assigned tasks for improvement, etc.',
+            'Tested the ready functionality, assigned tasks to improve the services, etc.',
             "Created technical documentation for small programs, controlled development and testing.\
             These programs were implemented in the shortest time and optimized the work of the Customer’s business units several times."]
           },{
             name: 'Project management:',
             description: [
-              'Formed a team of developers and designer.',
+              'Formed a team of developers and designers.',
               'Formed backlog, prioritized, set deadlines and monitored tasks execution in time.'
             ]
           }
@@ -460,7 +458,9 @@ export const Store = defineStore('main_store', () => {
           'Frontend: Vue.js (TypeScript, pinia, element-plus)',
           'Развернуто: AWS Amplify'
         ],
-        screen: []
+        screen: [
+          './CV_1.png'
+        ]
       }
     ]
   }
@@ -500,7 +500,9 @@ export const Store = defineStore('main_store', () => {
           'Frontend: Vue.js (TypeScript, pinia, element-plus)',
           'Deployment: AWS Amplify'
         ],
-        screen: []
+        screen: [
+          './CV_1.png'
+        ]
       }
     ]
   }
