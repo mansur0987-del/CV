@@ -220,7 +220,7 @@ export const Store = defineStore('main_store', () => {
             которые впоследствии были устранены.',
             'Подготовка технической документации по расширению функционала сервиса и тестирование результатов работ. \
             Добавлены 4 фичи, которые упростили работу пользователю и администратору сервиса.',
-            'Самостоятельно производил новые релизы сервиса в внутреннем контуре банка.'
+            'Самостоятельно производил новые релизы сервиса в внутреннем контуре Заказчиков.'
           ]
           },{
             name: 'Управление проектом:',
@@ -281,24 +281,22 @@ export const Store = defineStore('main_store', () => {
         responsibility: [{
           name: 'Analytics:',
           description: [
-            'Support of integration interaction (request-response integration schemes, \
-            optimization of intersystem interaction, etc.), coordination of project documentation.',
-            'Participation in the development of Python-based DSL language as a due \
-            diligence tool in corporate lending.',
-            'Creation of user and administrator manuals for internal service.',
-            'Creation of an internal analytics service for the audit team to store \
-            data and upload necessary information.',
-            'Identification of technical/logical errors and formation of proposals to \
-            improve the Robot Lawyer service with subsequent fixing.',
-            'Development and technical support of LegalTech projects, \
-            further development of automated due diligence process (research AS IS, development TO BE processes).',
-            'In collaboration with the DS team, participated in creating and improving up to \
-            90% F-measure of the service to generate a merged document based on machine learning.'
+            'Integrated various systems and optimized their interactions using \
+            request-response schemes and project documentation.',
+            'Developed a DSL language in Python for due diligence in corporate lending.',
+            'Produced user and administrator manuals for an internal service.',
+            'Built an internal analytics service for the audit team to store and upload data.',
+            'Detected and corrected technical/logical errors and suggested \
+            improvements for the Robot Lawyer service.',
+            'Developed and supported LegalTech projects and automated due diligence processes \
+            (researched AS IS and developed TO BE processes).',
+            'Collaborated with the DS team to create and enhance a service \
+            that generates a merged document based on machine learning with up to 90% F-measure.'
           ]
           },{
             name: 'Project Management:',
             description: [
-              'Backlog generation, coordinating team resources during sprints, preparing for release deployments, etc.'
+              'Generated backlog, coordinated team resources during sprints, prepared for release deployments, etc.'
             ]
           }
         ],
@@ -316,14 +314,14 @@ export const Store = defineStore('main_store', () => {
         responsibility: [{
           name: 'Analytics:',
           description: [
-            "Creation and coordination of project documentation on implementation of the service into the Customer's circuit.\
-            The service has been successfully implemented and integrated with internal services of all Customers",
-            'Formation of offloads from the service database for further analytics and fixation in reports on the system operation.',
-            'Identification of service defects (description of the scenario and hypothesis of occurrence with subsequent \
-            prioritization and fixation of the task). Identified 15 critical defects blocking the work, which were subsequently eliminated.',
-            'Preparation of technical documentation to expand the functionality of the service and testing the results of the work.\
-            Added 4 features that simplified the work for the user and administrator of the service',
-            'Independently produced new releases of the service in the internal circuit of the bank.'
+            "Created and coordinated project documentation for the service implementation into the Customer’s circuit.\
+            Successfully implemented and integrated the service with internal services of all Customers.",
+            'Generated data exports from the service database for further analytics and reporting on the system operation.',
+            'Identified service defects (described the scenario and hypothesis of occurrence with subsequent prioritization and task assignment). \
+            Identified and resolved 15 critical defects that blocked the work.',
+            'Prepared technical documentation to extend the service functionality and tested the work results.\
+            Added 4 features that simplified the work for the service user and administrator.',
+            "Coordinated implementation tasks and milestones with Customers and development team (priorities, deadlines)."
           ]
           },{
             name: 'Project Management:',
@@ -345,17 +343,17 @@ export const Store = defineStore('main_store', () => {
         responsibility: [{
           name: 'Analytics:',
           description: [
-            'Formation and coordination of project documentation with Customers.',
-            'Working out and further coordination with the customer and the development team of \
-            the internal architecture of the service, terms and cost of implementation, integration interactions and design.',
-            'Testing of ready functionality, setting tasks for improvement, etc.',
-            "Creation of technical documentation for small programs, development control and testing.\
-            These programs were implemented in the shortest possible time and optimized the work of the Customer's business units several times."]
+            'Created and coordinated project documentation with Customers.',
+            'Designed and coordinated with the customer and the development team the \
+            internal architecture of the service, implementation terms and costs, integration interactions and design.',
+            'Tested the ready functionality, assigned tasks for improvement, etc.',
+            "Created technical documentation for small programs, controlled development and testing.\
+            These programs were implemented in the shortest time and optimized the work of the Customer’s business units several times."]
           },{
             name: 'Project management:',
             description: [
-              'Formation of a team of developers and designer.',
-              'Formation of backlog, prioritization, deadlines and control of tasks execution in time.'
+              'Formed a team of developers and designer.',
+              'Formed backlog, prioritized, set deadlines and monitored tasks execution in time.'
             ]
           }
         ],
@@ -460,7 +458,7 @@ export const Store = defineStore('main_store', () => {
           'Легко настраивается и модифицируется под определенного пользователя.',
           'Возможно динамически изменять язык текста и изменять фон.',
           'Frontend: Vue.js (TypeScript, pinia, element-plus)',
-          'Deploy by AWS Amplify'
+          'Развернуто: AWS Amplify'
         ],
         screen: []
       }
@@ -474,11 +472,11 @@ export const Store = defineStore('main_store', () => {
         name: 'ft_trancendence',
         link: 'https://github.com/mansur0987-del/ft_transcendence',
         description: [
-          'A site for playing pong with another player at 3 different difficulty levels, \
-          with chat, achievements, friend list and match history.',
-          "Classic client-server architecture is used: Client interacts with \
-          frontend. Frontend interacts with backend via http requests and web-sockets. \
-          Backend interacts with database via TypeORM.",
+          'A website that allows users to play pong with another player at three levels of \
+          difficulty, with features such as chat, achievements, friend list and match history.',
+          "The website uses a classic client-server architecture: The client interacts with the \
+          frontend. The frontend interacts with the backend via HTTP requests and web-sockets. \
+          The backend interacts with the database via TypeORM.",
           'Database: PostgreSQL.',
           'Backend: NestJS.',
           'Frontend: Vue.js.',
@@ -496,11 +494,11 @@ export const Store = defineStore('main_store', () => {
         name: 'web_CV',
         link: 'https://github.com/mansur0987-del/CV',
         description: [
-          'Web site with a CV.',
-          'Easy to customize and modify for a specific user.',
-          'It is possible to dynamically change the text language and change the background.',
+          'A website that showcases a CV.',
+          'The website is easy to customize and modify for a specific user.',
+          'The website allows the user to dynamically change the text language and the background.',
           'Frontend: Vue.js (TypeScript, pinia, element-plus)',
-          'Deploy by AWS Amplify'
+          'Deployment: AWS Amplify'
         ],
         screen: []
       }
