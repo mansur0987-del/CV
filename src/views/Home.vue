@@ -164,6 +164,10 @@ ul {
 		font-size: 0.4rem;
 	}
 
+	.MainInfo {
+		height: 90vh;
+	}
+
 	.MainBar {
 		width: 70vw;
 	}

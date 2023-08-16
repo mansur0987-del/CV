@@ -116,17 +116,19 @@ export const Store = defineStore('main_store', () => {
     [
       {
         info: "Создание системы автоматизированного формирования юридического заключения.",
-        patent: "Патент: RU2732071C1",
+        patent: "Патент: RU2732071C1.",
         addit: "Зарегистрирован в реестре отечественного ПО 17.06.2022 №2022661214",
         result: "Оптимизация временных и человеческих ресурсов более чем в 5 раз. \
-        Исключение ошибок из-за человеческого фактора.",
+        Исключение ошибок из-за человеческого фактора.\
+        Такой результат достигается благодаря алгоритмам машинного обучения при извлечении данных из документов и \
+        алгоритмам по автоматизированному принятию решения.",
       },{
-        info: "Создание системы по автоматизированному взаимодействие между внутренними \
+        info: "Создание системы по автоматизированному взаимодействию между внутренними \
         сервисами брокера с внешними системами банков и Национального расчетного депозитария (НРД).",
         result: "Оптимизация временных и человеческих ресурсов более чем в 2 раза."
       },
       {
-        info: "Внедрение системы по полуавтоматизированному формированию документов в \
+        info: "Внедрение системы по полуавтоматизированному формированию документов во \
         внутренние системные контуры крупного бизнеса. ",
         result: "Оптимизация временных и человеческих ресурсов более чем в 3 раза. \
         Минимизация ошибок из-за человеческого фактора."
@@ -143,7 +145,9 @@ export const Store = defineStore('main_store', () => {
         info: "Developed a system for automated formation of a legal opinion.",
         patent: "Obtained a patent: RU2732071C1.",
         addit: "Registered in the register of domestic software on 17.06.2022 №2022661214.",
-        result: "Optimized time and human resources more than 5 times. Eliminated errors due to human factor."
+        result: "Optimized time and human resources more than 5 times. Eliminated errors due to human factor.\
+        This result is achieved by using machine learning algorithms for data extraction from documents \
+        and algorithms for automated decision making."
       },
       {
         info: "Developed a system for automated interaction between the broker’s internal \
@@ -179,7 +183,7 @@ export const Store = defineStore('main_store', () => {
             'Участие в разработке языка DSL на базе Python как инструмента due diligence \
             в корпоративном кредитовании.',
             'Создание руководства пользователя и администратора для внутреннего сервиса.',
-            'Создание внутренней аналитического сервиса для команды аудиторов для хранения \
+            'Создание внутреннего аналитического сервиса для команды аудиторов для хранения \
             данных и загрузки необходимой информации.',
             'Выявление технических/логических ошибок и формирование предложений по улучшению \
             работы сервиса Робот юрист с последующей фиксацией.',
@@ -197,7 +201,7 @@ export const Store = defineStore('main_store', () => {
           }
         ],
         team: 'Команда: 10 сотрудников',
-        tools: 'Инструменты: PyCharm, Confluence, Jira, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
+        tools: 'Инструменты: PyCharm, Confluence, Jira, SCRUM, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
       },
       {
         start_date: 'Ноябрь 2022',
@@ -211,7 +215,7 @@ export const Store = defineStore('main_store', () => {
           name: 'Аналитика:',
           description: [
             'Создание и согласование проектной документации по внедрению сервиса в контур Заказчика.\
-            Сервис успешно внедрен и интегрирован с внутренними сервисами у всех Заказчиков.',
+            Сервис успешно внедрен и интегрирован с внутренними сервисами у трех Заказчиков из сегмента крупного бизнеса.',
             'Формирование выгрузок из БД сервиса для последующей аналитики и фиксации в отчеты по работе системы.',
             'Выявление дефектов сервиса (описание сценария и гипотезы возникновения с последующей \
             приоритезацией и фиксацией задачи). Выявлено 15 критических дефектов блокирующих работу, \
@@ -229,7 +233,7 @@ export const Store = defineStore('main_store', () => {
           }
         ],
         team: 'Команда: 15 сотрудников',
-        tools: 'Инструменты: Redmine, MS Excel и Word, Draw.io, Archi, VS Code, DBeaver, PuTTY, Postman, Docker, Docker-compose'
+        tools: 'Инструменты: Redmine, SDLC, MS Excel и Word, Draw.io, Archi, VS Code, DBeaver, PuTTY, Postman, Docker, Docker-compose'
       },
       {
         start_date: 'Ноябрь 2022',
@@ -242,7 +246,7 @@ export const Store = defineStore('main_store', () => {
           name: 'Аналитика:',
           description: [
             'Формирование и согласование проектной документации с Заказчиками.',
-            'Проработка и последующее согласованием с заказчиком и командой \
+            'Проработка и последующее согласование с заказчиком и командой \
             разработки внутренней архитектуры сервиса, сроков и стоимости реализации, \
             интеграционных взаимодействий и дизайна.',
             'Тестирование готового функционала, заведение задач на доработку и т.д.',
@@ -259,7 +263,7 @@ export const Store = defineStore('main_store', () => {
           }
         ],
         team: 'Команда: 8 сотрудников',
-        tools: 'Инструменты: ClickUp, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
+        tools: 'Инструменты: ClickUp, SCRUM, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
       },
     ]
   }
@@ -299,7 +303,7 @@ export const Store = defineStore('main_store', () => {
           }
         ],
         team: 'Team: 10 employees',
-        tools: 'Tools: PyCharm, Confluence, Jira, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
+        tools: 'Tools: PyCharm, Confluence, Jira, SCRUM, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
       },
       {
         start_date: 'November 2022',
@@ -313,7 +317,7 @@ export const Store = defineStore('main_store', () => {
           name: 'Analytics:',
           description: [
             "Created and coordinated project documentation for the service implementation into the Customer’s circuit.\
-            Successfully implemented and integrated the service with internal services of all Customers.",
+            The service has been successfully implemented and integrated with internal services of three Customers from the large business segment.",
             'Generated data exports from the service database for further analytics and reporting on the system operation.',
             'Identified service defects (described the scenario and hypothesis of occurrence with subsequent prioritization and task assignment). \
             Identified and resolved 15 critical defects that were blocking the work.',
@@ -329,7 +333,7 @@ export const Store = defineStore('main_store', () => {
           }
         ],
         team: 'Team: 15 employees',
-        tools: 'Tools: Redmine, MS Excel and Word, Draw.io, Archi, VS Code, DBeaver, PuTTY, Postman, Docker, Docker-compose'
+        tools: 'Tools: Redmine, SDLC, MS Excel and Word, Draw.io, Archi, VS Code, DBeaver, PuTTY, Postman, Docker, Docker-compose'
       },
       {
         start_date: 'November 2022',
@@ -356,7 +360,7 @@ export const Store = defineStore('main_store', () => {
           }
         ],
         team: 'Team: 10 employees',
-        tools: 'Tools: ClickUp, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
+        tools: 'Tools: ClickUp, SCRUM, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
       },
     ]
   }
