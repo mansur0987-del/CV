@@ -24,9 +24,9 @@ watch(lang, (newLang) => {
 <template>
 	<div>
 		<h2 style="padding-bottom: 10px;"> {{ myProjects.name }} </h2>
-		<el-collapse accordion>
+		<el-collapse accordion >
 			<el-collapse-item v-for="project in myProjects.project"
-			:title="project.name" >
+			:title="project.name">
 				<p v-for="str in project.description">
 					{{ str }}
 				</p>

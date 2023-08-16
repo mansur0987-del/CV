@@ -80,6 +80,7 @@ ul {
 .MainInfo {
 	position: fixed;
 	left: 1vw;
+	bottom: 2vh;
 	height: 98vh;
 	width: 98vw;
 	background-color:#fce8d0;;
@@ -140,7 +141,14 @@ ul {
 
 .el-collapse-item__header {
 	font-size: 1rem;
-	font-weight: 900;
+	padding-left: 2vw;
+}
+
+.el-collapse-item__content {
+    padding-bottom: 3vh;
+	padding-top: 3vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 @media screen and (max-width: 800px) {
@@ -173,7 +181,15 @@ ul {
 	}
 
 	.el-collapse-item__header {
+		padding-left: 2vw;
 		font-size: 0.8rem;
+	}
+
+	.el-collapse-item__content {
+		padding-bottom: 2vh;
+		padding-top: 2vh;
+		padding-left: 1vw;
+		padding-right: 1vw;
 	}
 }
 
