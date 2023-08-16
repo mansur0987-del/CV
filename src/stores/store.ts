@@ -64,6 +64,18 @@ export interface Studys {
 	study: Study[]
 }
 
+interface MyProject {
+  name: string,
+  link: string,
+  description: string[],
+  screen: string[],
+}
+
+export interface MyProjects {
+  name: string,
+  project: MyProject[]
+}
+
 export const Store = defineStore('main_store', () => {
   const lang = ref(localStorage.getItem('lang') ? localStorage.getItem('lang') : 'eng')
 
@@ -361,7 +373,7 @@ export const Store = defineStore('main_store', () => {
       {
         start_date: '2012',
         end_date: '2016',
-        name: 'Московская Государственная юридическая академия им. О.Е. Кутафина',
+        name: 'Московская государственная юридическая академия им. О.Е. Кутафина',
         location: 'Москва',
         profession: 'Юриспруденция',
         lvl: 'Бакалавр'
@@ -369,7 +381,7 @@ export const Store = defineStore('main_store', () => {
       {
         start_date: '2016',
         end_date: '2019',
-        name: 'Московская Государственная юридическая академия им. О.Е. Кутафина',
+        name: 'Московская государственная юридическая академия им. О.Е. Кутафина',
         location: 'Москва',
         profession: 'Юриспруденция',
         lvl: 'Магистр'
@@ -414,5 +426,99 @@ export const Store = defineStore('main_store', () => {
     ]
   }
 
-  return { lang, aboutMeRus, aboutMeEng, mainInfoRus, mainInfoEng, ExperiencesRus, ExperiencesEng, studysRus, studysEng }
+  //My projects
+  const myProjectRus : MyProjects = {
+    name: 'Проекты',
+    project: [
+      {
+        name: 'ft_trancendence',
+        link: 'https://github.com/mansur0987-del/ft_transcendence',
+        description: [
+          'Сайт для игры в pong с другим игроком на 3 разных уровнях сложности, \
+          с чатом, достижениями, френд-листом и историей матчей.',
+          "Используется классическая клиент-серверная архитектура: Клиент взаимодействует с frontend'ом. \
+          Frontend взаимодействует с backend'ом через http-запросы и web-сокеты. Backend \
+          взаимодействует с базой данных через TypeORM.",
+          'База данных: PostgreSQL.',
+          'Backend: NestJS.',
+          'Frontend: Vue.js.',
+        ],
+        screen: [
+          '/src/assets/ft_tr1.png',
+          '/src/assets/ft_tr1.1.png',
+          '/src/assets/ft_tr2.png',
+          '/src/assets/ft_tr3.png',
+          '/src/assets/ft_tr4.png',
+          '/src/assets/ft_tr5.png'
+        ]
+      },
+      {
+        name: 'web_CV',
+        link: 'https://github.com/mansur0987-del/CV',
+        description: [
+          'Веб-сайт с резюме.',
+          'Легко настраивается и модифицируется под определенного пользователя.',
+          'Возможно динамически изменять язык текста и изменять фон.',
+          'Frontend: Vue.js (TypeScript, pinia, element-plus)',
+          'Deploy by AWS Amplify'
+        ],
+        screen: []
+      }
+    ]
+  }
+
+  const myProjectEng : MyProjects = {
+    name: 'Projects',
+    project: [
+      {
+        name: 'ft_trancendence',
+        link: 'https://github.com/mansur0987-del/ft_transcendence',
+        description: [
+          'A site for playing pong with another player at 3 different difficulty levels, \
+          with chat, achievements, friend list and match history.',
+          "Classic client-server architecture is used: Client interacts with \
+          frontend. Frontend interacts with backend via http requests and web-sockets. \
+          Backend interacts with database via TypeORM.",
+          'Database: PostgreSQL.',
+          'Backend: NestJS.',
+          'Frontend: Vue.js.',
+        ],
+        screen: [
+          '/src/assets/ft_tr1.png',
+          '/src/assets/ft_tr1.1.png',
+          '/src/assets/ft_tr2.png',
+          '/src/assets/ft_tr3.png',
+          '/src/assets/ft_tr4.png',
+          '/src/assets/ft_tr5.png'
+        ]
+      },
+      {
+        name: 'web_CV',
+        link: 'https://github.com/mansur0987-del/CV',
+        description: [
+          'Web site with a CV.',
+          'Easy to customize and modify for a specific user.',
+          'It is possible to dynamically change the text language and change the background.',
+          'Frontend: Vue.js (TypeScript, pinia, element-plus)',
+          'Deploy by AWS Amplify'
+        ],
+        screen: []
+      }
+    ]
+  }
+
+
+  return {
+    lang,
+    aboutMeRus,
+    aboutMeEng,
+    mainInfoRus,
+    mainInfoEng,
+    ExperiencesRus,
+    ExperiencesEng,
+    studysRus,
+    studysEng,
+    myProjectRus,
+    myProjectEng
+  }
 })

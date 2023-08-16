@@ -6,6 +6,7 @@ import MainInfo from '@/components/MainInfo.vue';
 import AboutMe from '@/components/AboutMe.vue';
 import Study from '@/components/Study.vue';
 import Experience from '@/components/Experience.vue';
+import Project from '@/components/Project.vue';
 </script>
 <template>
 	<div class="ThemeLang">
@@ -20,6 +21,7 @@ import Experience from '@/components/Experience.vue';
 			<AboutMe class="AboutMe"/>
 			<Experience class="Experience"/>
 			<Study class="Study"/>
+			<Project class="Project" />
 		</div>
 
 
@@ -33,6 +35,7 @@ p, h1, h2, h3, h4, ul {
     margin-top: 0.2vh;
     padding: 0px;
 	text-align:justify;
+	font-family: "Times New Roman", Times, serif;
 }
 
 h1 {
@@ -112,12 +115,10 @@ ul {
 
 .AboutMe {
 	padding-top: 15px;
-	font-family: "Times New Roman", Times, serif;
 	word-wrap: break-word;
 }
 .Experience {
 	padding-top: 2vh;
-	font-family: "Times New Roman", Times, serif;
 	word-wrap: break-word;
 	width: fit-content;
 	max-width: fit-content;
@@ -125,12 +126,21 @@ ul {
 }
 .Study {
 	padding-top: 2vh;
-	font-family: "Times New Roman", Times, serif;
+	z-index: 1;
+}
+
+.Project {
+	padding-top: 2vh;
 	z-index: 1;
 }
 
 .dark .MainInfo {
 	background-color:rgb(77, 77, 77);
+}
+
+.el-collapse-item__header {
+	font-size: 1rem;
+	font-weight: 900;
 }
 
 @media screen and (max-width: 800px) {
@@ -156,6 +166,10 @@ ul {
 
 	.MainBar {
 		width: 70vw;
+	}
+
+	.el-collapse-item__header {
+		font-size: 0.8rem;
 	}
 }
 
