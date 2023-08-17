@@ -9,12 +9,11 @@ import Experience from '@/components/Experience.vue';
 import Project from '@/components/Project.vue';
 </script>
 <template>
-	<div class="ThemeLang">
-		<Theme class="Theme"/>
-		<Lang class="Lang"/>
-	</div>
-
 	<div class="MainInfo">
+		<div class="ThemeLang">
+			<Theme class="Theme"/>
+			<Lang class="Lang"/>
+		</div>
 		<Avatar class="Avatar" />
 		<MainInfo class="MainInfoText" />
 		<div class="MainBar">
@@ -63,10 +62,10 @@ ul {
 }
 
 .ThemeLang {
-	position: fixed;
-	top: 2vh;
-	right: 2vw;
-	z-index: 1;
+    position: absolute;
+    top: 0vh;
+    right: 2vw;
+    z-index: 1;
 }
 .Theme {
 	position: absolute;
@@ -111,7 +110,7 @@ ul {
 	position: absolute;
 	top: 0px;
 	left: 25vw;
-	width: 60vw;
+	width: 70vw;
 	max-width: fit-content;
 }
 
