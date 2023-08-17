@@ -29,6 +29,11 @@ import Project from '@/components/Project.vue';
 </template>
 <style>
 
+html, body {
+  overflow: hidden;
+}
+
+
 p, h1, h2, h3, h4, ul {
 	margin: 0px;
     margin-top: 0.2vh;
@@ -77,11 +82,11 @@ ul {
 }
 
 .MainInfo {
-	position: fixed;
+	position: absolute;
 	left: 1vw;
 	top: 1vh;
 	bottom: 2vh;
-	height: 98vh;
+	height: max-content;
 	width: 98vw;
 	background-color:#fce8d0;;
 	border-radius: 2rem;

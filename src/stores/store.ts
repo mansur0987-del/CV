@@ -118,19 +118,19 @@ export const Store = defineStore('main_store', () => {
         info: "Создание системы автоматизированного формирования юридического заключения.",
         patent: "Патент: RU2732071C1.",
         addit: "Зарегистрирован в реестре отечественного ПО 17.06.2022 №2022661214",
-        result: "Оптимизация временных и человеческих ресурсов более чем в 5 раз. \
+        result: "Сокращение затрат на время и персонал более чем в пять раз. \
         Исключение ошибок из-за человеческого фактора.\
         Такой результат достигается благодаря алгоритмам машинного обучения при извлечении данных из документов и \
         алгоритмам по автоматизированному принятию решения.",
       },{
         info: "Создание системы по автоматизированному взаимодействию между внутренними \
         сервисами брокера с внешними системами банков и Национального расчетного депозитария (НРД).",
-        result: "Оптимизация временных и человеческих ресурсов более чем в 2 раза."
+        result: "Оптимизация временных и человеческих ресурсов более чем в два раза."
       },
       {
         info: "Внедрение системы по полуавтоматизированному формированию документов во \
         внутренние системные контуры крупного бизнеса. ",
-        result: "Оптимизация временных и человеческих ресурсов более чем в 3 раза. \
+        result: "Повышение производительности труда и времени более чем в три раз. \
         Минимизация ошибок из-за человеческого фактора."
       }
     ]
@@ -145,19 +145,19 @@ export const Store = defineStore('main_store', () => {
         info: "Developed a system for automated formation of a legal opinion.",
         patent: "Obtained a patent: RU2732071C1.",
         addit: "Registered in the register of domestic software on 17.06.2022 №2022661214.",
-        result: "Optimized time and human resources more than 5 times. Eliminated errors due to human factor.\
+        result: "Achieved more than five-fold savings on time and staff. Eliminated errors due to human factor.\
         This result is achieved by using machine learning algorithms for data extraction from documents \
         and algorithms for automated decision making."
       },
       {
         info: "Developed a system for automated interaction between the broker’s internal \
         services and external systems of banks and the National Settlement Depository (NSD).",
-        result: "Optimized time and human resources by more than 2 times."
+        result: "Optimized time and human resources by more than two times."
       },
       {
         info: "Implemented a system for semi-automated document generation into the internal \
         system circuits of a large business.",
-        result: "Optimized time and human resources more than 3 times. Minimized errors due to human factor."
+        result: "Boosted time and labor performance by more than three times. Minimized errors due to human factor."
       }
     ]
   }
