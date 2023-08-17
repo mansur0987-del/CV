@@ -18,12 +18,10 @@ import Project from '@/components/Project.vue';
 		<MainInfo class="MainInfoText" />
 		<div class="MainBar">
 			<AboutMe class="AboutMe"/>
-			<Experience class="Experience"/>
 			<Study class="Study"/>
+			<Experience class="Experience"/>
 			<Project class="Project" />
 		</div>
-
-
 	</div>
 
 </template>
@@ -35,8 +33,7 @@ html, body {
 
 
 p, h1, h2, h3, h4, ul {
-	margin: 0px;
-    margin-top: 0.2vh;
+	margin: 0.6vh 0.6vw;
     padding: 0px;
 	text-align:justify;
 	font-family: "Times New Roman", Times, serif;

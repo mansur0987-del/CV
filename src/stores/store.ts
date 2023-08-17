@@ -167,40 +167,34 @@ export const Store = defineStore('main_store', () => {
     exp:
     [
       {
-        start_date: 'Декабрь 2018',
-        end_date: 'Октябрь 2022',
-        company: 'Сбер',
-        site: 'http://www.sberbank.ru/',
-        location: 'Москва',
+        start_date: 'Ноябрь 2022',
+        end_date: 'н.в.',
+        company: 'Extrum Technologies',
+        location: 'Астана, удаленно',
         position: 'Системный аналитик',
         responsibility_name: 'Функциональные обязанности:',
         responsibility: [{
           name: 'Аналитика:',
           description: [
-            'Поддержка интеграционного взаимодействия (схемы интеграции запрос-ответ, \
-            оптимизация межсистемного взаимодействия и т.д.), согласование проектной документации.',
-            'Участие в разработке языка DSL на базе Python как инструмента due diligence \
-            в корпоративном кредитовании.',
-            'Создание руководства пользователя и администратора для внутреннего сервиса.',
-            'Создание внутреннего аналитического сервиса для команды аудиторов для хранения \
-            данных и загрузки необходимой информации.',
-            'Выявление технических/логических ошибок и формирование предложений по улучшению \
-            работы сервиса Робот юрист с последующей фиксацией.',
-            'Разработка и техническая поддержка проектов LegalTech, дальнейшее развитие \
-            автоматизированного процесса due diligence (исследование AS IS, разработка TO BE процессов).',
-            'При взаимодействии с командой DS участвовал в создании и улучшении до 90% \
-            F-меры сервиса для формирования объединенного документа на основе машинного обучения.'
-          ]
+            'Формирование и согласование проектной документации с Заказчиками.',
+            'Проработка и последующее согласование с заказчиком и командой \
+            разработки внутренней архитектуры сервиса, сроков и стоимости реализации, \
+            интеграционных взаимодействий и дизайна.',
+            'Тестирование готового функционала, заведение задач на доработку и т.д.',
+            'Создание технической документации для небольших программ, \
+            контроль за разработкой и тестирование. \
+            Данные программы реализованы в кратчайшие сроки и оптимизировали \
+            работу бизнес подразделений Заказчиков в несколько раз.']
           },{
             name: 'Управление проектом:',
             description: [
-              'Формирование бэклога, координация ресурсов команды во время спринта, \
-              подготовка к развертыванию релизов и т.д.'
+              'Формирование команды разработчиков и дизайнера.',
+              'Формирование беклога, определение приоритета, сроков и контроль исполнения задач в срок.'
             ]
           }
         ],
-        team: 'Команда: 10 сотрудников',
-        tools: 'Инструменты: PyCharm, Confluence, Jira, SCRUM, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
+        team: 'Команда: 8 сотрудников',
+        tools: 'Инструменты: ClickUp, SCRUM, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
       },
       {
         start_date: 'Ноябрь 2022',
@@ -235,35 +229,41 @@ export const Store = defineStore('main_store', () => {
         tools: 'Инструменты: Redmine, SDLC, MS Excel и Word, Draw.io, Archi, VS Code, DBeaver, PuTTY, Postman, Docker, Docker-compose'
       },
       {
-        start_date: 'Ноябрь 2022',
-        end_date: 'н.в.',
-        company: 'Extrum Technologies',
-        location: 'Астана, удаленно',
+        start_date: 'Декабрь 2018',
+        end_date: 'Октябрь 2022',
+        company: 'Сбер',
+        site: 'http://www.sberbank.ru/',
+        location: 'Москва',
         position: 'Системный аналитик',
         responsibility_name: 'Функциональные обязанности:',
         responsibility: [{
           name: 'Аналитика:',
           description: [
-            'Формирование и согласование проектной документации с Заказчиками.',
-            'Проработка и последующее согласование с заказчиком и командой \
-            разработки внутренней архитектуры сервиса, сроков и стоимости реализации, \
-            интеграционных взаимодействий и дизайна.',
-            'Тестирование готового функционала, заведение задач на доработку и т.д.',
-            'Создание технической документации для небольших программ, \
-            контроль за разработкой и тестирование. \
-            Данные программы реализованы в кратчайшие сроки и оптимизировали \
-            работу бизнес подразделений Заказчиков в несколько раз.']
+            'Поддержка интеграционного взаимодействия (схемы интеграции запрос-ответ, \
+            оптимизация межсистемного взаимодействия и т.д.), согласование проектной документации.',
+            'Участие в разработке языка DSL на базе Python как инструмента due diligence \
+            в корпоративном кредитовании.',
+            'Создание руководства пользователя и администратора для внутреннего сервиса.',
+            'Создание внутреннего аналитического сервиса для команды аудиторов для хранения \
+            данных и загрузки необходимой информации.',
+            'Выявление технических/логических ошибок и формирование предложений по улучшению \
+            работы сервиса Робот юрист с последующей фиксацией.',
+            'Разработка и техническая поддержка проектов LegalTech, дальнейшее развитие \
+            автоматизированного процесса due diligence (исследование AS IS, разработка TO BE процессов).',
+            'При взаимодействии с командой DS участвовал в создании и улучшении до 90% \
+            F-меры сервиса для формирования объединенного документа на основе машинного обучения.'
+          ]
           },{
             name: 'Управление проектом:',
             description: [
-              'Формирование команды разработчиков и дизайнера.',
-              'Формирование беклога, определение приоритета, сроков и контроль исполнения задач в срок.'
+              'Формирование бэклога, координация ресурсов команды во время спринта, \
+              подготовка к развертыванию релизов и т.д.'
             ]
           }
         ],
-        team: 'Команда: 8 сотрудников',
-        tools: 'Инструменты: ClickUp, SCRUM, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
-      },
+        team: 'Команда: 10 сотрудников',
+        tools: 'Инструменты: PyCharm, Confluence, Jira, SCRUM, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
+      }
     ]
   }
 
@@ -272,37 +272,31 @@ export const Store = defineStore('main_store', () => {
     exp:
     [
       {
-        start_date: 'December 2018',
-        end_date: 'October 2022',
-        company: 'Sber',
-        site: 'http://www.sberbank.ru',
-        location: 'Moscow',
+        start_date: 'November 2022',
+        end_date: 'present',
+        company: 'Extrum Technologies',
+        location: 'Astana, remotely',
         position: 'System Analyst',
         responsibility_name: 'Functional Responsibilities:',
         responsibility: [{
           name: 'Analytics:',
           description: [
-            'Integrated various systems and optimized their interactions using \
-            request-response schemes and project documentation.',
-            'Developed a DSL language in Python for due diligence in corporate lending.',
-            'Produced user and administrator manuals for an internal service.',
-            'Built an internal analytics service for the audit team to store and upload data.',
-            'Detected and corrected technical/logical errors and suggested \
-            improvements for the Robot Lawyer service.',
-            'Developed and supported LegalTech projects and automated due diligence processes \
-            (researched AS IS and developed TO BE processes).',
-            'Collaborated with the DS team to create and enhance a service \
-            that generates a merged document based on machine learning with up to 90% F-measure.'
-          ]
+            'Created and coordinated project documentation with Customers.',
+            'Designed and coordinated with the Customer and the development team the \
+            internal architecture of the service, implementation terms and costs, integration interactions and design.',
+            'Tested the ready functionality, assigned tasks to improve the services, etc.',
+            "Created technical documentation for small programs, controlled development and testing.\
+            These programs were implemented in the shortest time and optimized the work of the Customer’s business units several times."]
           },{
-            name: 'Project Management:',
+            name: 'Project management:',
             description: [
-              'Generated backlog, coordinated team resources during sprints, prepared for release deployments, etc.'
+              'Formed a team of developers and designers.',
+              'Formed backlog, prioritized, set deadlines and monitored tasks execution in time.'
             ]
           }
         ],
         team: 'Team: 10 employees',
-        tools: 'Tools: PyCharm, Confluence, Jira, SCRUM, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
+        tools: 'Tools: ClickUp, SCRUM, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
       },
       {
         start_date: 'November 2022',
@@ -335,32 +329,38 @@ export const Store = defineStore('main_store', () => {
         tools: 'Tools: Redmine, SDLC, MS Excel and Word, Draw.io, Archi, VS Code, DBeaver, PuTTY, Postman, Docker, Docker-compose'
       },
       {
-        start_date: 'November 2022',
-        end_date: 'present',
-        company: 'Extrum Technologies',
-        location: 'Astana, remotely',
+        start_date: 'December 2018',
+        end_date: 'October 2022',
+        company: 'Sber',
+        site: 'http://www.sberbank.ru',
+        location: 'Moscow',
         position: 'System Analyst',
         responsibility_name: 'Functional Responsibilities:',
         responsibility: [{
           name: 'Analytics:',
           description: [
-            'Created and coordinated project documentation with Customers.',
-            'Designed and coordinated with the Customer and the development team the \
-            internal architecture of the service, implementation terms and costs, integration interactions and design.',
-            'Tested the ready functionality, assigned tasks to improve the services, etc.',
-            "Created technical documentation for small programs, controlled development and testing.\
-            These programs were implemented in the shortest time and optimized the work of the Customer’s business units several times."]
+            'Integrated various systems and optimized their interactions using \
+            request-response schemes and project documentation.',
+            'Developed a DSL language in Python for due diligence in corporate lending.',
+            'Produced user and administrator manuals for an internal service.',
+            'Built an internal analytics service for the audit team to store and upload data.',
+            'Detected and corrected technical/logical errors and suggested \
+            improvements for the Robot Lawyer service.',
+            'Developed and supported LegalTech projects and automated due diligence processes \
+            (researched AS IS and developed TO BE processes).',
+            'Collaborated with the DS team to create and enhance a service \
+            that generates a merged document based on machine learning with up to 90% F-measure.'
+          ]
           },{
-            name: 'Project management:',
+            name: 'Project Management:',
             description: [
-              'Formed a team of developers and designers.',
-              'Formed backlog, prioritized, set deadlines and monitored tasks execution in time.'
+              'Generated backlog, coordinated team resources during sprints, prepared for release deployments, etc.'
             ]
           }
         ],
         team: 'Team: 10 employees',
-        tools: 'Tools: ClickUp, SCRUM, MS Excel и Word, Draw.io, Google Таблицы, VS Code, Figma, DBeaver, Postman, Docker, Docker-compose'
-      },
+        tools: 'Tools: PyCharm, Confluence, Jira, SCRUM, XMLSpy, Jenkins, Grafana, MS Excel и Word.'
+      }
     ]
   }
 
@@ -509,7 +509,6 @@ export const Store = defineStore('main_store', () => {
       }
     ]
   }
-
 
   return {
     lang,
