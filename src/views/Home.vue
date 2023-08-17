@@ -86,9 +86,9 @@ ul {
 	left: 1vw;
 	top: 1vh;
 	bottom: 2vh;
-	height: max-content;
+	height: 98vh;
 	width: 98vw;
-	background-color:#fce8d0;;
+	background-color:#fce8d0;
 	border-radius: 2rem;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
@@ -137,11 +137,20 @@ ul {
 
 .Project {
 	padding-top: 2vh;
+	padding-bottom: 1vh;
 	z-index: 1;
 }
 
 .dark .MainInfo {
 	background-color:rgb(77, 77, 77);
+}
+
+.el-timeline-item__timestamp {
+	color: black;
+}
+
+.dark .el-timeline-item__timestamp {
+	color: white;
 }
 
 .el-collapse-item__header {
