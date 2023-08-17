@@ -145,9 +145,8 @@ export const Store = defineStore('main_store', () => {
         info: "Developed a system for automated formation of a legal opinion.",
         patent: "Obtained a patent: RU2732071C1.",
         addit: "Registered in the register of domestic software on 17.06.2022 №2022661214.",
-        result: "Achieved more than five-fold savings on time and staff. Eliminated errors due to human factor.\
-        This result is achieved by using machine learning algorithms for data extraction from documents \
-        and algorithms for automated decision making."
+        result: "Achieved more than five-fold savings on time and staff. Reduced human error by implementing automated solutions.\
+        Applied machine learning algorithms to extract data from documents and automate decision making."
       },
       {
         info: "Developed a system for automated interaction between the broker’s internal \
