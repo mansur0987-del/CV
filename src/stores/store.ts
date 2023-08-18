@@ -82,7 +82,7 @@ export const Store = defineStore('main_store', () => {
   // main info
   const mainInfoEng : MainInfo = {
     name: 'Mansur Kakushkin',
-    position: 'Frontend developer',
+    position: 'System analyst',
     date: 'April 1st, 1994 (29 y.o.)',
     locate: 'Yerevan, Armenia',
     email: 'Email: Kakushkin.mansur@gmail.com',
@@ -95,7 +95,7 @@ export const Store = defineStore('main_store', () => {
 
   const mainInfoRus : MainInfo = {
     name: 'Какушкин Мансур Наилевич',
-    position: 'Фронтенд разработчик',
+    position: 'Системный аналитик',
     date: '01.04.1994 (29 лет)',
     locate: 'Ереван, Армения',
     email: 'Эл. почта: Kakushkin.mansur@gmail.com',
