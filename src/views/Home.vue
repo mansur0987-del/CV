@@ -22,7 +22,7 @@ import {ElCarousel, ElCarouselItem} from 'element-plus'
 		>
 			<el-carousel-item>
 				<Avatar class="Avatar" />
-				<MainInfo class="MainInfoText" />
+				<MainInfo class="MainInfo" />
 				<AboutMe class="AboutMe"/>
 			</el-carousel-item>
 
@@ -63,11 +63,12 @@ html, body {
 }
 
 html {
-	background-image: linear-gradient( 68.4deg,  rgba(158,143,254,1) 0.2%, rgba(113,202,255,1) 93.3% );
+	background-color: #FFDEE9;
+	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
 .dark {
-	background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );;
+	background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 
 
@@ -127,12 +128,11 @@ ul {
 	border-radius: 2rem;
 }
 
-.MainInfoText {
+.MainInfo {
 	position: absolute;
 	left: 50vw;
 	top: 5vh;
-	padding: 2vw;
-	width: 30vw;
+	width: fit-content;
 	font-family: "Times New Roman", Times, serif;
 }
 
@@ -141,6 +141,24 @@ ul {
 	bottom: 10vh;
 	left: 5vw;
 	word-wrap: break-word;
+}
+
+.el-carousel__button {
+    display: block;
+    opacity: .48;
+    width: var(--el-carousel-indicator-width);
+    height: var(--el-carousel-indicator-height);
+    background-color: #000000;
+    outline: 0;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: var(--el-transition-duration);
+}
+
+.dark .el-carousel__button {
+	background-color: #726f93;
 }
 
 .MainBar {
@@ -161,6 +179,7 @@ ul {
 }*/
 .Study {
 	padding-top: 2vh;
+	width: 85vw;
 	z-index: 1;
 }
 
@@ -168,10 +187,6 @@ ul {
 	padding-top: 2vh;
 	padding-bottom: 1vh;
 	z-index: 1;
-}
-
-.dark .MainInfo {
-	background-color:rgb(77, 77, 77);
 }
 
 .el-timeline-item__timestamp {
@@ -194,7 +209,7 @@ ul {
 	padding-right: 2vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and ((max-width: 800px) or (max-height: 600px) ) {
 	h1 {
 		font-size: 1.2rem;
 	}
@@ -214,14 +229,57 @@ ul {
 	div {
 		font-size: 0.4rem;
 	}
+}
 
-	.MainInfo {
-		height: 87vh;
-		top: 2vh;
+@media screen and (max-height: 600px){
+	.Avatar {
+		position: absolute;
+		left: 5vw;
+		top: 20vh;
+		height:45vh;
+		border-radius: 2rem;
 	}
 
-	.MainBar {
-		width: 70vw;
+	.MainInfo {
+		position: absolute;
+		left: 25vw;
+		top: 20vh;
+		width: fit-content;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	.AboutMe {
+		position: absolute;
+		top: 20vh;
+		left: 45vw;
+		width: 40vw;
+		word-wrap: break-word;
+	}
+}
+
+@media screen and (max-width: 830px) and (min-height: 600px){
+	.Avatar {
+		position: absolute;
+		left: 10vw;
+		top: 20vh;
+		height: 20vh;
+		border-radius: 2rem;
+	}
+
+	.MainInfo {
+		position: absolute;
+		left: 50vw;
+		top: 20vh;
+		width: fit-content;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	.AboutMe {
+		position: absolute;
+		top: 55vh;
+		left: 5vw;
+		width: 80vw;
+		word-wrap: break-word;
 	}
 
 	.el-collapse-item__header {
