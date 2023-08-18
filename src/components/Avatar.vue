@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const url: string = './avatar.jpeg'
+const url: string = './avatar.png'
 
 
 </script>
