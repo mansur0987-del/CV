@@ -2,7 +2,7 @@
 import { Store, type Experiences } from '@/stores/store'
 import { storeToRefs } from "pinia";
 import { ref, watch } from 'vue';
-import { ElTimeline, ElTimelineItem, ElCard } from 'element-plus'
+import { ElTimeline, ElTimelineItem, ElCard, ElCarousel, ElCarouselItem } from 'element-plus'
 
 const store = Store()
 
@@ -23,11 +23,17 @@ watch(lang, (newLang) => {
 
 <template>
 	<div>
-		<h2 style="padding-bottom: 10px;"> {{ Experiences.name }} </h2>
-		<el-timeline>
-			<el-timeline-item v-for="(exp) in Experiences.exp" style="padding-inline-start: 0px"
-			:timestamp="exp.start_date + ' - ' + exp.end_date" placement="top">
-				<el-card>
+		<h1 style="text-align: center;"> {{ Experiences.name }} </h1>
+		<el-carousel
+			width="90vw"
+			height="90vh"
+			type="card"
+			:autoplay="false"
+		>
+			<el-carousel-item v-for="(exp) in Experiences.exp">
+				{{ exp.start_date + ' - ' + exp.end_date }}
+				<div class="CardShow">
+
 					<h4> {{ exp.position }} </h4>
 					<p>{{ exp.company }}</p>
 					<a :href="exp.site"> {{exp.site}}</a>
@@ -45,11 +51,30 @@ watch(lang, (newLang) => {
 					</ul>
 					<p>{{ exp.team }}</p>
 					<p>{{ exp.tools }}</p>
-				</el-card>
-			</el-timeline-item>
-		</el-timeline>
+				</div>
+			</el-carousel-item>
+		</el-carousel>
 	</div>
 </template>
 
 <style>
+
+.el-carousel__item .CardShow {
+	color: #475669;
+  /*color: #475669;*/
+  /*opacity: 0.75;*/
+  /*line-height: 200px;*/
+  margin: 0;
+  text-align: center;
+}
+
+/*.el-carousel__item:nth-child(1n) {
+  background-color: #99a9bf;
+}*/
+
+.el-carousel__item:nth-child(1n) {
+	/*color: #475669;*/
+
+}
+
 </style>

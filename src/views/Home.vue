@@ -7,9 +7,40 @@ import AboutMe from '@/components/AboutMe.vue';
 import Study from '@/components/Study.vue';
 import Experience from '@/components/Experience.vue';
 import Project from '@/components/Project.vue';
+import {ElCarousel, ElCarouselItem} from 'element-plus'
 </script>
 <template>
-	<div class="MainInfo">
+	<div class="ThemeLang">
+		<Theme class="Theme"/>
+		<Lang class="Lang"/>
+	</div>
+	<div class="mainCarusel">
+		<el-carousel
+			height="100vh"
+			direction="vertical"
+			:autoplay="false"
+		>
+			<el-carousel-item>
+				<Avatar class="Avatar" />
+				<MainInfo class="MainInfoText" />
+				<AboutMe class="AboutMe"/>
+			</el-carousel-item>
+
+			<el-carousel-item>
+				<Study class="Study"/>
+			</el-carousel-item>
+
+			<el-carousel-item>
+				<Experience class="Experience"/>
+			</el-carousel-item>
+
+			<el-carousel-item>
+				<Project class="Project" />
+			</el-carousel-item>
+
+		</el-carousel>
+	</div>
+	<!--<div class="MainInfo">
 		<div class="ThemeLang">
 			<Theme class="Theme"/>
 			<Lang class="Lang"/>
@@ -22,13 +53,21 @@ import Project from '@/components/Project.vue';
 			<Experience class="Experience"/>
 			<Project class="Project" />
 		</div>
-	</div>
+	</div>-->
 
 </template>
 <style>
 
 html, body {
   overflow: hidden;
+}
+
+html {
+	background-image: linear-gradient( 68.4deg,  rgba(158,143,254,1) 0.2%, rgba(113,202,255,1) 93.3% );
+}
+
+.dark {
+	background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );;
 }
 
 
@@ -63,9 +102,11 @@ ul {
 	padding-inline-start: 2vw;
 }
 
+
+
 .ThemeLang {
     position: absolute;
-    top: 0vh;
+    top: 3vh;
     right: 2vw;
     z-index: 1;
 }
@@ -78,34 +119,28 @@ ul {
 	right: 80px;
 }
 
-.MainInfo {
-	position: absolute;
-	left: 1vw;
-	top: 1vh;
-	bottom: 2vh;
-	height: 98vh;
-	width: 98vw;
-	background-color:#fce8d0;
-	border-radius: 2rem;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	z-index: 0;
-}
-
 .Avatar {
-	padding-top: 2vh;
-	padding-left: 1vw;
-	width: 20vw;
+	position: absolute;
+	left: 20vw;
+	top: 5vh;
+	height:45vh;
 	border-radius: 2rem;
 }
 
 .MainInfoText {
-	position: -webkit-sticky;
-	position:sticky;
-	top: 1vh;
-	padding-left: 1vw;
-	width: 20vw;
+	position: absolute;
+	left: 50vw;
+	top: 5vh;
+	padding: 2vw;
+	width: 30vw;
 	font-family: "Times New Roman", Times, serif;
+}
+
+.AboutMe {
+	position: absolute;
+	bottom: 10vh;
+	left: 5vw;
+	word-wrap: break-word;
 }
 
 .MainBar {
@@ -116,17 +151,14 @@ ul {
 	max-width: fit-content;
 }
 
-.AboutMe {
-	padding-top: 15px;
-	word-wrap: break-word;
-}
-.Experience {
+
+/*.Experience {
 	padding-top: 2vh;
 	word-wrap: break-word;
 	width: fit-content;
 	max-width: fit-content;
 	z-index: 1;
-}
+}*/
 .Study {
 	padding-top: 2vh;
 	z-index: 1;
