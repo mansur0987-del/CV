@@ -162,7 +162,7 @@ ul {
 	padding-right: 2vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 	h1 {
 		font-size: 1.2rem;
 	}
