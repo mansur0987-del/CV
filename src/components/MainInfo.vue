@@ -24,9 +24,9 @@ watch(lang, (newLang) => {
 <template>
 	<div>
 		<el-card>
-			<h2>
+			<h3>
 				{{ mainInfo.name }}
-			</h2>
+			</h3>
 			<p>
 				{{ mainInfo.position }}
 			</p>

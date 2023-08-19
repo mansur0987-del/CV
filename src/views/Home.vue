@@ -241,7 +241,7 @@ ul {
 	}
 }
 
-@media screen and (max-height: 600px){
+@media screen and (max-height: 600px) and (max-width: 1100px) {
 	.Avatar {
 		position: absolute;
 		left: 2vw;
@@ -268,7 +268,7 @@ ul {
 	}
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 500px){
 	.Avatar {
 		position: absolute;
 		left: 4vw;
