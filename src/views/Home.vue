@@ -123,7 +123,7 @@ ul {
 	position: absolute;
 	left: 20vw;
 	top: 5vh;
-	height:45vh;
+	height:35vh;
 	border-radius: 0.5rem;
 }
 
