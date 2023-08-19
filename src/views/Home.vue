@@ -167,14 +167,6 @@ ul {
 	max-width: fit-content;
 }
 
-
-/*.Experience {
-	padding-top: 2vh;
-	word-wrap: break-word;
-	width: fit-content;
-	max-width: fit-content;
-	z-index: 1;
-}*/
 .Study {
 	padding-top: 2vh;
 	width: 85vw;
@@ -188,7 +180,7 @@ ul {
 }
 
 .el-timeline {
-    --el-timeline-node-color: #bec2ca;
+    --el-timeline-node-color: #a6a9ad
 }
 
 .dark .el-timeline {
@@ -202,8 +194,6 @@ ul {
 .dark .el-timeline-item__timestamp {
 	color: white;
 }
-
-
 
 .el-collapse-item__header {
 	font-size: 1rem;
@@ -221,7 +211,7 @@ ul {
 	--el-card-padding: 0.4vh 0.2vw;
 	max-width: 90vw;
 	border: 2px solid #7c8db0;
-	background-color:azure;
+	background-color:#E5EAF3
 }
 
 .dark .el-card {
@@ -229,77 +219,82 @@ ul {
 
 }
 
-@media screen and ((max-width: 800px) or (max-height: 600px)) {
+@media screen and (max-width: 900px) {
 	h1 {
-		font-size: 1.2rem;
+		font-size: 3em;
 	}
 
 	h2 {
-		font-size: 1rem
+		font-size: 2em;
 	}
 
 	h3 {
-		font-size: 0.8rem;
+		font-size: 1em;
 	}
 
 	h4 {
-		font-size: 0.6rem;
+		font-size: 0.5em;
 	}
 
 	div {
-		font-size: 0.4rem;
+		font-size: 0.5rem;
 	}
 }
 
 @media screen and (max-height: 600px){
 	.Avatar {
 		position: absolute;
-		left: 5vw;
-		top: 20vh;
+		left: 2vw;
+		top: 15vh;
 		height:45vh;
-		border-radius: 2rem;
+		border-radius: 0,5rem;
 	}
 
 	.MainInfo {
 		position: absolute;
-		left: 25vw;
-		top: 20vh;
+		left: 21vw;
+		top: 15vh;
 		width: fit-content;
+		max-width: 25vw;
 		font-family: "Times New Roman", Times, serif;
 	}
 
 	.AboutMe {
 		position: absolute;
-		top: 20vh;
-		left: 45vw;
-		width: 40vw;
+		top: 10vh;
+		left: 47vw;
+		width: 45vw;
 		word-wrap: break-word;
 	}
 }
 
-@media screen and (max-width: 830px) and (min-height: 600px){
+@media screen and (max-width: 700px){
 	.Avatar {
 		position: absolute;
-		left: 30vw;
-		top: 5vh;
-		height: 25vh;
-		border-radius: 2rem;
+		left: 4vw;
+		top: 8vh;
+		height: 28.5vh;
+		border-radius: 0.5rem;
 	}
 
 	.MainInfo {
 		position: absolute;
-		left: 30vw;
-		top: 15vh;
-		width: 70vw;
+		left: 48vw;
+		top: 8vh;
+		width: fit-content;
+		max-width: 38vw;
 		font-family: "Times New Roman", Times, serif;
 	}
 
 	.AboutMe {
-		position: absolute;
-		top: 55vh;
-		left: 5vw;
-		width: 80vw;
-		word-wrap: break-word;
+		position: relative;
+		top: 43vh;
+		left: 4vw;
+		width: 82vw;
+	}
+
+	.AboutMe div {
+		padding-left: 1vw;
 	}
 
 	.el-collapse-item__header {

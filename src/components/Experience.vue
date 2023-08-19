@@ -25,7 +25,7 @@ watch(lang, (newLang) => {
 	<div>
 		<h1 style="text-align: left;"> {{ Experiences.name }} </h1>
 		<el-carousel
-			width="90vw"
+			width="95vw"
 			height="90vh"
 			type="card"
 			:autoplay="false"
@@ -57,7 +57,7 @@ watch(lang, (newLang) => {
 
 <style>
 .Exp {
-	width: 95%;
+	width: 95vw;
 }
 
 .Exp .el-carousel__button {
@@ -66,8 +66,13 @@ watch(lang, (newLang) => {
 	width: 15px;
 }
 
+.Exp .el-carousel__item--card.is-active {
+	left: -10vw;
+	width: 70vw;
+}
+
 .Exp .CardShow {
-	background-color:azure;
+	background-color:#E5EAF3;
 	border: 2px solid #7c8db0;
 	height: 90%;
 }

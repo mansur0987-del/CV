@@ -24,11 +24,11 @@ watch(lang, (newLang) => {
 <template>
 	<div>
 		<h2 style="padding-bottom: 10px;"> {{ studys.name }}</h2>
-		<el-timeline>
+		<el-timeline style="overflow-x: auto; height: 80vh;">
 			<el-timeline-item v-for="(study) in studys.study" style="padding-inline-start: 0px"
 			:timestamp="study.start_date + ' - ' + study.end_date" placement="top">
 				<el-card class="EducatCard">
-					<h4>{{ study.name }}</h4>
+					<h3>{{ study.name }}</h3>
 					<p>{{ study.location}}</p>
 					<p>{{ study.profession }}</p>
 					<p> {{ study.lvl }}</p>
