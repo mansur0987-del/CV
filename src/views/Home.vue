@@ -210,8 +210,8 @@ ul {
 .el-card {
 	--el-card-padding: 0.4vh 0.2vw;
 	max-width: 90vw;
-	border: 2px solid #7c8db0;
-	background-color:#E5EAF3
+	border: 1px solid #7c8db0;
+	background-color: var(--el-color-info-light-9);
 }
 
 .dark .el-card {

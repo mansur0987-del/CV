@@ -44,9 +44,10 @@ watch(lang, (newLang) => {
 <style>
 .StudyCollapse{
 	width: 85vw;
-	border: 2px solid #7c8db0;
-	--el-collapse-header-bg-color: #E5EAF3;
-	--el-collapse-content-bg-color: #E5EAF3;
+	height: 100%;
+	border: 1px solid #7c8db0;
+	--el-collapse-header-bg-color: var(--el-color-info-light-9);
+	--el-collapse-content-bg-color: var(--el-color-info-light-9);
 }
 
 .dark .StudyCollapse {
@@ -65,7 +66,7 @@ watch(lang, (newLang) => {
 }
 
 .StudyCollapse .StudyCollapseItem {
-	height: 10%;
+	height: 100%;
 }
 
 .StudyCollapse .el-collapse-item__content {
