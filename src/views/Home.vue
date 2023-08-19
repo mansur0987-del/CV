@@ -8,6 +8,7 @@ import Study from '@/components/Study.vue';
 import Experience from '@/components/Experience.vue';
 import Project from '@/components/Project.vue';
 import {ElCarousel, ElCarouselItem} from 'element-plus'
+
 </script>
 <template>
 	<div class="ThemeLang">
@@ -72,7 +73,7 @@ html {
 }
 
 
-p, h1, h2, h3, h4, ul {
+p, h1, h2, h3, h4, ul, a {
 	margin: 0.6vh 0.6vw;
     padding: 0px;
 	text-align:justify;
@@ -103,8 +104,6 @@ ul {
 	padding-inline-start: 2vw;
 }
 
-
-
 .ThemeLang {
     position: absolute;
     top: 3vh;
@@ -125,20 +124,19 @@ ul {
 	left: 20vw;
 	top: 5vh;
 	height:45vh;
-	border-radius: 2rem;
+	border-radius: 0.5rem;
 }
 
 .MainInfo {
 	position: absolute;
 	left: 50vw;
 	top: 5vh;
-	width: fit-content;
 	font-family: "Times New Roman", Times, serif;
 }
 
 .AboutMe {
 	position: absolute;
-	bottom: 10vh;
+	bottom: 9vh;
 	left: 5vw;
 	word-wrap: break-word;
 }
@@ -189,6 +187,14 @@ ul {
 	z-index: 1;
 }
 
+.el-timeline {
+    --el-timeline-node-color: #bec2ca;
+}
+
+.dark .el-timeline {
+	--el-timeline-node-color: #46484c;
+}
+
 .el-timeline-item__timestamp {
 	color: black;
 }
@@ -196,6 +202,8 @@ ul {
 .dark .el-timeline-item__timestamp {
 	color: white;
 }
+
+
 
 .el-collapse-item__header {
 	font-size: 1rem;
@@ -209,7 +217,19 @@ ul {
 	padding-right: 2vw;
 }
 
-@media screen and ((max-width: 800px) or (max-height: 600px) ) {
+.el-card {
+	--el-card-padding: 0.4vh 0.2vw;
+	max-width: 90vw;
+	border: 2px solid #7c8db0;
+	background-color:azure;
+}
+
+.dark .el-card {
+	background-color: rgb(68, 67, 86);
+
+}
+
+@media screen and ((max-width: 800px) or (max-height: 600px)) {
 	h1 {
 		font-size: 1.2rem;
 	}
@@ -260,17 +280,17 @@ ul {
 @media screen and (max-width: 830px) and (min-height: 600px){
 	.Avatar {
 		position: absolute;
-		left: 10vw;
-		top: 20vh;
-		height: 20vh;
+		left: 30vw;
+		top: 5vh;
+		height: 25vh;
 		border-radius: 2rem;
 	}
 
 	.MainInfo {
 		position: absolute;
-		left: 50vw;
-		top: 20vh;
-		width: fit-content;
+		left: 30vw;
+		top: 15vh;
+		width: 70vw;
 		font-family: "Times New Roman", Times, serif;
 	}
 

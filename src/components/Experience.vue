@@ -23,58 +23,57 @@ watch(lang, (newLang) => {
 
 <template>
 	<div>
-		<h1 style="text-align: center;"> {{ Experiences.name }} </h1>
+		<h1 style="text-align: left;"> {{ Experiences.name }} </h1>
 		<el-carousel
 			width="90vw"
 			height="90vh"
 			type="card"
 			:autoplay="false"
+			class="Exp"
 		>
-			<el-carousel-item v-for="(exp) in Experiences.exp">
+			<el-carousel-item v-for="(exp) in Experiences.exp" class="CardShow">
 				{{ exp.start_date + ' - ' + exp.end_date }}
-				<div class="CardShow">
-
-					<h4> {{ exp.position }} </h4>
-					<p>{{ exp.company }}</p>
-					<a :href="exp.site"> {{exp.site}}</a>
-					<p>{{ exp.location }}</p>
-					<p>{{ exp.responsibility_name }}</p>
-					<ul>
-						<li v-for="res in exp.responsibility">
-							{{ res.name }}
-							<ul>
-								<li v-for="des in res.description">
-								{{ des }}
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<p>{{ exp.team }}</p>
-					<p>{{ exp.tools }}</p>
-				</div>
+				<h4> {{ exp.position }} </h4>
+				<p>{{ exp.company }}</p>
+				<a :href="exp.site" v-if="exp.site" style="color: inherit;"> {{exp.site}}</a>
+				<p>{{ exp.location }}</p>
+				<p>{{ exp.responsibility_name }}</p>
+				<ul>
+					<li v-for="res in exp.responsibility">
+						{{ res.name }}
+						<ul>
+							<li v-for="des in res.description">
+							{{ des }}
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p>{{ exp.team }}</p>
+				<p>{{ exp.tools }}</p>
 			</el-carousel-item>
 		</el-carousel>
 	</div>
 </template>
 
 <style>
-
-.el-carousel__item .CardShow {
-	color: #475669;
-  /*color: #475669;*/
-  /*opacity: 0.75;*/
-  /*line-height: 200px;*/
-  margin: 0;
-  text-align: center;
+.Exp {
+	width: 95%;
 }
 
-/*.el-carousel__item:nth-child(1n) {
-  background-color: #99a9bf;
-}*/
+.Exp .el-carousel__button {
+    padding: 2px;
+	height: 15px;
+	width: 15px;
+}
 
-.el-carousel__item:nth-child(1n) {
-	/*color: #475669;*/
+.Exp .CardShow {
+	background-color:azure;
+	border: 2px solid #7c8db0;
+	height: 90%;
+}
 
+.dark .Exp .CardShow{
+	background-color: rgb(68, 67, 86);
 }
 
 </style>

@@ -24,13 +24,13 @@ watch(lang, (newLang) => {
 <template>
 	<div>
 		<h2 style="padding-bottom: 10px;"> {{ myProjects.name }} </h2>
-		<el-collapse accordion >
+		<el-collapse accordion class="StudyCollapse">
 			<el-collapse-item v-for="project in myProjects.project"
 			:title="project.name">
 				<p v-for="str in project.description">
 					{{ str }}
 				</p>
-				<a :href="project.link"> {{project.link}}</a>
+				<a :href="project.link" style="color: inherit;"> {{project.link}}</a>
 				<el-carousel type="card" height="calc(2em * 6)" width="calc(2em * 13)" v-if="project.screen.length">
 					<el-carousel-item v-for="screen in project.screen" :key="screen">
 						<img :src="screen" style="height:calc(2em * 6); width: calc(2em * 13)" justify="center"/>
@@ -43,4 +43,21 @@ watch(lang, (newLang) => {
 </template>
 
 <style>
+.StudyCollapse{
+	width: 95vw;
+	background-color:azure;
+	border: 2px solid #7c8db0;
+	/*height: 90%;*/
+	overflow: auto;
+}
+
+.dark .StudyCollapse {
+	background-color: rgb(68, 67, 86);
+}
+.StudyCollapse .el-carousel__button {
+    padding: 2px;
+	height: 15px;
+	width: 15px;
+}
+
 </style>

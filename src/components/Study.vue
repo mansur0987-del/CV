@@ -39,8 +39,4 @@ watch(lang, (newLang) => {
 </template>
 
 <style>
-.el-card {
-	border: 1px solid #7c8db0;
-    background-color: #b2b9ff;
-}
 </style>

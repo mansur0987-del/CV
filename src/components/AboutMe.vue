@@ -2,6 +2,7 @@
 import { Store, type AboutMe } from '@/stores/store'
 import { storeToRefs } from "pinia";
 import { ref, watch } from 'vue';
+import { ElCard } from 'element-plus'
 
 const store = Store()
 
@@ -22,26 +23,28 @@ watch(lang, (newLang) => {
 
 <template>
 	<div>
-		<h2>
-			{{ aboutMe.title }}
-		</h2>
-		<p>
-			{{ aboutMe.main }}
-		</p>
-		<ul v-for="project in aboutMe.projects">
-			<li>
-				{{ project.info }}
-				<p>
-					{{ project.patent }}
-				</p>
-				<p>
-					{{ project.addit }}
-				</p>
-				<p>
-					{{ project.result }}
-				</p>
-			</li>
-		</ul>
+		<el-card>
+			<h2>
+				{{ aboutMe.title }}
+			</h2>
+			<p>
+				{{ aboutMe.main }}
+			</p>
+			<ul v-for="project in aboutMe.projects">
+				<li>
+					{{ project.info }}
+					<p>
+						{{ project.patent }}
+					</p>
+					<p>
+						{{ project.addit }}
+					</p>
+					<p>
+						{{ project.result }}
+					</p>
+				</li>
+			</ul>
+		</el-card>
 	</div>
 </template>
 
