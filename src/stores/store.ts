@@ -77,7 +77,7 @@ export interface MyProjects {
 }
 
 export const Store = defineStore('main_store', () => {
-  const lang = ref(localStorage.getItem('lang') ? localStorage.getItem('lang') : 'eng')
+  const lang = ref(localStorage.getItem('lang') ? localStorage.getItem('lang') : 'Eng')
 
   // main info
   const mainInfoEng : MainInfo = {
@@ -200,7 +200,7 @@ export const Store = defineStore('main_store', () => {
         start_date: 'Ноябрь 2022',
         end_date: 'Апрель 2023',
         company: 'ООО Умная Автоматизация',
-        site: 'turbocontract.ru',
+        site: 'https://turbocontract.ru',
         location: 'Москва, удаленно',
         position: 'Системный аналитик',
         responsibility_name: 'Функциональные обязанности:',
@@ -302,7 +302,7 @@ export const Store = defineStore('main_store', () => {
         start_date: 'November 2022',
         end_date: 'April 2023',
         company: 'ООО Умная Автоматизация (Smart Automation Ltd.)',
-        site: 'turbocontract.ru',
+        site: 'https://turbocontract.ru',
         location: 'Moscow, remotely',
         position: 'System analyst',
         responsibility_name: 'Functional responsibilities:',

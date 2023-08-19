@@ -8,7 +8,7 @@ const store = Store()
 const {lang} = storeToRefs(store)
 
 const toggleLang = () => {
-	lang.value = (lang.value === 'eng' ? 'рус' : 'eng')
+	lang.value = (lang.value === 'Eng' ? 'Рус' : 'Eng')
 	localStorage.removeItem('lang')
 	localStorage.setItem('lang', lang.value)
 }
@@ -16,7 +16,7 @@ const toggleLang = () => {
 </script>
 <template>
 	<el-button @click="toggleLang()" type="info" plain>
-		{{ lang === 'eng' ? 'рус' : 'eng' }}
+		{{ lang === 'Eng' ? 'Рус' : 'Eng' }}
 	</el-button>
 </template>
 <style>

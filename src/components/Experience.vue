@@ -2,16 +2,16 @@
 import { Store, type Experiences } from '@/stores/store'
 import { storeToRefs } from "pinia";
 import { ref, watch } from 'vue';
-import { ElTimeline, ElTimelineItem, ElCard } from 'element-plus'
+import { ElTimeline, ElTimelineItem, ElCard, ElCarousel, ElCarouselItem } from 'element-plus'
 
 const store = Store()
 
 const {lang} = storeToRefs(store)
 
-const Experiences = ref<Experiences>(lang.value === 'eng' ? store.ExperiencesEng : store.ExperiencesRus)
+const Experiences = ref<Experiences>(lang.value === 'Eng' ? store.ExperiencesEng : store.ExperiencesRus)
 
 watch(lang, (newLang) => {
-	if (newLang !== 'eng') {
+	if (newLang !== 'Eng') {
 		Experiences.value = store.ExperiencesRus
 	}
 	else {
@@ -23,33 +23,62 @@ watch(lang, (newLang) => {
 
 <template>
 	<div>
-		<h2 style="padding-bottom: 10px;"> {{ Experiences.name }} </h2>
-		<el-timeline>
-			<el-timeline-item v-for="(exp) in Experiences.exp" style="padding-inline-start: 0px"
-			:timestamp="exp.start_date + ' - ' + exp.end_date" placement="top">
-				<el-card>
-					<h4> {{ exp.position }} </h4>
-					<p>{{ exp.company }}</p>
-					<a :href="exp.site"> {{exp.site}}</a>
-					<p>{{ exp.location }}</p>
-					<p>{{ exp.responsibility_name }}</p>
-					<ul>
-						<li v-for="res in exp.responsibility">
-							{{ res.name }}
-							<ul>
-								<li v-for="des in res.description">
-								{{ des }}
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<p>{{ exp.team }}</p>
-					<p>{{ exp.tools }}</p>
-				</el-card>
-			</el-timeline-item>
-		</el-timeline>
+		<h1 style="text-align: left;"> {{ Experiences.name }} </h1>
+		<el-carousel
+			width="95vw"
+			height="90vh"
+			type="card"
+			:autoplay="false"
+			class="Exp"
+		>
+			<el-carousel-item v-for="(exp) in Experiences.exp" class="CardShow">
+				{{ exp.start_date + ' - ' + exp.end_date }}
+				<h4> {{ exp.position }} </h4>
+				<p>{{ exp.company }}</p>
+				<a :href="exp.site" v-if="exp.site" style="color: inherit;"> {{exp.site}}</a>
+				<p>{{ exp.location }}</p>
+				<p>{{ exp.responsibility_name }}</p>
+				<ul>
+					<li v-for="res in exp.responsibility">
+						{{ res.name }}
+						<ul>
+							<li v-for="des in res.description">
+							{{ des }}
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p>{{ exp.team }}</p>
+				<p>{{ exp.tools }}</p>
+			</el-carousel-item>
+		</el-carousel>
 	</div>
 </template>
 
 <style>
+.Exp {
+	width: 95vw;
+}
+
+.Exp .el-carousel__button {
+    padding: 2px;
+	height: 15px;
+	width: 15px;
+}
+
+.Exp .el-carousel__item--card.is-active {
+	left: -10vw;
+	width: 70vw;
+}
+
+.Exp .CardShow {
+	background-color:var(--el-color-info-light-9);
+	border: 1px solid #7c8db0;
+	height: 90%;
+}
+
+.dark .Exp .CardShow{
+	background-color: rgb(68, 67, 86);
+}
+
 </style>

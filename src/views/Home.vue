@@ -7,9 +7,41 @@ import AboutMe from '@/components/AboutMe.vue';
 import Study from '@/components/Study.vue';
 import Experience from '@/components/Experience.vue';
 import Project from '@/components/Project.vue';
+import {ElCarousel, ElCarouselItem} from 'element-plus'
+
 </script>
 <template>
-	<div class="MainInfo">
+	<div class="ThemeLang">
+		<Theme class="Theme"/>
+		<Lang class="Lang"/>
+	</div>
+	<div class="mainCarusel">
+		<el-carousel
+			height="100vh"
+			direction="vertical"
+			:autoplay="false"
+		>
+			<el-carousel-item>
+				<Avatar class="Avatar" />
+				<MainInfo class="MainInfo" />
+				<AboutMe class="AboutMe"/>
+			</el-carousel-item>
+
+			<el-carousel-item>
+				<Study class="Study"/>
+			</el-carousel-item>
+
+			<el-carousel-item>
+				<Experience class="Experience"/>
+			</el-carousel-item>
+
+			<el-carousel-item>
+				<Project class="Project" />
+			</el-carousel-item>
+
+		</el-carousel>
+	</div>
+	<!--<div class="MainInfo">
 		<div class="ThemeLang">
 			<Theme class="Theme"/>
 			<Lang class="Lang"/>
@@ -22,7 +54,7 @@ import Project from '@/components/Project.vue';
 			<Experience class="Experience"/>
 			<Project class="Project" />
 		</div>
-	</div>
+	</div>-->
 
 </template>
 <style>
@@ -31,8 +63,17 @@ html, body {
   overflow: hidden;
 }
 
+html {
+	background-color: #FFDEE9;
+	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
 
-p, h1, h2, h3, h4, ul {
+.dark {
+	background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+}
+
+
+p, h1, h2, h3, h4, ul, a {
 	margin: 0.6vh 0.6vw;
     padding: 0px;
 	text-align:justify;
@@ -65,7 +106,7 @@ ul {
 
 .ThemeLang {
     position: absolute;
-    top: 0vh;
+    top: 3vh;
     right: 2vw;
     z-index: 1;
 }
@@ -78,34 +119,44 @@ ul {
 	right: 80px;
 }
 
+.Avatar {
+	position: absolute;
+	left: 20vw;
+	top: 5vh;
+	height:45vh;
+	border-radius: 0.5rem;
+}
+
 .MainInfo {
 	position: absolute;
-	left: 1vw;
-	top: 1vh;
-	bottom: 2vh;
-	height: 98vh;
-	width: 98vw;
-	background-color:#fce8d0;
-	border-radius: 2rem;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	z-index: 0;
-}
-
-.Avatar {
-	padding-top: 2vh;
-	padding-left: 1vw;
-	width: 20vw;
-	border-radius: 2rem;
-}
-
-.MainInfoText {
-	position: -webkit-sticky;
-	position:sticky;
-	top: 1vh;
-	padding-left: 1vw;
-	width: 20vw;
+	left: 50vw;
+	top: 5vh;
 	font-family: "Times New Roman", Times, serif;
+}
+
+.AboutMe {
+	position: absolute;
+	bottom: 9vh;
+	left: 5vw;
+	word-wrap: break-word;
+}
+
+.el-carousel__button {
+    display: block;
+    opacity: .48;
+    width: var(--el-carousel-indicator-width);
+    height: var(--el-carousel-indicator-height);
+    background-color: #000000;
+    outline: 0;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: var(--el-transition-duration);
+}
+
+.dark .el-carousel__button {
+	background-color: #726f93;
 }
 
 .MainBar {
@@ -116,19 +167,9 @@ ul {
 	max-width: fit-content;
 }
 
-.AboutMe {
-	padding-top: 15px;
-	word-wrap: break-word;
-}
-.Experience {
-	padding-top: 2vh;
-	word-wrap: break-word;
-	width: fit-content;
-	max-width: fit-content;
-	z-index: 1;
-}
 .Study {
 	padding-top: 2vh;
+	width: 85vw;
 	z-index: 1;
 }
 
@@ -138,8 +179,12 @@ ul {
 	z-index: 1;
 }
 
-.dark .MainInfo {
-	background-color:rgb(77, 77, 77);
+.el-timeline {
+    --el-timeline-node-color: #a6a9ad
+}
+
+.dark .el-timeline {
+	--el-timeline-node-color: #46484c;
 }
 
 .el-timeline-item__timestamp {
@@ -162,34 +207,94 @@ ul {
 	padding-right: 2vw;
 }
 
-@media screen and (max-width: 600px) {
+.el-card {
+	--el-card-padding: 0.4vh 0.2vw;
+	max-width: 90vw;
+	border: 1px solid #7c8db0;
+	background-color: var(--el-color-info-light-9);
+}
+
+.dark .el-card {
+	background-color: rgb(68, 67, 86);
+
+}
+
+@media screen and (max-width: 900px) {
 	h1 {
-		font-size: 1.2rem;
+		font-size: 3em;
 	}
 
 	h2 {
-		font-size: 1rem
+		font-size: 2em;
 	}
 
 	h3 {
-		font-size: 0.8rem;
+		font-size: 1em;
 	}
 
 	h4 {
-		font-size: 0.6rem;
+		font-size: 0.5em;
 	}
 
 	div {
-		font-size: 0.4rem;
+		font-size: 0.5rem;
+	}
+}
+
+@media screen and (max-height: 600px) and (max-width: 1100px) {
+	.Avatar {
+		position: absolute;
+		left: 2vw;
+		top: 15vh;
+		height:45vh;
+		border-radius: 0,5rem;
 	}
 
 	.MainInfo {
-		height: 87vh;
-		top: 2vh;
+		position: absolute;
+		left: 21vw;
+		top: 15vh;
+		width: fit-content;
+		max-width: 25vw;
+		font-family: "Times New Roman", Times, serif;
 	}
 
-	.MainBar {
-		width: 70vw;
+	.AboutMe {
+		position: absolute;
+		top: 10vh;
+		left: 47vw;
+		width: 45vw;
+		word-wrap: break-word;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.Avatar {
+		position: absolute;
+		left: 4vw;
+		top: 8vh;
+		height: 28.5vh;
+		border-radius: 0.5rem;
+	}
+
+	.MainInfo {
+		position: absolute;
+		left: 48vw;
+		top: 8vh;
+		width: fit-content;
+		max-width: 38vw;
+		font-family: "Times New Roman", Times, serif;
+	}
+
+	.AboutMe {
+		position: relative;
+		top: 43vh;
+		left: 4vw;
+		width: 82vw;
+	}
+
+	.AboutMe div {
+		padding-left: 1vw;
 	}
 
 	.el-collapse-item__header {

@@ -2,15 +2,16 @@
 import { Store, type AboutMe } from '@/stores/store'
 import { storeToRefs } from "pinia";
 import { ref, watch } from 'vue';
+import { ElCard } from 'element-plus'
 
 const store = Store()
 
 const lang = storeToRefs(store).lang
 
-const aboutMe = ref<AboutMe>(lang.value === 'eng' ? store.aboutMeEng : store.aboutMeRus)
+const aboutMe = ref<AboutMe>(lang.value === 'Eng' ? store.aboutMeEng : store.aboutMeRus)
 
 watch(lang, (newLang) => {
-	if (newLang !== 'eng') {
+	if (newLang !== 'Eng') {
 		aboutMe.value = store.aboutMeRus
 	}
 	else {
@@ -22,26 +23,28 @@ watch(lang, (newLang) => {
 
 <template>
 	<div>
-		<h2>
-			{{ aboutMe.title }}
-		</h2>
-		<p>
-			{{ aboutMe.main }}
-		</p>
-		<ul v-for="project in aboutMe.projects">
-			<li>
-				{{ project.info }}
-				<p>
-					{{ project.patent }}
-				</p>
-				<p>
-					{{ project.addit }}
-				</p>
-				<p>
-					{{ project.result }}
-				</p>
-			</li>
-		</ul>
+		<el-card>
+			<h3>
+				{{ aboutMe.title }}
+			</h3>
+			<p>
+				{{ aboutMe.main }}
+			</p>
+			<ul v-for="project in aboutMe.projects">
+				<li>
+					{{ project.info }}
+					<p>
+						{{ project.patent }}
+					</p>
+					<p>
+						{{ project.addit }}
+					</p>
+					<p>
+						{{ project.result }}
+					</p>
+				</li>
+			</ul>
+		</el-card>
 	</div>
 </template>
 
