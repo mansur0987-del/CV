@@ -77,7 +77,7 @@ export interface MyProjects {
 }
 
 export const Store = defineStore('main_store', () => {
-  const lang = ref(localStorage.getItem('lang') ? localStorage.getItem('lang') : 'eng')
+  const lang = ref(localStorage.getItem('lang') ? localStorage.getItem('lang') : 'Eng')
 
   // main info
   const mainInfoEng : MainInfo = {

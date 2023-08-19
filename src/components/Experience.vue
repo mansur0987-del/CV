@@ -8,10 +8,10 @@ const store = Store()
 
 const {lang} = storeToRefs(store)
 
-const Experiences = ref<Experiences>(lang.value === 'eng' ? store.ExperiencesEng : store.ExperiencesRus)
+const Experiences = ref<Experiences>(lang.value === 'Eng' ? store.ExperiencesEng : store.ExperiencesRus)
 
 watch(lang, (newLang) => {
-	if (newLang !== 'eng') {
+	if (newLang !== 'Eng') {
 		Experiences.value = store.ExperiencesRus
 	}
 	else {
