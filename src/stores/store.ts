@@ -462,7 +462,9 @@ export const Store = defineStore('main_store', () => {
           'Развернуто: AWS Amplify'
         ],
         screen: [
-          './CV_1.png'
+          './CV_1.png',
+          './CV_2.png',
+          './CV_3.png'
         ]
       }
     ]
@@ -504,7 +506,9 @@ export const Store = defineStore('main_store', () => {
           'Deployment: AWS Amplify'
         ],
         screen: [
-          './CV_1.png'
+          './CV_1.png',
+          './CV_2.png',
+          './CV_3.png'
         ]
       }
     ]
