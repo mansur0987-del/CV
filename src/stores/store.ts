@@ -76,6 +76,11 @@ export interface MyProjects {
   project: MyProject[]
 }
 
+export interface DownloadCV {
+  name: string,
+  url: string
+}
+
 export const Store = defineStore('main_store', () => {
   const lang = ref(localStorage.getItem('lang') ? localStorage.getItem('lang') : 'Eng')
 
@@ -514,6 +519,16 @@ export const Store = defineStore('main_store', () => {
     ]
   }
 
+  const downloadCVRus : DownloadCV = {
+    name: 'Скачать',
+    url: './CV_Rus.pdf'
+  }
+
+  const downloadCVEng : DownloadCV = {
+    name: 'Download',
+    url: './CV_Eng.pdf'
+  }
+
   return {
     lang,
     aboutMeRus,
@@ -525,6 +540,8 @@ export const Store = defineStore('main_store', () => {
     studysRus,
     studysEng,
     myProjectRus,
-    myProjectEng
+    myProjectEng,
+    downloadCVRus,
+    downloadCVEng
   }
 })

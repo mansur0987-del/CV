@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Theme from '@/components/Theme.vue'
 import Lang from '@/components/Lang.vue'
+import Download from '@/components/Download.vue';
 import Avatar from '@/components/Avatar.vue'
 import MainInfo from '@/components/MainInfo.vue';
 import AboutMe from '@/components/AboutMe.vue';
@@ -14,6 +15,7 @@ import {ElCarousel, ElCarouselItem} from 'element-plus'
 	<div class="ThemeLang">
 		<Theme class="Theme"/>
 		<Lang class="Lang"/>
+		<Download class="Download"/>
 	</div>
 	<div class="mainCarusel">
 		<el-carousel
@@ -41,21 +43,6 @@ import {ElCarousel, ElCarouselItem} from 'element-plus'
 
 		</el-carousel>
 	</div>
-	<!--<div class="MainInfo">
-		<div class="ThemeLang">
-			<Theme class="Theme"/>
-			<Lang class="Lang"/>
-		</div>
-		<Avatar class="Avatar" />
-		<MainInfo class="MainInfoText" />
-		<div class="MainBar">
-			<AboutMe class="AboutMe"/>
-			<Study class="Study"/>
-			<Experience class="Experience"/>
-			<Project class="Project" />
-		</div>
-	</div>-->
-
 </template>
 <style>
 
@@ -110,7 +97,12 @@ ul {
 }
 .Lang {
 	position: absolute;
-	right: 80px;
+	right: 70px;
+}
+
+.Download {
+	position: absolute;
+	right: 120px;
 }
 
 .Avatar {
