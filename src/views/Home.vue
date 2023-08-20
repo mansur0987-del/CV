@@ -219,13 +219,13 @@ ul {
 		position: absolute;
 		left: 2vw;
 		top: 15vh;
-		height:45vh;
+		height:37vh;
 		border-radius: 0,5rem;
 	}
 
 	.MainInfo {
 		position: absolute;
-		left: 21vw;
+		left: 24vw;
 		top: 15vh;
 		width: fit-content;
 		max-width: 25vw;
@@ -246,7 +246,7 @@ ul {
 		position: absolute;
 		left: 4vw;
 		top: 8vh;
-		height: 28.5vh;
+		height: 22vh;
 		border-radius: 0.5rem;
 	}
 
