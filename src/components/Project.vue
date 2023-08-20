@@ -45,14 +45,10 @@ watch(lang, (newLang) => {
 .StudyCollapse{
 	width: 85vw;
 	height: 100%;
-	border: 1px solid #7c8db0;
-	--el-collapse-header-bg-color: var(--el-color-info-light-9);
-	--el-collapse-content-bg-color: var(--el-color-info-light-9);
-}
-
-.dark .StudyCollapse {
-	--el-collapse-header-bg-color: rgb(68, 67, 86);
-	--el-collapse-content-bg-color: rgb(68, 67, 86);
+	border: 1px solid var(--el-color-primary-light-5);
+	--el-collapse-header-bg-color: var(--el-color-primary-light-8);
+	--el-collapse-content-bg-color: var(--el-color-primary-light-8);
+	--el-collapse-border-color: var(--el-color-primary-light-7);
 }
 
 .StudyCollapse img {

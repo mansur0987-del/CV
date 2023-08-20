@@ -72,13 +72,9 @@ watch(lang, (newLang) => {
 }
 
 .Exp .CardShow {
-	background-color:var(--el-color-info-light-9);
-	border: 1px solid #7c8db0;
+	background-color:var(--el-color-primary-light-8);
+	border: 1px solid var(--el-color-primary-light-5);
 	height: 90%;
-}
-
-.dark .Exp .CardShow{
-	background-color: rgb(68, 67, 86);
 }
 
 </style>

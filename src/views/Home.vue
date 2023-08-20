@@ -64,14 +64,8 @@ html, body {
 }
 
 html {
-	background-color: #FFDEE9;
-	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+	background-color: var(--el-color-primary-light-9);
 }
-
-.dark {
-	background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
-}
-
 
 p, h1, h2, h3, h4, ul, a {
 	margin: 0.6vh 0.6vw;
@@ -146,17 +140,13 @@ ul {
     opacity: .48;
     width: var(--el-carousel-indicator-width);
     height: var(--el-carousel-indicator-height);
-    background-color: #000000;
+    background-color: var(--el-color-primary-light-5);
     outline: 0;
     padding: 8px;
     margin: 5px;
     cursor: pointer;
     border-radius: 50%;
     transition: var(--el-transition-duration);
-}
-
-.dark .el-carousel__button {
-	background-color: #726f93;
 }
 
 .MainBar {
@@ -180,19 +170,7 @@ ul {
 }
 
 .el-timeline {
-    --el-timeline-node-color: #a6a9ad
-}
-
-.dark .el-timeline {
-	--el-timeline-node-color: #46484c;
-}
-
-.el-timeline-item__timestamp {
-	color: black;
-}
-
-.dark .el-timeline-item__timestamp {
-	color: white;
+    --el-timeline-node-color: var(--el-color-primary-light-5);
 }
 
 .el-collapse-item__header {
@@ -210,13 +188,8 @@ ul {
 .el-card {
 	--el-card-padding: 0.4vh 0.2vw;
 	max-width: 90vw;
-	border: 1px solid #7c8db0;
-	background-color: var(--el-color-info-light-9);
-}
-
-.dark .el-card {
-	background-color: rgb(68, 67, 86);
-
+	border: 1px solid var(--el-color-primary-light-5);
+	background-color: var(--el-color-primary-light-8);
 }
 
 @media screen and (max-width: 900px) {
