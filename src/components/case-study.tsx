@@ -25,19 +25,23 @@ export function CaseStudyPage({
 }: CaseStudyProps) {
   return (
     <div className="mx-auto max-w-3xl px-6 py-32">
+      <div className="fixed top-20 left-0 z-50 w-full px-6">
+        <div className="mx-auto max-w-3xl">
+          <Link
+            href="/#projects"
+            className="inline-flex items-center gap-2 rounded-lg bg-background/80 px-2.5 py-1.5 text-sm font-medium text-muted-foreground shadow-sm backdrop-blur-md transition-colors hover:bg-muted hover:text-foreground"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to Projects
+          </Link>
+        </div>
+      </div>
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Link
-          href="/#projects"
-          className="mb-8 inline-flex items-center gap-2 rounded-lg px-2.5 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Projects
-        </Link>
-
         <p className="mb-2 text-sm font-medium uppercase tracking-widest text-muted-foreground">
           Case Study
         </p>
