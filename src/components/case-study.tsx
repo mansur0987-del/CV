@@ -25,8 +25,8 @@ export function CaseStudyPage({
 }: CaseStudyProps) {
   return (
     <div className="relative mx-auto max-w-3xl px-6 py-32">
-      {/* Fixed back button - right side, closer to content */}
-      <div className="fixed top-20 right-6 z-50">
+      {/* Fixed back button - left side, near the text */}
+      <div className="fixed top-20 left-6 z-50">
         <Link
           href="/#projects"
           className="inline-flex items-center gap-2 rounded-lg border border-border/60 bg-background/60 px-3 py-2 text-sm font-medium text-foreground shadow-lg backdrop-blur-md transition-colors hover:bg-background/90 hover:text-primary"

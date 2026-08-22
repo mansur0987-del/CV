@@ -16,17 +16,21 @@ export function ScrollToTop() {
   return (
     <AnimatePresence>
       {visible && (
-        <motion.button
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
-          transition={{ duration: 0.2 }}
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 right-6 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-border/40 bg-background/80 text-muted-foreground shadow-md backdrop-blur-md transition-colors hover:bg-muted hover:text-foreground"
-          aria-label="Scroll to top"
+        <motion.a
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.3 }}
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="fixed bottom-8 right-[calc((100vw-min(100vw,1280px))/2+1.5rem)] z-50 inline-flex items-center gap-2 rounded-lg border border-border/60 bg-background/60 px-4 py-2.5 text-sm font-medium text-foreground shadow-lg backdrop-blur-md transition-colors hover:bg-background/90 hover:text-primary"
         >
           <ArrowUp className="h-4 w-4" />
-        </motion.button>
+          Наверх
+        </motion.a>
       )}
     </AnimatePresence>
   );
