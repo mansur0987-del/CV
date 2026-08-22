@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ScrollToTop } from "@/components/scroll-to-top";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/lib/theme-provider";
 import { LanguageProvider } from "@/lib/language-context";
@@ -57,6 +58,7 @@ export default function RootLayout({
               <Navbar />
               <main>{children}</main>
               <Footer />
+              <ScrollToTop />
             </TooltipProvider>
           </LanguageProvider>
         </ThemeProvider>
