@@ -11,7 +11,7 @@ export function Experience() {
 
   const experiences = [
     {
-      company: "X5 Tech",
+      company: t("experience.x5tech.company") || "X5 Tech",
       roles: [
         {
           role: t("experience.x5tech.senior.role"),
@@ -58,7 +58,7 @@ export function Experience() {
       ],
     },
     {
-      company: "Extrum",
+      company: t("experience.extrum.company") || "Extrum",
       roles: [
         {
           role: t("experience.extrum.role"),
@@ -84,7 +84,7 @@ export function Experience() {
       ],
     },
     {
-      company: "ООО Умная Автоматизация",
+      company: t("experience.smartauto.company") || "ООО Умная Автоматизация",
       roles: [
         {
           role: t("experience.smartauto.role"),
