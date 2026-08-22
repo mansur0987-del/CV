@@ -24,17 +24,16 @@ export function CaseStudyPage({
   technologies,
 }: CaseStudyProps) {
   return (
-    <div className="mx-auto max-w-3xl px-6 py-32">
-      <div className="fixed top-20 left-0 z-50 w-full px-6">
-        <div className="mx-auto max-w-3xl">
-          <Link
-            href="/#projects"
-            className="inline-flex items-center gap-2 rounded-lg bg-background/80 px-2.5 py-1.5 text-sm font-medium text-muted-foreground shadow-sm backdrop-blur-md transition-colors hover:bg-muted hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Projects
-          </Link>
-        </div>
+    <div className="relative mx-auto max-w-3xl px-6 py-32">
+      {/* Fixed back button - right side, closer to content */}
+      <div className="fixed top-20 right-6 z-50">
+        <Link
+          href="/#projects"
+          className="inline-flex items-center gap-2 rounded-lg border border-border/60 bg-background/60 px-3 py-2 text-sm font-medium text-foreground shadow-lg backdrop-blur-md transition-colors hover:bg-background/90 hover:text-primary"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          Back to Projects
+        </Link>
       </div>
 
       <motion.div
