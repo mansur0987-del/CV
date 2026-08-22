@@ -74,7 +74,7 @@ export default function TaxMonitoringPage() {
   return (
     <CaseStudyPage
       title={t("projects.tax.title")}
-      subtitle="SAP / FNS / Microservices / PostgreSQL / ClickHouse / Airflow"
+      subtitle={t("projects.tax.subtitle")}
       sections={sections}
       technologies={technologies}
     />
