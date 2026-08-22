@@ -64,24 +64,6 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} {t("hero.name")}
           </p>
-          <div className="flex items-center gap-4">
-            <Link
-              href="https://github.com/mansur0987-del"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <GithubIcon className="h-5 w-5" />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <LinkedinIcon className="h-5 w-5" />
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
