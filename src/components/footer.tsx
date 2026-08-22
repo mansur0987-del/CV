@@ -45,7 +45,7 @@ export function Footer() {
               <GithubIcon className="h-5 w-5" />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/mansur-kakushkin-00a399235/"
+              href="https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-foreground"
