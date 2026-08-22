@@ -52,6 +52,7 @@ export default function SchemaAutomationPage() {
         t("schema.result2"),
         t("schema.result3"),
         t("schema.result4"),
+        t("schema.result5"),
       ],
     },
   ];
