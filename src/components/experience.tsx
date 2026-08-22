@@ -11,6 +11,30 @@ export function Experience() {
 
   const experiences = [
     {
+      company: t("experience.aiharness.company") || "AI Harness Engineering",
+      roles: [
+        {
+          role: t("experience.aiharness.role"),
+          period: t("experience.aiharness.period") || "Currently",
+          location: t("experience.aiharness.location") || "Remote",
+          highlights: [
+            t("experience.aiharness.highlight1"),
+            t("experience.aiharness.highlight2"),
+            t("experience.aiharness.highlight3"),
+            t("experience.aiharness.highlight4"),
+          ],
+        },
+      ],
+      technologies: [
+        "LLM",
+        "AI Agents",
+        "Tool Orchestration",
+        "RAG",
+        "Python",
+        "TypeScript",
+      ],
+    },
+    {
       company: t("experience.x5tech.company") || "X5 Tech",
       roles: [
         {
