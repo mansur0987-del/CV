@@ -30,7 +30,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.selectedProjects': 'Selected Projects',
     'hero.scrollExplore': 'Scroll to explore',
     'about.title': 'About',
-    'about.subtitle': 'I bridge business requirements, system architecture, data, integrations and implementation.',
+    'about.subtitle': 'I connect business requirements, system architecture, data, integrations and implementation.',
     'about.description1': 'Senior System Analyst with 7+ years of experience designing complex information systems, integrations and automation for large enterprises including X5 and Sber.',
     'about.description2': 'My approach goes beyond collecting requirements and drawing diagrams. I work across the full spectrum — from understanding business processes and constraints to designing system architecture, APIs, data structures and implementation workflows.',
     'about.description3': 'I actively apply AI and automation to engineering work itself — using LLM, RAG, Graph RAG and knowledge graphs to accelerate system analysis, code understanding and documentation.',
