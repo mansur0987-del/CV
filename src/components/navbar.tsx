@@ -51,7 +51,8 @@ export function Navbar() {
           <ThemeToggle />
           <a
             href={language === 'ru' ? '/CV_Rus_v1.pdf' : '/CV_Eng_v1.pdf'}
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-9 items-center rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
             {t("hero.downloadCV")}
@@ -89,7 +90,8 @@ export function Navbar() {
             <li className="pt-2">
               <a
                 href={language === 'ru' ? '/CV_Rus_v1.pdf' : '/CV_Eng_v1.pdf'}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full rounded-md border border-border bg-background px-3 py-2 text-center text-sm font-medium transition-colors hover:bg-muted"
               >
                 {t("hero.downloadCV")}

@@ -67,7 +67,8 @@ export function Hero() {
           </Link>
           <a
             href={language === 'ru' ? '/CV_Rus_v1.pdf' : '/CV_Eng_v1.pdf'}
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-9 items-center gap-2 rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
             <FileText className="h-4 w-4" />
