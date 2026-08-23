@@ -52,6 +52,26 @@ export function Projects() {
       slug: "schema-automation",
     },
     {
+      title: t("projects.aiDelivery.title"),
+      subtitle: t("projects.aiDelivery.subtitle"),
+      description: t("projects.aiDelivery.description"),
+      icon: <Brain className="h-6 w-6" />,
+      technologies: [
+        "LLM",
+        "AI Harness",
+        "Skill-packs",
+        "MCP",
+        "Context Engineering",
+        "Python",
+      ],
+      metrics: [
+        t("projects.aiDelivery.metric1"),
+        t("projects.aiDelivery.metric2"),
+        t("projects.aiDelivery.metric3"),
+      ],
+      slug: "ai-delivery",
+    },
+    {
       title: t("projects.ai.title"),
       subtitle: t("projects.ai.subtitle"),
       description: t("projects.ai.description"),
