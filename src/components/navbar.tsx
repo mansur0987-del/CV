@@ -15,8 +15,8 @@ export function Navbar() {
   const navItems = [
     { href: "#about", label: t("nav.about") },
     { href: "#experience", label: t("nav.experience") },
-    { href: "#projects", label: t("nav.projects") },
     { href: "#achievements", label: t("nav.achievements") },
+    { href: "#projects", label: t("nav.projects") },
     { href: "#tech", label: t("nav.techStack") },
     { href: "#contact", label: t("nav.contact") },
   ];
