@@ -1,0 +1,3 @@
+# PDF files should be served directly, not through SPA fallback
+/*.pdf  /:splat  200
+/*      /index.html   200
