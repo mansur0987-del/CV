@@ -66,7 +66,7 @@ export function Hero() {
             {t("hero.selectedProjects")}
           </Link>
           <a
-            href={language === 'ru' ? '/CV_Rus.pdf' : '/CV_Eng.pdf'}
+            href={language === 'ru' ? '/CV_Rus_v1.pdf' : '/CV_Eng_v1.pdf'}
             download
             className="inline-flex h-9 items-center gap-2 rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
