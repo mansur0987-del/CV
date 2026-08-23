@@ -37,7 +37,6 @@ export function Experience() {
             t("experience.x5tech.analyst.highlight3"),
             t("experience.x5tech.analyst.highlight4"),
             t("experience.x5tech.analyst.highlight5"),
-            t("experience.x5tech.analyst.highlight6"),
           ],
         },
       ],

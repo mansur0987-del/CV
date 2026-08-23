@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { useLanguage } from "@/lib/language-context";
 
 interface CaseStudySection {
   title: string;
@@ -23,6 +24,7 @@ export function CaseStudyPage({
   sections,
   technologies,
 }: CaseStudyProps) {
+  const { t } = useLanguage();
   return (
     <div className="relative mx-auto max-w-3xl px-6 py-32">
       {/* Fixed back button - left side, near the text */}
@@ -32,7 +34,7 @@ export function CaseStudyPage({
           className="inline-flex items-center gap-2 rounded-lg border border-border/60 bg-background/60 px-3 py-2 text-sm font-medium text-foreground shadow-lg backdrop-blur-md transition-colors hover:bg-background/90 hover:text-primary"
         >
           <ArrowLeft className="h-4 w-4" />
-          Back to Projects
+          {t("casestudy.back")}
         </Link>
       </div>
 
@@ -42,7 +44,7 @@ export function CaseStudyPage({
         transition={{ duration: 0.5 }}
       >
         <p className="mb-2 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-          Case Study
+          {t("casestudy.label")}
         </p>
         <h1 className="mb-2 text-4xl font-bold tracking-tight">{title}</h1>
         <p className="mb-12 text-lg text-muted-foreground">{subtitle}</p>
