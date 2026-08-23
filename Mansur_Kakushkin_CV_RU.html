@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мансур Какушкин — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.45;
+    color: #111827;
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    max-height: 297mm;
+    padding: 22mm 20mm 18mm 20mm;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* HEADER */
+  .header {
+    margin-bottom: 3mm;
+  }
+
+  .header h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #111827;
+    margin-bottom: 1px;
+  }
+
+  .header .subtitle {
+    font-size: 8.5pt;
+    font-weight: 400;
+    color: #4B5563;
+    margin-bottom: 2mm;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 7.5pt;
+    color: #4B5563;
+  }
+
+  .contact a {
+    color: #4B5563;
+    text-decoration: none;
+  }
+
+  .contact .sep {
+    color: #D1D5DB;
+  }
+
+  /* SECTION */
+  .section-title {
+    font-size: 7.5pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #111827;
+    margin-top: 2.5mm;
+    margin-bottom: 1.5mm;
+    padding-bottom: 0.8mm;
+    border-bottom: 0.5px solid #E5E7EB;
+  }
+
+  /* LAYOUT */
+  .columns {
+    display: flex;
+    gap: 6mm;
+    margin-top: 3mm;
+  }
+
+  .col-left {
+    flex: 0 0 58%;
+    padding-right: 6mm;
+    border-right: 0.5px solid #E5E7EB;
+  }
+
+  .col-right {
+    flex: 1;
+    padding-left: 1mm;
+  }
+
+  /* PROFILE */
+  .profile p {
+    font-size: 7.5pt;
+    color: #374151;
+    line-height: 1.45;
+  }
+
+  /* METRICS */
+  .metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5mm;
+    margin-bottom: 3mm;
+  }
+
+  .metric {
+    padding: 2.5mm 3mm;
+    background: #F9FAFB;
+    border-radius: 3px;
+    border: 0.5px solid #F3F4F6;
+  }
+
+  .metric .value {
+    font-size: 15pt;
+    font-weight: 700;
+    color: #2563EB;
+    line-height: 1.1;
+  }
+
+  .metric .label {
+    font-size: 6.5pt;
+    color: #6B7280;
+    margin-top: 0.5mm;
+  }
+
+  /* EXPERIENCE */
+  .exp-item {
+    margin-bottom: 2mm;
+    position: relative;
+  }
+
+  .exp-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5mm;
+  }
+
+  .exp-company {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  .exp-dates {
+    font-size: 7pt;
+    color: #6B7280;
+    flex-shrink: 0;
+  }
+
+  .exp-role {
+    font-size: 7.5pt;
+    color: #4B5563;
+    margin-bottom: 1mm;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    padding: 0;
+  }
+
+  .exp-bullets li {
+    font-size: 7.5pt;
+    color: #374151;
+    padding-left: 8px;
+    position: relative;
+    margin-bottom: 0.8mm;
+    line-height: 1.4;
+  }
+
+  .exp-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #2563EB;
+  }
+
+  /* PROJECT */
+  .project-block {
+    background: #F9FAFB;
+    border: 0.5px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 3mm 3.5mm;
+    margin-bottom: 3mm;
+  }
+
+  .project-block h3 {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1mm;
+  }
+
+  .project-block .desc {
+    font-size: 7.5pt;
+    color: #4B5563;
+    line-height: 1.45;
+    margin-bottom: 2mm;
+  }
+
+  .project-block .tech-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .project-block .tech-tag {
+    font-size: 6pt;
+    padding: 1px 4px;
+    background: #EFF6FF;
+    color: #2563EB;
+    border-radius: 2px;
+    border: 0.5px solid #DBEAFE;
+  }
+
+  /* ACHIEVEMENTS */
+  .ach-item {
+    margin-bottom: 2mm;
+  }
+
+  .ach-item .ach-title {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  .ach-item .ach-desc {
+    font-size: 7pt;
+    color: #6B7280;
+  }
+
+  /* TECH STACK */
+  .stack-category {
+    margin-bottom: 2mm;
+  }
+
+  .stack-category .cat-name {
+    font-size: 7pt;
+    font-weight: 600;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.8mm;
+  }
+
+  .stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .stack-tag {
+    font-size: 6.5pt;
+    padding: 1.5px 4px;
+    background: #F3F4F6;
+    color: #4B5563;
+    border-radius: 2px;
+    border: 0.5px solid #E5E7EB;
+  }
+
+  /* AI RESEARCH */
+  .ai-block {
+    margin-bottom: 2.5mm;
+  }
+
+  .ai-block h3 {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 1mm;
+  }
+
+  .ai-block p {
+    font-size: 7pt;
+    color: #4B5563;
+    line-height: 1.4;
+  }
+
+  .ai-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-top: 1mm;
+  }
+
+  .ai-topic {
+    font-size: 6pt;
+    padding: 1px 4px;
+    background: #EFF6FF;
+    color: #1D4ED8;
+    border-radius: 2px;
+    border: 0.5px solid #DBEAFE;
+  }
+
+  /* EXPERTISE */
+  .expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .exp-tag {
+    font-size: 6.5pt;
+    padding: 2px 5px;
+    background: #F9FAFB;
+    color: #374151;
+    border-radius: 2px;
+    border: 0.5px solid #E5E7EB;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Мансур Какушкин</h1>
+    <div class="subtitle">Старший системный аналитик · Бизнес и системный анализ · AI / RAG</div>
+    <div class="contact">
+      <a href="https://mansur.club">mansur.club</a>
+      <span class="sep">·</span>
+      <a href="https://github.com/mansur0987-del">GitHub</a>
+      <span class="sep">·</span>
+      <a href="https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/">LinkedIn</a>
+      <span class="sep">·</span>
+      <a href="https://t.me/Mans_mans_mans">Telegram</a>
+      <span class="sep">·</span>
+      <a href="mailto:Kakushkin.mansur@gmail.com">Kakushkin.mansur@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- COLUMNS -->
+  <div class="columns">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-left">
+
+      <!-- PROFILE -->
+      <div class="section-title">Профиль</div>
+      <div class="profile">
+        <p>Старший системный аналитик с 7+ годами опыта проектирования сложных информационных систем, интеграций и автоматизации для крупных предприятий, включая X5 и Сбер. Работаю по всему спектру — от понимания бизнес-процессов и ограничений до проектирования системной архитектуры, API, структур данных и процессов реализации. Активно применяю AI и автоматизацию в самой инженерной работе — использую LLM, RAG, Graph RAG и графы знаний для ускорения системного анализа, понимания кода и документирования.</p>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="section-title">Опыт</div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">X5 Tech</span>
+          <span class="exp-dates">Окт 2023 — настоящее время</span>
+        </div>
+        <div class="exp-role">Старший системный аналитик · Москва / Удалённо</div>
+        <ul class="exp-bullets">
+          <li>Инициировал и реализовал внедрение AI-инструментов в процесс разработки и анализа требований, изменив подход к delivery-флоу</li>
+          <li>Добился ускорения цикла «идея → реализация фичи» на 30–40% за счёт оптимизации подготовки задач</li>
+          <li>Проектировал архитектуру системы налогового мониторинга для API-интеграций через 9 юридических лиц с SAP и ФНС</li>
+          <li>Реализовал schema-driven подход: автоматизированная генерация JSON Schema из XSD, сократив ручную работу аналитиков</li>
+          <li>Внедряю AI Harness — программную инфраструктуру вокруг LLM для надёжного поведения автономных агентов</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Extrum</span>
+          <span class="exp-dates">Ноя 2022 — Сен 2023</span>
+        </div>
+        <div class="exp-role">Бизнес / Системный аналитик · Астана</div>
+        <ul class="exp-bullets">
+          <li>Проектировал внутреннюю архитектуру сервиса, сроки, стоимость, интеграционные взаимодействия и дизайн с заказчиком и командой разработки</li>
+          <li>Сформировал команду разработчиков и дизайнера, управлял бэклогом, приоритетами, сроками и контролем исполнения</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Сбер</span>
+          <span class="exp-dates">Дек 2018 — Окт 2022</span>
+        </div>
+        <div class="exp-role">Системный аналитик · Москва</div>
+        <ul class="exp-bullets">
+          <li>Участвовал в разработке языка DSL на базе Python как инструмента due diligence в корпоративном кредитовании</li>
+          <li>Создал внутренний аналитический сервис для команды аудиторов; взаимодействовал с DS-командой, достигнув 90% F-меры</li>
+          <li>Разрабатывал и поддерживал проекты LegalTech, автоматизировал процесс due diligence (AS IS → TO BE)</li>
+        </ul>
+      </div>
+
+      <!-- ACHIEVEMENT -->
+      <div class="section-title">Достижение</div>
+      <div class="ach-item">
+        <div class="ach-title">RU2732071C1 — Патент на автоматизированную систему правового анализа (17.06.2022)</div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-right">
+
+      <!-- IMPACT METRICS -->
+      <div class="section-title">Результаты</div>
+      <div class="metrics">
+        <div class="metric">
+          <div class="value">30–40%</div>
+          <div class="label">ускорение idea → feature</div>
+        </div>
+        <div class="metric">
+          <div class="value">5×</div>
+          <div class="label">оптимизация ресурсов</div>
+        </div>
+        <div class="metric">
+          <div class="value">3×</div>
+          <div class="label">скорость генерации документов</div>
+        </div>
+        <div class="metric">
+          <div class="value">3×</div>
+          <div class="label">решение инцидентов</div>
+        </div>
+        <div class="metric">
+          <div class="value">2×</div>
+          <div class="label">взаимодействие с брокерами</div>
+        </div>
+        <div class="metric">
+          <div class="value">9</div>
+          <div class="label">юридических лиц</div>
+        </div>
+      </div>
+
+      <!-- AI / RESEARCH -->
+      <div class="section-title">AI / Research</div>
+      <div class="ai-block">
+        <p>Активно исследую AI-powered системы для анализа кода, графы знаний, семантический поиск и архитектуры AI-агентов с MCP для автоматизированного системного анализа и документирования.</p>
+        <div class="ai-topics">
+          <span class="ai-topic">Graph RAG</span>
+          <span class="ai-topic">Knowledge Graph</span>
+          <span class="ai-topic">Vector Search</span>
+          <span class="ai-topic">AI Agents</span>
+          <span class="ai-topic">MCP</span>
+          <span class="ai-topic">Semantic Search</span>
+          <span class="ai-topic">LLM</span>
+        </div>
+      </div>
+
+      <!-- TECH STACK -->
+      <div class="section-title">Технический стек</div>
+      <div class="stack-category">
+        <div class="cat-name">Данные и инфраструктура</div>
+        <div class="stack-tags">
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">ClickHouse</span>
+          <span class="stack-tag">Redis</span>
+          <span class="stack-tag">Docker</span>
+          <span class="stack-tag">Grafana</span>
+          <span class="stack-tag">Airflow</span>
+        </div>
+      </div>
+      <div class="stack-category">
+        <div class="cat-name">API / Интеграции</div>
+        <div class="stack-tags">
+          <span class="stack-tag">REST API</span>
+          <span class="stack-tag">Kafka</span>
+          <span class="stack-tag">SAP</span>
+          <span class="stack-tag">JSON Schema</span>
+          <span class="stack-tag">XSD</span>
+        </div>
+      </div>
+      <div class="stack-category">
+        <div class="cat-name">Языки</div>
+        <div class="stack-tags">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">SQL</span>
+        </div>
+      </div>
+
+      <!-- CORE EXPERTISE -->
+      <div class="section-title">Экспертиза</div>
+      <div class="expertise-tags">
+        <span class="exp-tag">Системный анализ</span>
+        <span class="exp-tag">Архитектура интеграций</span>
+        <span class="exp-tag">Проектирование API</span>
+        <span class="exp-tag">Данные и потоки информации</span>
+        <span class="exp-tag">Инженерия требований</span>
+        <span class="exp-tag">Бизнес-процессы</span>
+        <span class="exp-tag">RAG / Graph RAG</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

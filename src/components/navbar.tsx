@@ -10,7 +10,7 @@ import { LanguageToggle } from "./language-toggle";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const navItems = [
     { href: "#about", label: t("nav.about") },
@@ -50,7 +50,7 @@ export function Navbar() {
           <LanguageToggle />
           <ThemeToggle />
           <a
-            href="/CV_Rus.pdf"
+            href={language === 'ru' ? '/CV_Rus.pdf' : '/CV_Eng.pdf'}
             download
             className="inline-flex h-9 items-center rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
@@ -88,7 +88,7 @@ export function Navbar() {
             ))}
             <li className="pt-2">
               <a
-                href="/CV_Rus.pdf"
+                href={language === 'ru' ? '/CV_Rus.pdf' : '/CV_Eng.pdf'}
                 download
                 className="block w-full rounded-md border border-border bg-background px-3 py-2 text-center text-sm font-medium transition-colors hover:bg-muted"
               >

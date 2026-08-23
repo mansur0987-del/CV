@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useLanguage } from "@/lib/language-context";
 
 export function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
@@ -66,7 +66,7 @@ export function Hero() {
             {t("hero.selectedProjects")}
           </Link>
           <a
-            href="/CV_Rus.pdf"
+            href={language === 'ru' ? '/CV_Rus.pdf' : '/CV_Eng.pdf'}
             download
             className="inline-flex h-9 items-center gap-2 rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
