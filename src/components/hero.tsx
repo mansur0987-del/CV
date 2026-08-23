@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown, FileText } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { GithubIcon, LinkedinIcon, TelegramIcon } from "@/components/icons";
 import Link from "next/link";
 import { useLanguage } from "@/lib/language-context";
 
@@ -88,6 +88,14 @@ export function Hero() {
             className="inline-flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
           >
             <LinkedinIcon className="h-5 w-5" />
+          </a>
+          <a
+            href="https://t.me/Mans_mans_mans"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+          >
+            <TelegramIcon className="h-5 w-5" />
           </a>
         </motion.div>
 
