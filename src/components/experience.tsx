@@ -50,6 +50,13 @@ export function Experience() {
         "SQL",
         "PlantUML",
         "BPMN",
+        "FastAPI",
+        "React",
+        "Memgraph",
+        "Docker",
+        "Graph RAG",
+        "MCP",
+        "Cognee",
       ],
     },
     {

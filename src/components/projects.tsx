@@ -19,6 +19,48 @@ export function Projects() {
 
   const projects = [
     {
+      title: t("projects.ai.title"),
+      subtitle: t("projects.ai.subtitle"),
+      description: t("projects.ai.description"),
+      icon: <Brain className="h-6 w-6" />,
+      technologies: [
+        "LLM",
+        "AI Agents",
+        "RAG",
+        "Knowledge Graph",
+        "MCP",
+        "Semantic Search",
+        "Docker",
+        "GitLab Integration",
+      ],
+      metrics: [
+        t("projects.ai.metric1"),
+        t("projects.ai.metric2"),
+        t("projects.ai.metric3"),
+      ],
+      slug: "ai-research",
+    },
+    {
+      title: t("projects.aiDelivery.title"),
+      subtitle: t("projects.aiDelivery.subtitle"),
+      description: t("projects.aiDelivery.description"),
+      icon: <Brain className="h-6 w-6" />,
+      technologies: [
+        "LLM",
+        "AI Harness",
+        "Skill-packs",
+        "MCP",
+        "Context Engineering",
+        "Python",
+      ],
+      metrics: [
+        t("projects.aiDelivery.metric1"),
+        t("projects.aiDelivery.metric2"),
+        t("projects.aiDelivery.metric3"),
+      ],
+      slug: "ai-delivery",
+    },
+    {
       title: t("projects.tax.title"),
       subtitle: t("projects.tax.subtitle"),
       description: t("projects.tax.description"),
@@ -50,42 +92,6 @@ export function Projects() {
         t("projects.schema.metric2"),
       ],
       slug: "schema-automation",
-    },
-    {
-      title: t("projects.aiDelivery.title"),
-      subtitle: t("projects.aiDelivery.subtitle"),
-      description: t("projects.aiDelivery.description"),
-      icon: <Brain className="h-6 w-6" />,
-      technologies: [
-        "LLM",
-        "AI Harness",
-        "Skill-packs",
-        "MCP",
-        "Context Engineering",
-        "Python",
-      ],
-      metrics: [
-        t("projects.aiDelivery.metric1"),
-        t("projects.aiDelivery.metric2"),
-        t("projects.aiDelivery.metric3"),
-      ],
-      slug: "ai-delivery",
-    },
-    {
-      title: t("projects.ai.title"),
-      subtitle: t("projects.ai.subtitle"),
-      description: t("projects.ai.description"),
-      icon: <Brain className="h-6 w-6" />,
-      technologies: [
-        "LLM",
-        "RAG",
-        "Graph RAG",
-        "Vector Search",
-        "Knowledge Graph",
-        "MCP",
-        "AI Agents",
-      ],
-      slug: "ai-research",
     },
   ];
 

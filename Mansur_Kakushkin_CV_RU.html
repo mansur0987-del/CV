@@ -15,8 +15,8 @@
 
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 8.5pt;
-    line-height: 1.45;
+    font-size: 8pt;
+    line-height: 1.38;
     color: #111827;
     background: #fff;
     -webkit-print-color-adjust: exact;
@@ -27,7 +27,7 @@
     width: 210mm;
     min-height: 297mm;
     max-height: 297mm;
-    padding: 22mm 20mm 18mm 20mm;
+    padding: 15mm 18mm 14mm 18mm;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -77,8 +77,8 @@
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: #111827;
-    margin-top: 2.5mm;
-    margin-bottom: 1.5mm;
+    margin-top: 2mm;
+    margin-bottom: 1.2mm;
     padding-bottom: 0.8mm;
     border-bottom: 0.5px solid #E5E7EB;
   }
@@ -103,9 +103,9 @@
 
   /* PROFILE */
   .profile p {
-    font-size: 7.5pt;
+    font-size: 7pt;
     color: #374151;
-    line-height: 1.45;
+    line-height: 1.4;
   }
 
   /* METRICS */
@@ -138,7 +138,7 @@
 
   /* EXPERIENCE */
   .exp-item {
-    margin-bottom: 2mm;
+    margin-bottom: 1.5mm;
     position: relative;
   }
 
@@ -177,12 +177,12 @@
   }
 
   .exp-bullets li {
-    font-size: 7.5pt;
+    font-size: 7pt;
     color: #374151;
     padding-left: 8px;
     position: relative;
-    margin-bottom: 0.8mm;
-    line-height: 1.4;
+    margin-bottom: 0.6mm;
+    line-height: 1.35;
   }
 
   .exp-bullets li::before {
@@ -236,23 +236,23 @@
 
   /* ACHIEVEMENTS */
   .ach-item {
-    margin-bottom: 2mm;
+    margin-bottom: 1.5mm;
   }
 
   .ach-item .ach-title {
-    font-size: 7.5pt;
+    font-size: 7pt;
     font-weight: 600;
     color: #111827;
   }
 
   .ach-item .ach-desc {
-    font-size: 7pt;
+    font-size: 6.5pt;
     color: #6B7280;
   }
 
   /* TECH STACK */
   .stack-category {
-    margin-bottom: 2mm;
+    margin-bottom: 1.5mm;
   }
 
   .stack-category .cat-name {
@@ -360,7 +360,7 @@
       <!-- PROFILE -->
       <div class="section-title">Профиль</div>
       <div class="profile">
-        <p>Старший системный аналитик с 7+ годами опыта проектирования сложных информационных систем, интеграций и автоматизации для крупных предприятий, включая X5 и Сбер. Работаю по всему спектру — от понимания бизнес-процессов и ограничений до проектирования системной архитектуры, API, структур данных и процессов реализации. Активно применяю AI и автоматизацию в самой инженерной работе — использую LLM, RAG, Graph RAG и графы знаний для ускорения системного анализа, понимания кода и документирования.</p>
+        <p>Старший системный аналитик с 7+ годами опыта проектирования сложных информационных систем, интеграций и автоматизации для крупных предприятий, включая X5 и Сбер. Работаю по всему спектру — от понимания бизнес-процессов и ограничений до проектирования системной архитектуры, API, структур данных и процессов реализации. Активно применяю AI и автоматизацию в самой инженерной работе — использую LLM, RAG, Graph RAG и графы знаний для ускорения системного анализа, понимания кода и документирования. В настоящее время строю AI Code Knowledge Platform — используется аналитиками, инженерами, поддержкой, тестировщиками и менеджерами для понимания систем и онбординга.</p>
       </div>
 
       <!-- EXPERIENCE -->
@@ -378,7 +378,7 @@
           <li>Проектировал микросервисную архитектуру платформы, прорабатывал интеграции с SAP и внешними системами, определял архитектуру взаимодействия внутренних сервисов и структуру БД.</li>
           <li>Реализовал schema-driven подход: полуавтоматически формировал JSON Schema из XSD, спроектировал универсальный механизм генерации экранных форм из JSON-схем — аналитик может обновлять схемы и формы без участия разработчиков</li>
           <li>Создавал дашборды для мониторинга системы в Grafana и реализовывал логику алертов для отслеживания состояния платформы в production</li>
-          <li>Внедряю AI Harness — программную инфраструктуру вокруг LLM для надёжного поведения автономных агентов</li>
+          <li>Спроектировал и реализовал AI Code Knowledge Platform — продукт, автоматически извлекающий знания из кодовых баз и генерирующий структурированную документацию для кросс-функциональных команд</li>
         </ul>
       </div>
 
@@ -408,10 +408,10 @@
       </div>
 
       <!-- КЛЮЧЕВОЙ ПРОЕКТ -->
-      <div class="section-title">Ключевой проект · AI Трансформация</div>
+      <div class="section-title">Ключевой проект</div>
       <div class="ach-item">
-        <div class="ach-title">Skill-packs / Контекст / AI Harness · X5 Tech</div>
-        <div class="ach-desc">Проектирование и масштабирование end-to-end AI-трансформации процессов delivery. Создание стандартизированных skill-packs для AI-инструментов, реструктуризация декомпозиции задач, построение AI Harness инфраструктуры — ускорение цикла «идея → фича» на 30–40% и ускорение решения инцидентов в 3 раза для нескольких команд.</div>
+        <div class="ach-title">AI Code Knowledge Platform · X5 Tech</div>
+        <div class="ach-desc">Спроектировал и реализовал продукт, автоматически извлекающий знания из кодовых баз и генерирующий структурированную документацию — доменную, БД, архитектурную и функциональную. Используется аналитиками, инженерами, поддержкой, тестировщиками и менеджерами для онбординга и понимания систем.</div>
       </div>
 
       <!-- ДОСТИЖЕНИЕ -->
@@ -457,15 +457,15 @@
       <!-- AI / RESEARCH -->
       <div class="section-title">AI / Research</div>
       <div class="ai-block">
-        <p>Активно исследую AI-powered системы для анализа кода, графы знаний, семантический поиск и архитектуры AI-агентов с MCP для автоматизированного системного анализа и документирования.</p>
+        <p>Строю AI Code Knowledge Platform. Применяю Graph RAG, графы знаний, семантический поиск и AI-агенты с MCP для ускорения системного анализа, понимания кода и документирования.</p>
         <div class="ai-topics">
+          <span class="ai-topic">Knowledge Extraction</span>
           <span class="ai-topic">Graph RAG</span>
           <span class="ai-topic">Knowledge Graph</span>
-          <span class="ai-topic">Vector Search</span>
-          <span class="ai-topic">AI Agents</span>
           <span class="ai-topic">MCP</span>
-          <span class="ai-topic">Semantic Search</span>
+          <span class="ai-topic">AI Agents</span>
           <span class="ai-topic">LLM</span>
+          <span class="ai-topic">RAG</span>
         </div>
       </div>
 
@@ -480,6 +480,16 @@
           <span class="stack-tag">Docker</span>
           <span class="stack-tag">Grafana</span>
           <span class="stack-tag">Airflow</span>
+        </div>
+      </div>
+      <div class="stack-category">
+        <div class="cat-name">AI</div>
+        <div class="stack-tags">
+          <span class="stack-tag">FastAPI</span>
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Memgraph</span>
+          <span class="stack-tag">Cognee</span>
+          <span class="stack-tag">MCP</span>
         </div>
       </div>
       <div class="stack-category">
@@ -505,6 +515,7 @@
       <div class="section-title">Экспертиза</div>
       <div class="expertise-tags">
         <span class="exp-tag">Системный анализ</span>
+        <span class="exp-tag">Разработка продуктов</span>
         <span class="exp-tag">Архитектура интеграций</span>
         <span class="exp-tag">Проектирование API</span>
         <span class="exp-tag">Данные и потоки информации</span>

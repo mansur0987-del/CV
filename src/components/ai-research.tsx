@@ -3,10 +3,11 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, GitBranch, Search, Bot, Layers } from "lucide-react";
+import { Brain, GitBranch, Bot, Layers, Plug } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 
 const statusColors: Record<string, string> = {
+  Built: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
   Research: "bg-blue-500/10 text-blue-500 border-blue-500/20",
   Experiment: "bg-purple-500/10 text-purple-500 border-purple-500/20",
   Exploring: "bg-amber-500/10 text-amber-500 border-amber-500/20",
@@ -17,6 +18,27 @@ export function AIResearch() {
   const { t } = useLanguage();
 
   const researchAreas = [
+    {
+      icon: <Brain className="h-5 w-5" />,
+      title: t("aiResearch.aickp.title"),
+      description: t("aiResearch.aickp.description"),
+      tags: ["Knowledge Extraction", "Automated Documentation", "AI Chat", "Onboarding"],
+      status: "Built" as const,
+    },
+    {
+      icon: <Bot className="h-5 w-5" />,
+      title: t("aiResearch.mcpPlatform.title"),
+      description: t("aiResearch.mcpPlatform.description"),
+      tags: ["Skill-packs", "AI Agents", "Context Templates", "Analytics Workflows"],
+      status: "Built" as const,
+    },
+    {
+      icon: <Plug className="h-5 w-5" />,
+      title: t("aiResearch.mcp.title"),
+      description: t("aiResearch.mcp.description"),
+      tags: ["MCP", "Tool Integration", "AI Agents", "External Systems"],
+      status: "Built" as const,
+    },
     {
       icon: <Brain className="h-5 w-5" />,
       title: t("aiResearch.llm.title"),
@@ -30,20 +52,6 @@ export function AIResearch() {
       description: t("aiResearch.graph.description"),
       tags: ["Graph RAG", "Knowledge Graph", "AST", "Dependencies"],
       status: "Experiment" as const,
-    },
-    {
-      icon: <Search className="h-5 w-5" />,
-      title: t("aiResearch.semantic.title"),
-      description: t("aiResearch.semantic.description"),
-      tags: ["Semantic Search", "Code Analysis", "NLP"],
-      status: "Prototype" as const,
-    },
-    {
-      icon: <Bot className="h-5 w-5" />,
-      title: t("aiResearch.agents.title"),
-      description: t("aiResearch.agents.description"),
-      tags: ["AI Agents", "MCP", "Automation", "Tool Use"],
-      status: "Exploring" as const,
     },
     {
       icon: <Layers className="h-5 w-5" />,

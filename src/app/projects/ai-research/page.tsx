@@ -61,21 +61,20 @@ export default function AIResearchPage() {
 
   const technologies = [
     "LLM",
+    "AI Agents",
     "RAG",
-    "Graph RAG",
-    "Vector Search",
     "Knowledge Graph",
     "MCP",
-    "AI Agents",
-    "LangChain",
-    "Python",
-    "Graph Database",
+    "Semantic Search",
+    "Automated Documentation",
+    "Docker",
+    "GitLab Integration",
   ];
 
   return (
     <CaseStudyPage
       title={t("projects.ai.title")}
-      subtitle="Graph RAG / Code Graph / AI Agents / MCP"
+      subtitle="Graph RAG / AI Agents / MCP / Knowledge Graph"
       sections={sections}
       technologies={technologies}
     />

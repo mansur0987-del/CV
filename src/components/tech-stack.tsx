@@ -20,7 +20,7 @@ export function TechStack() {
     {
       name: t("techStack.backend"),
       icon: <Database className="h-5 w-5" />,
-      technologies: ["Python", "PostgreSQL", "ClickHouse", "Redis", "Tarantool"],
+      technologies: ["Python", "FastAPI", "PostgreSQL", "ClickHouse", "Redis", "Tarantool"],
     },
     {
       name: t("techStack.integration"),
@@ -48,6 +48,9 @@ export function TechStack() {
         "Knowledge Graph",
         "MCP",
         "AI Agents",
+        "Cognee",
+        "Memgraph",
+        "Graph MCP",
       ],
     },
     {

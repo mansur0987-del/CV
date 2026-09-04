@@ -29,6 +29,11 @@ export function Achievements() {
       description: t("achievements.cycle.description"),
     },
     {
+      value: "AI Platform",
+      label: t("achievements.platform.label"),
+      description: t("achievements.platform.description"),
+    },
+    {
       value: "RU2732071C1",
       label: t("achievements.patent.label"),
       description: t("achievements.patent.description"),
