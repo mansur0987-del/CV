@@ -1,3 +1,3 @@
-# PDF files should be served directly, not through SPA fallback
-/*.pdf  /:splat  200
-/*      /index.html   200
+# Static Next.js export: do not rewrite arbitrary URLs to /index.html.
+# A wildcard SPA rewrite can serve the homepage instead of /resume.md or other public files.
+# Configure any AWS Amplify rewrites in Hosting > Rewrites and redirects, if needed.

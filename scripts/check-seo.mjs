@@ -34,8 +34,9 @@ for (const slug of projectPaths) {
 }
 
 const llms = read("llms.txt");
-const resume = read("resume.md");
-assert.ok(llms.includes("https://mansur.club/resume.md"));
+const resume = read("resume.txt");
+assert.ok(!resume.trimStart().startsWith("<!DOCTYPE html"), "Resume must not be HTML fallback");
+assert.ok(llms.includes("https://mansur.club/resume.txt"));
 assert.ok(resume.includes("Mansur Kakushkin"));
 assert.ok(resume.includes("X5 Tech"));
 assert.ok(resume.includes("AI Code Knowledge Platform"));
