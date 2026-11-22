@@ -28,3 +28,5 @@ jobs:
         run: npm run build
       - name: Validate exported SEO
         run: node scripts/check-seo.mjs
+      - name: Audit installed dependency tree
+        run: npm audit --audit-level=high
