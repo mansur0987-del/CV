@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mansur Kakushkin — CV and portfolio
 
-## Getting Started
+Source code for [mansur.club](https://mansur.club/), a public professional portfolio for a Senior Systems Analyst working in enterprise architecture, integrations and AI engineering.
 
-First, run the development server:
+## Technology
+
+Next.js 16 App Router, React 19, TypeScript, Tailwind CSS. The site uses **static export** (`output: "export"`), deployed with AWS Amplify; it does not require a runtime Next.js server.
+
+## Development and checks
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run lint
+npm run build
+node scripts/check-seo.mjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The SEO check reads the generated `out/` directory, so run it after building. CI runs lint, build and SEO checks for `dev` pushes and pull requests to `master`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Content and search visibility
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Site content and translations: `src/lib/language-context.tsx`
+- Home page and page metadata: `src/app/page.tsx`, `src/app/layout.tsx`
+- Case studies: `src/app/projects/*/page.tsx`
+- Case-study SEO metadata: `src/app/projects/*/layout.tsx`
+- Crawler rules: `public/robots.txt`
+- Sitemap: `public/sitemap.xml`
+- AI-readable site map: `public/llms.txt`
+- Text resume: `public/resume.txt` (Markdown syntax; `public/resume.md` retained as source)
+- Structured data: JSON-LD `ProfilePage` and `Person` in the root layout
 
-## Learn More
+When updating career facts, keep the visible page, structured data and Markdown resume consistent. Search crawler access does **not** guarantee search-engine indexing or recommendations.
 
-To learn more about Next.js, take a look at the following resources:
+## Agent guidance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Coding agents should read [AGENTS.md](./AGENTS.md). [CLAUDE.md](./CLAUDE.md) imports the same instructions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The build exports to `out/`; `amplify.yml` contains the Amplify build settings. Production changes are merged from `dev` into `master` after validation.

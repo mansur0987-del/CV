@@ -1,0 +1,80 @@
+# Mansur Kakushkin
+
+**Senior Systems Analyst | Solution Architecture | Systems & AI**
+
+Website: https://mansur.club/  
+GitHub: https://github.com/mansur0987-del  
+LinkedIn: https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/  
+Email: Kakushkin.mansur@gmail.com
+
+## Professional summary
+
+Senior Systems Analyst with 7+ years of experience designing enterprise systems, integrations, APIs and data workflows. Experience spans requirements analysis, architecture, technical specifications, cross-team coordination and production support. Recent focus includes AI-assisted engineering workflows, AI agents, retrieval-augmented generation (RAG), knowledge graphs and the Model Context Protocol (MCP).
+
+Interested in Senior Systems Analyst, Solution Architect and AI-focused engineering positions involving enterprise-scale systems and integrations.
+
+## Core competencies
+
+- Enterprise systems analysis, solution design, technical requirements, API contracts and documentation.
+- Integration architecture: SAP, REST APIs, microservices and data synchronization.
+- Data systems: PostgreSQL, ClickHouse, SQL, Apache Airflow and Python.
+- AI engineering: LLM workflows, AI agents, RAG, Graph RAG, knowledge extraction and MCP.
+- Engineering delivery: automated documentation, testing workflows, incident investigation and cross-team coordination.
+
+## Professional experience
+
+### X5 Tech — Senior System Analyst (September 2025–present, per portfolio)
+
+- Coordinate work across two project teams and one product team, including priorities, technical decisions and delivery.
+- Redesigned AI-assisted analysis and specification workflows with Git-based documentation, test generation and reviews. Reported result: 30–40% shorter idea-to-feature delivery cycle.
+- Introduced AI-assisted production incident investigation and structured context for support, shortening time to resolution.
+- Designed and built an AI Code Knowledge Platform using Python, React, MCP and Memgraph. The system extracts codebase knowledge, generates documentation and supports AI-powered exploration.
+- Helped standardize technical documentation and share AI engineering practices across teams.
+
+### X5 Tech — System Analyst (October 2023–August 2025)
+
+- Designed parts of a tax monitoring platform serving nine legal entities and 40+ users, integrating SAP and corporate systems with Federal Tax Service (FNS) processes.
+- Designed API contracts and data flows across microservices, PostgreSQL, ClickHouse and Airflow.
+- Designed schema-driven forms using XSD and JSON Schema, reducing the need for developer changes when schema versions evolve.
+- Developed monitoring and alerting practices with Grafana.
+
+### Extrum — Business / System Analyst (November 2022–September 2023)
+
+Requirements gathering, architecture coordination, technical specifications, backlog priorities, delivery coordination and functional testing.
+
+### Smart Automation — System Analyst (November 2022–April 2023)
+
+Enterprise product implementation for three customers, project documentation, defect analysis and delivery coordination.
+
+### Sber — System Analyst (December 2018–October 2022)
+
+System analysis and LegalTech automation, ML-assisted document processing, Python tooling and internal analytics for corporate lending and due diligence workflows.
+
+## Selected case studies
+
+### Tax Monitoring System
+https://mansur.club/projects/tax-monitoring
+
+Enterprise tax monitoring and reporting with SAP integrations, microservices, PostgreSQL, ClickHouse and Airflow. Portfolio reports support for nine legal entities and over 40 users.
+
+### Schema-driven Automation
+https://mansur.club/projects/schema-automation
+
+Semi-automated XSD-to-JSON Schema pipeline enabling forms to adapt to new schema versions without routine developer intervention.
+
+### AI Code Knowledge Platform
+https://mansur.club/projects/ai-research
+
+Code knowledge extraction, AI-generated documentation, graph RAG, agents and MCP access to structured repository context.
+
+### AI Delivery Transformation
+https://mansur.club/projects/ai-delivery
+
+AI-assisted requirements, specifications, skills, context engineering and engineering workflows. Portfolio reports a 30–40% reduction in idea-to-feature cycle time.
+
+## Other
+
+- Contributed to an automated legal analysis product associated with patent RU2732071C1.
+- Public English and Russian PDF versions: https://mansur.club/CV_Eng_v1.pdf and https://mansur.club/CV_Rus_v1.pdf.
+
+This Markdown version mirrors the public portfolio and should be updated alongside any changes to the site's career history or project results.

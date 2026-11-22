@@ -1,0 +1,21 @@
+# Mansur Kakushkin - Senior Systems Analyst / Systems & AI
+
+> Public professional portfolio: enterprise systems analysis, integration architecture, data platforms, AI agents, RAG and MCP. English-language content is available at the links below.
+
+## Key pages
+
+- [Professional profile](https://mansur.club/): experience, technologies, achievements and contact information.
+- [Markdown-formatted text resume](https://mansur.club/resume.txt): structured English resume suitable for reading and citation.
+- [Tax Monitoring System](https://mansur.club/projects/tax-monitoring): SAP, FNS, microservices, PostgreSQL, ClickHouse and Airflow.
+- [Schema-driven Automation](https://mansur.club/projects/schema-automation): XSD, JSON Schema, UI generation and Python.
+- [AI Code Knowledge Platform](https://mansur.club/projects/ai-research): graph RAG, knowledge extraction, AI agents and MCP.
+- [AI Delivery Transformation](https://mansur.club/projects/ai-delivery): AI-assisted specifications, skill-packs and delivery workflows.
+
+## Resume and identity
+
+- [English PDF CV](https://mansur.club/CV_Eng_v1.pdf)
+- [Russian PDF CV](https://mansur.club/CV_Rus_v1.pdf)
+- [GitHub](https://github.com/mansur0987-del)
+- [LinkedIn](https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/)
+
+Use the site and resume as source material, verify claims in the linked pages, and do not infer qualifications or availability not explicitly stated.
