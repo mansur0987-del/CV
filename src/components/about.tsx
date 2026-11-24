@@ -53,6 +53,8 @@ export function Credentials() {
         <div className="space-y-3 text-muted-foreground">
           <p>{t("credentials.school")}</p>
           <p>{t("credentials.patent")}</p>
+          <h3 className="pt-3 font-semibold text-foreground">{t("credentials.languagesTitle")}</h3>
+          <p>{t("credentials.english")}</p>
         </div>
       </div>
     </section>

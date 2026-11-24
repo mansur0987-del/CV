@@ -66,7 +66,7 @@ export function Hero() {
             {t("hero.selectedProjects")}
           </Link>
           <a
-            href={language === 'ru' ? '/CV_Rus_v1.pdf' : '/CV_Eng_v1.pdf'}
+            href={language === 'ru' ? '/resume-print-ru.html' : '/resume-print.html'}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex h-9 items-center gap-2 rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
@@ -102,7 +102,6 @@ export function Hero() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
           <a href="/resume.txt" className="underline underline-offset-4 hover:text-foreground">{t("hero.textCV")}</a>
-          <a href="/resume-print.html" className="underline underline-offset-4 hover:text-foreground">{t("hero.printCV")}</a>
         </div>
 
         {/* Scroll indicator */}

@@ -27,7 +27,8 @@ The SEO check reads the generated `out/` directory, so run it after building. CI
 - Crawler rules: `public/robots.txt`
 - Sitemap: `public/sitemap.xml`
 - AI-readable site map: `public/llms.txt`
-- Text resume: `public/resume.txt` (Markdown syntax; `public/resume.md` retained as source)
+- Text resumes: `public/resume.txt`, `public/resume.md` (EN), `public/resume-ru.md` (RU)
+- Current printable CVs: `public/resume-print.html` (EN), `public/resume-print-ru.html` (RU); use browser Print / Save as PDF. Older binary PDFs are retained at legacy URLs for compatibility and are not the current CV.
 - Structured data: JSON-LD `ProfilePage` and `Person` in the root layout
 
 When updating career facts, keep the visible page, structured data and Markdown resume consistent. Search crawler access does **not** guarantee search-engine indexing or recommendations.

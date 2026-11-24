@@ -67,6 +67,7 @@ const profileStructuredData = {
     url: "https://mansur.club/",
     image: "https://mansur.club/avatar.png",
     jobTitle: "Senior Systems Analyst",
+    knowsLanguage: [{ "@type": "Language", name: "English", description: "CEFR B2 (self-assessed)" }],
     description: "Senior Systems Analyst working on enterprise system design, APIs, SAP integrations, data platforms, AI agents, RAG and MCP.",
     knowsAbout: [
       "Systems Analysis",

@@ -33,7 +33,7 @@ Open to senior systems analysis, solution design and AI-focused engineering role
 
 ### X5 Tech — System Analyst (October 2023–August 2025)
 
-- Designed parts of a tax monitoring platform serving nine legal entities and 40+ users, integrating SAP and corporate systems with Federal Tax Service (FNS) processes.
+- Designed parts of a tax monitoring platform serving 13 legal entities and 40+ users, integrating SAP and corporate systems with Federal Tax Service (FNS) processes.
 - Designed API contracts and data flows across microservices, PostgreSQL, ClickHouse and Airflow.
 - Designed schema-driven forms using XSD and JSON Schema, reducing the need for developer changes when schema versions evolve.
 - Developed monitoring and alerting practices with Grafana.
@@ -55,7 +55,7 @@ System analysis and LegalTech automation, ML-assisted document processing, Pytho
 ### Tax Monitoring System
 https://mansur.club/projects/tax-monitoring
 
-Enterprise tax monitoring and reporting with SAP integrations, microservices, PostgreSQL, ClickHouse and Airflow. Portfolio reports support for nine legal entities and over 40 users.
+Enterprise tax monitoring and reporting with SAP integrations, microservices, PostgreSQL, ClickHouse and Airflow. Portfolio reports support for 13 legal entities and over 40 users.
 
 ### Schema-driven Automation
 https://mansur.club/projects/schema-automation
@@ -74,9 +74,11 @@ AI-assisted requirements, specifications, skills, context engineering and engine
 
 ## Education and credentials
 
-- 42 School — Common Core completed; RNCP Level 6 qualification not yet awarded.
-
+- 42 School — Common Core completed; RNCP Level 6 qualification in progress.
 - Contributed to an automated legal analysis product associated with patent RU2732071C1.
-- Public English and Russian PDF versions: https://mansur.club/CV_Eng_v1.pdf and https://mansur.club/CV_Rus_v1.pdf.
 
-Print-ready English CV: https://mansur.club/resume-print.html
+## Languages
+
+- English — B2 (Upper Intermediate, self-assessed).
+
+Print-ready CV: https://mansur.club/resume-print.html (EN), https://mansur.club/resume-print-ru.html (RU)

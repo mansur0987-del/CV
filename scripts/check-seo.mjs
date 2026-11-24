@@ -45,9 +45,20 @@ const printResume = read("resume-print.html");
 assert.ok(printResume.includes("Mansur Kakushkin"));
 assert.ok(printResume.includes("Professional experience"));
 assert.ok(printResume.includes("Print / Save as PDF"));
+const printResumeRu = read("resume-print-ru.html");
+for (const content of [resume, printResume, printResumeRu, read("resume-ru.md")]) {
+  assert.ok(content.includes("B2"), "Missing English B2");
+  assert.ok(content.includes("RNCP Level 6"), "Missing RNCP status");
+  assert.ok(/13 (?:legal entities|юридических лиц)/.test(content), "Missing current platform scope");
+  assert.ok(!/9 (?:legal entities|юридических лиц)|nine legal entities/.test(content), "Stale scope");
+}
+assert.ok(printResume.includes("qualification in progress"));
+assert.ok(printResumeRu.includes("в процессе получения"));
 const home = read("index.html");
 assert.ok(home.includes("Core expertise"));
 assert.ok(home.includes("resume-print.html"));
+assert.ok(home.includes("13 legal entities"));
+assert.ok(home.includes("B2"));
 assert.ok(home.includes("Education &amp; credentials") || home.includes("Education & credentials"));
 assert.ok(home.includes("https://mansur.club/"), "Missing home canonical");
 const match = home.match(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/);

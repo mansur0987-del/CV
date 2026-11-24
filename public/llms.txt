@@ -6,7 +6,7 @@
 
 - [Professional profile](https://mansur.club/): experience, technologies, achievements and contact information.
 - [Markdown-formatted text resume](https://mansur.club/resume.txt): structured English resume suitable for reading and citation.
-- [Tax Monitoring System](https://mansur.club/projects/tax-monitoring): SAP, FNS, microservices, PostgreSQL, ClickHouse and Airflow.
+- [Tax Monitoring System](https://mansur.club/projects/tax-monitoring): SAP, FNS, microservices, PostgreSQL, ClickHouse and Airflow; 13 legal entities.
 - [Schema-driven Automation](https://mansur.club/projects/schema-automation): XSD, JSON Schema, UI generation and Python.
 - [AI Code Knowledge Platform](https://mansur.club/projects/ai-research): graph RAG, knowledge extraction, AI agents and MCP.
 - [AI Delivery Transformation](https://mansur.club/projects/ai-delivery): AI-assisted specifications, skill-packs and delivery workflows.
@@ -14,8 +14,8 @@
 ## Resume and identity
 
 - [Print-ready English CV](https://mansur.club/resume-print.html)
-- [English PDF CV](https://mansur.club/CV_Eng_v1.pdf)
-- [Russian PDF CV](https://mansur.club/CV_Rus_v1.pdf)
+- [Print-ready Russian CV](https://mansur.club/resume-print-ru.html)
+- [Russian Markdown resume](https://mansur.club/resume-ru.md)
 - [GitHub](https://github.com/mansur0987-del)
 - [LinkedIn](https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/)
 
