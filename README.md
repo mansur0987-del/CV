@@ -13,7 +13,9 @@ npm ci
 npm run dev
 npm run lint
 npm run build
+CV_CHROME=chromium node scripts/export-resume-pdf.mjs
 node scripts/check-seo.mjs
+node scripts/check-resume-pdf.mjs --published
 ```
 
 The SEO check reads the generated `out/` directory, so run it after building. CI runs lint, build, SEO and one-page PDF extraction checks for `dev` pushes and pull requests to `master`.
@@ -28,10 +30,11 @@ The SEO check reads the generated `out/` directory, so run it after building. CI
 - Sitemap: `public/sitemap.xml`
 - AI-readable site map: `public/llms.txt`
 - Text resumes: `public/resume.txt`, `public/resume.md` (EN), `public/resume-ru.md` (RU)
-- Current printable CVs: `public/resume-print.html` (EN), `public/resume-print-ru.html` (RU); use browser Print / Save as PDF. Older binary PDFs are retained at legacy URLs for compatibility and are not the current CV.
+- Printable CV source HTML: `public/resume-print.html` (EN), `public/resume-print-ru.html` (RU).
+- Downloadable PDFs: `out/Mansur_Kakushkin_CV_EN.pdf` and `out/Mansur_Kakushkin_CV_RU.pdf` are generated during deployment; legacy PDF URLs are updated to the same files. Markdown/text CVs are still available for search and AI crawlers but are not shown in the main UI.
 - Structured data: JSON-LD `ProfilePage` and `Person` in the root layout
 
-The English and Russian Markdown CVs are the one-page resume source files. After editing them, run `node scripts/generate-resume.mjs` to regenerate both print pages and the English text version. SEO validation checks that generated files are current. For PDF export use A4, scale 100%, and disable browser headers and footers. To validate actual PDF pagination and text extraction, install Chromium/Chrome and Poppler (pdfinfo, pdftotext), then run `CV_CHROME=chromium node scripts/check-resume-pdf.mjs` (defaults to google-chrome). Detailed project case studies remain on the portfolio. When updating career facts, keep the visible page, structured data and Markdown resume consistent. Search crawler access does **not** guarantee search-engine indexing or recommendations.
+The English and Russian Markdown CVs are the one-page resume source files. After editing them, run `node scripts/generate-resume.mjs` to regenerate both print pages and the English text version. SEO validation checks that generated files are current. Amplify exports PDFs automatically using isolated, pinned Chromium/Puppeteer build tooling, without adding browser libraries to the web application bundle. For local development, set `CV_CHROME` to the installed browser executable and run `node scripts/export-resume-pdf.mjs --public` to create downloadable files in `public/`. The exporter fails if either PDF is not a single page. To validate actual PDF pagination and text extraction, install Chromium/Chrome and Poppler (pdfinfo, pdftotext), then run `CV_CHROME=chromium node scripts/check-resume-pdf.mjs` (defaults to google-chrome). Detailed project case studies remain on the portfolio. When updating career facts, keep the visible page, structured data and Markdown resume consistent. Search crawler access does **not** guarantee search-engine indexing or recommendations.
 
 ## Agent guidance
 

@@ -66,9 +66,8 @@ export function Hero() {
             {t("hero.selectedProjects")}
           </Link>
           <a
-            href={language === 'ru' ? '/resume-print-ru.html' : '/resume-print.html'}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={language === 'ru' ? '/Mansur_Kakushkin_CV_RU.pdf' : '/Mansur_Kakushkin_CV_EN.pdf'}
+            download
             className="inline-flex h-9 items-center gap-2 rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
             <FileText className="h-4 w-4" />
@@ -99,10 +98,6 @@ export function Hero() {
             <TelegramIcon className="h-5 w-5" />
           </a>
         </motion.div>
-
-        <div className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
-          <a href={language === "ru" ? "/resume-ru.md" : "/resume.txt"} className="underline underline-offset-4 hover:text-foreground">{t("hero.textCV")}</a>
-        </div>
 
         {/* Scroll indicator */}
         <motion.div

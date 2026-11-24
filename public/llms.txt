@@ -13,6 +13,9 @@
 
 ## Resume and identity
 
+- [English PDF CV](https://mansur.club/Mansur_Kakushkin_CV_EN.pdf)
+- [Russian PDF CV](https://mansur.club/Mansur_Kakushkin_CV_RU.pdf)
+
 - [Print-ready English CV](https://mansur.club/resume-print.html)
 - [Print-ready Russian CV](https://mansur.club/resume-print-ru.html)
 - [Russian Markdown resume](https://mansur.club/resume-ru.md)

@@ -65,7 +65,11 @@ for (const html of [printResume, printResumeRu]) {
 const home = read("index.html");
 assert.ok(home.includes("Senior Systems Analyst"), "Missing consistent role title");
 assert.ok(home.includes("Core expertise"));
-assert.ok(home.includes("resume-print.html"));
+assert.ok(home.includes("Mansur_Kakushkin_CV_EN.pdf"), "Missing direct PDF download");
+for (const name of ["Mansur_Kakushkin_CV_EN.pdf", "Mansur_Kakushkin_CV_RU.pdf"]) {
+  const pdf = readFileSync(join(out, name));
+  assert.ok(pdf.subarray(0, 5).toString() === "%PDF-", "Invalid published PDF: " + name);
+}
 assert.ok(home.includes("13 legal entities"));
 assert.ok(home.includes("B2"));
 assert.ok(home.includes("Education &amp; credentials") || home.includes("Education & credentials"));

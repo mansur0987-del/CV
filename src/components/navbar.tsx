@@ -49,9 +49,8 @@ export function Navbar() {
           <LanguageToggle />
           <ThemeToggle />
           <a
-            href={language === 'ru' ? '/resume-print-ru.html' : '/resume-print.html'}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={language === 'ru' ? '/Mansur_Kakushkin_CV_RU.pdf' : '/Mansur_Kakushkin_CV_EN.pdf'}
+            download
             className="inline-flex h-9 items-center rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
             {t("hero.downloadCV")}
@@ -90,9 +89,8 @@ export function Navbar() {
             ))}
             <li className="pt-2">
               <a
-                href={language === 'ru' ? '/resume-print-ru.html' : '/resume-print.html'}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={language === 'ru' ? '/Mansur_Kakushkin_CV_RU.pdf' : '/Mansur_Kakushkin_CV_EN.pdf'}
+                download
                 className="block w-full rounded-md border border-border bg-background px-3 py-2 text-center text-sm font-medium transition-colors hover:bg-muted"
               >
                 {t("hero.downloadCV")}

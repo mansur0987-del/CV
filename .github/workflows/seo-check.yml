@@ -26,9 +26,11 @@ jobs:
         run: npm run lint
       - name: Build static website
         run: npm run build
-      - name: Validate exported SEO
-        run: node scripts/check-seo.mjs
       - name: Install PDF validation tools
         run: sudo apt-get update && sudo apt-get install -y poppler-utils fonts-liberation
-      - name: Validate one-page PDF export and text extraction
-        run: node scripts/check-resume-pdf.mjs
+      - name: Generate downloadable PDFs
+        run: CV_CHROME=google-chrome node scripts/export-resume-pdf.mjs
+      - name: Validate exported SEO
+        run: node scripts/check-seo.mjs
+      - name: Validate published PDFs and text extraction
+        run: node scripts/check-resume-pdf.mjs --published

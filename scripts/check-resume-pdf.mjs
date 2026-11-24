@@ -12,8 +12,11 @@ try {
     ["resume-print.html", ["Professional summary", "Core skills", "Professional experience", "Education and credentials", "Languages"], "13 legal entities"],
     ["resume-print-ru.html", ["Профессиональный профиль", "Ключевые навыки", "Опыт работы", "Образование и достижения", "Языки"], "13 юридических лиц"],
   ]) {
-    const pdf = join(dir, html.replace(".html", ".pdf"));
-    execFileSync(browser, ["--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer", "--user-data-dir=" + join(dir, html), "--print-to-pdf=" + pdf, pathToFileURL(resolve("public", html)).href], { stdio: "ignore" });
+    const published = process.argv.includes("--published");
+    const pdf = published
+      ? resolve("out", html === "resume-print.html" ? "Mansur_Kakushkin_CV_EN.pdf" : "Mansur_Kakushkin_CV_RU.pdf")
+      : join(dir, html.replace(".html", ".pdf"));
+    if (!published) execFileSync(browser, ["--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer", "--user-data-dir=" + join(dir, html), "--print-to-pdf=" + pdf, pathToFileURL(resolve("public", html)).href], { stdio: "ignore" });
     const info = execFileSync("pdfinfo", [pdf], { encoding: "utf8" });
     assert.match(info, /^Pages:\s+1\s*$/m, html + " must fit on one page");
     assert.match(info, /^Page size:.*A4/m, html + " must use A4");
