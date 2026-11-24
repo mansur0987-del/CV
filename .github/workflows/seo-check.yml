@@ -28,3 +28,7 @@ jobs:
         run: npm run build
       - name: Validate exported SEO
         run: node scripts/check-seo.mjs
+      - name: Install PDF validation tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils fonts-liberation
+      - name: Validate one-page PDF export and text extraction
+        run: node scripts/check-resume-pdf.mjs

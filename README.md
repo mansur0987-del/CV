@@ -16,7 +16,7 @@ npm run build
 node scripts/check-seo.mjs
 ```
 
-The SEO check reads the generated `out/` directory, so run it after building. CI runs lint, build and SEO checks for `dev` pushes and pull requests to `master`.
+The SEO check reads the generated `out/` directory, so run it after building. CI runs lint, build, SEO and one-page PDF extraction checks for `dev` pushes and pull requests to `master`.
 
 ## Content and search visibility
 

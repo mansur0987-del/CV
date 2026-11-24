@@ -172,10 +172,12 @@ export function Experience() {
                             <Calendar className="h-3.5 w-3.5" />
                             {roleData.period}
                           </div>
-                          <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                            <MapPin className="h-3.5 w-3.5" />
-                            {"location" in roleData ? roleData.location : null}
-                          </div>
+                          {"location" in roleData && roleData.location && (
+                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                              <MapPin className="h-3.5 w-3.5" />
+                              {roleData.location}
+                            </div>
+                          )}
                         </div>
                       </div>
                       <ul className="mb-4 space-y-2">
