@@ -1,20 +1,26 @@
-# Mansur Kakushkin - Senior Systems Analyst / Systems & AI
+# Mansur Kakushkin - Senior Systems Analyst | Solution Design & AI Engineering
 
 > Public professional portfolio: enterprise systems analysis, integration architecture, data platforms, AI agents, RAG and MCP. English-language content is available at the links below.
 
 ## Key pages
 
 - [Professional profile](https://mansur.club/): experience, technologies, achievements and contact information.
-- [Markdown-formatted text resume](https://mansur.club/resume.txt): structured English resume suitable for reading and citation.
-- [Tax Monitoring System](https://mansur.club/projects/tax-monitoring): SAP, FNS, microservices, PostgreSQL, ClickHouse and Airflow.
+- [Markdown-formatted text resume](https://mansur.club/resume.txt): concise one-page English resume suitable for reading and citation.
+- [Tax Monitoring System](https://mansur.club/projects/tax-monitoring): SAP, FNS, microservices, PostgreSQL, ClickHouse and Airflow; 13 legal entities.
 - [Schema-driven Automation](https://mansur.club/projects/schema-automation): XSD, JSON Schema, UI generation and Python.
 - [AI Code Knowledge Platform](https://mansur.club/projects/ai-research): graph RAG, knowledge extraction, AI agents and MCP.
 - [AI Delivery Transformation](https://mansur.club/projects/ai-delivery): AI-assisted specifications, skill-packs and delivery workflows.
 
+- [SBP Payment Routing & Bank Redundancy](https://mansur.club/projects/payment-routing): conceptual payment integration design, agent bank switching, UML sequence diagrams and QR code data exchange.
+
 ## Resume and identity
 
-- [English PDF CV](https://mansur.club/CV_Eng_v1.pdf)
-- [Russian PDF CV](https://mansur.club/CV_Rus_v1.pdf)
+- [English PDF CV](https://mansur.club/Mansur_Kakushkin_CV_EN.pdf)
+- [Russian PDF CV](https://mansur.club/Mansur_Kakushkin_CV_RU.pdf)
+
+- [Print-ready English CV](https://mansur.club/resume-print.html)
+- [Print-ready Russian CV](https://mansur.club/resume-print-ru.html)
+- [Russian Markdown resume](https://mansur.club/resume-ru.md)
 - [GitHub](https://github.com/mansur0987-del)
 - [LinkedIn](https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/)
 

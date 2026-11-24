@@ -3,11 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm use 22
         - npm ci
+        - npm install --prefix /tmp/mansur-cv-pdf-tools --no-save --package-lock=false --no-audit --no-fund @sparticuz/chromium@153.0.0 puppeteer-core@25.11.0
     build:
       commands:
         - npm run lint
         - npm run build
+        - CV_PDF_TOOLS=/tmp/mansur-cv-pdf-tools node scripts/export-resume-pdf.mjs
         - node scripts/check-seo.mjs
         - npm audit --audit-level=high
   artifacts:

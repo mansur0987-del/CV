@@ -77,6 +77,7 @@ export default function AIDeliveryPage() {
       subtitle="Skill-packs / Context Structuring / AI Harness"
       sections={sections}
       technologies={technologies}
+      flow={t("case.delivery.flow").split("|")}
     />
   );
 }

@@ -1,80 +1,38 @@
 # Mansur Kakushkin
-
-**Senior Systems Analyst | Solution Architecture | Systems & AI**
-
-Website: https://mansur.club/  
-GitHub: https://github.com/mansur0987-del  
-LinkedIn: https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/  
-Email: Kakushkin.mansur@gmail.com
+**Senior Systems Analyst | Solution Design & AI Engineering**
+Kakushkin.mansur@gmail.com | https://mansur.club | https://github.com/mansur0987-del
+LinkedIn: https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/
 
 ## Professional summary
+Senior Systems Analyst with 7+ years of enterprise IT experience in retail and banking, specializing in system design, integrations, data flows, technical delivery and AI engineering. Open to international remote work and relocation.
 
-Senior Systems Analyst with 7+ years of experience designing enterprise systems, integrations, APIs and data workflows. Experience spans requirements analysis, architecture, technical specifications, cross-team coordination and production support. Recent focus includes AI-assisted engineering workflows, AI agents, retrieval-augmented generation (RAG), knowledge graphs and the Model Context Protocol (MCP).
-
-Interested in Senior Systems Analyst, Solution Architect and AI-focused engineering positions involving enterprise-scale systems and integrations.
-
-## Core competencies
-
-- Enterprise systems analysis, solution design, technical requirements, API contracts and documentation.
-- Integration architecture: SAP, REST APIs, microservices and data synchronization.
-- Data systems: PostgreSQL, ClickHouse, SQL, Apache Airflow and Python.
-- AI engineering: LLM workflows, AI agents, RAG, Graph RAG, knowledge extraction and MCP.
-- Engineering delivery: automated documentation, testing workflows, incident investigation and cross-team coordination.
+## Core skills
+System design, microservices, requirements analysis, API contracts, UML, payment integrations, REST API, SAP, data modeling, PostgreSQL, ClickHouse, SQL, Airflow, Python, React, XSD, JSON Schema, Grafana, Git, LLM, RAG, Graph RAG, AI agents, MCP, Memgraph.
 
 ## Professional experience
+### X5 Tech — Senior Systems Analyst | Sep 2025 – Present
+- Coordinate priorities and technical delivery across two project teams and one product team.
+- Reduced idea-to-feature cycle time by 30–40% using AI-assisted specifications, Git-based documentation, test generation and code reviews.
+- Reduced production incident resolution time from 2–3 days to under one day through AI-assisted root-cause analysis.
+- Designed and built the AI Code Knowledge Platform (AICKP) with Python, React, MCP and Memgraph for code analysis, documentation and AI chat; currently in user testing.
 
-### X5 Tech — Senior System Analyst (September 2025–present, per portfolio)
+### X5 Tech — Systems Analyst | Oct 2023 – Aug 2025
+- Designed a tax monitoring platform now serving 13 legal entities and 40+ users, integrating SAP, the Federal Tax Service (FNS) and corporate systems.
+- Designed API contracts, data flows and schema-driven forms (XSD to JSON Schema); automated reporting to save approximately 2 FTE in manual effort.
+Additional X5 Tech project: Designed conceptual SBP payment routing between agent banks, defining system responsibilities, UML sequence diagrams, QR code storage and data exchange.
 
-- Coordinate work across two project teams and one product team, including priorities, technical decisions and delivery.
-- Redesigned AI-assisted analysis and specification workflows with Git-based documentation, test generation and reviews. Reported result: 30–40% shorter idea-to-feature delivery cycle.
-- Introduced AI-assisted production incident investigation and structured context for support, shortening time to resolution.
-- Designed and built an AI Code Knowledge Platform using Python, React, MCP and Memgraph. The system extracts codebase knowledge, generates documentation and supports AI-powered exploration.
-- Helped standardize technical documentation and share AI engineering practices across teams.
+### Extrum — Business / Systems Analyst | Nov 2022 – Sep 2023
+- Gathered requirements, coordinated architecture decisions, managed backlog priorities and functional testing.
 
-### X5 Tech — System Analyst (October 2023–August 2025)
+### Smart Automation — Systems Analyst | Nov 2022 – Apr 2023
+- Implemented an enterprise product for three customers; managed documentation and defect resolution.
 
-- Designed parts of a tax monitoring platform serving nine legal entities and 40+ users, integrating SAP and corporate systems with Federal Tax Service (FNS) processes.
-- Designed API contracts and data flows across microservices, PostgreSQL, ClickHouse and Airflow.
-- Designed schema-driven forms using XSD and JSON Schema, reducing the need for developer changes when schema versions evolve.
-- Developed monitoring and alerting practices with Grafana.
+### Sber — Systems Analyst | Dec 2018 – Oct 2022
+- Designed LegalTech automation and Python tooling for corporate lending and due diligence; co-created an ML document generation service achieving 90% F-measure.
 
-### Extrum — Business / System Analyst (November 2022–September 2023)
+## Education and credentials
+42 School — Common Core completed; RNCP Level 6 qualification in progress.
+Contributed to an automated legal analysis product associated with patent RU2732071C1.
 
-Requirements gathering, architecture coordination, technical specifications, backlog priorities, delivery coordination and functional testing.
-
-### Smart Automation — System Analyst (November 2022–April 2023)
-
-Enterprise product implementation for three customers, project documentation, defect analysis and delivery coordination.
-
-### Sber — System Analyst (December 2018–October 2022)
-
-System analysis and LegalTech automation, ML-assisted document processing, Python tooling and internal analytics for corporate lending and due diligence workflows.
-
-## Selected case studies
-
-### Tax Monitoring System
-https://mansur.club/projects/tax-monitoring
-
-Enterprise tax monitoring and reporting with SAP integrations, microservices, PostgreSQL, ClickHouse and Airflow. Portfolio reports support for nine legal entities and over 40 users.
-
-### Schema-driven Automation
-https://mansur.club/projects/schema-automation
-
-Semi-automated XSD-to-JSON Schema pipeline enabling forms to adapt to new schema versions without routine developer intervention.
-
-### AI Code Knowledge Platform
-https://mansur.club/projects/ai-research
-
-Code knowledge extraction, AI-generated documentation, graph RAG, agents and MCP access to structured repository context.
-
-### AI Delivery Transformation
-https://mansur.club/projects/ai-delivery
-
-AI-assisted requirements, specifications, skills, context engineering and engineering workflows. Portfolio reports a 30–40% reduction in idea-to-feature cycle time.
-
-## Other
-
-- Contributed to an automated legal analysis product associated with patent RU2732071C1.
-- Public English and Russian PDF versions: https://mansur.club/CV_Eng_v1.pdf and https://mansur.club/CV_Rus_v1.pdf.
-
-This Markdown version mirrors the public portfolio and should be updated alongside any changes to the site's career history or project results.
+## Languages
+English — B2 (Upper Intermediate, self-assessed).

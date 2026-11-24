@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mansur.club"),
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
-  title: "Mansur Kakushkin — Senior System Analyst / Systems & AI",
+  title: "Mansur Kakushkin — Senior Systems Analyst | Solution Design & AI Engineering",
   description:
-    "I design complex systems, integrations and AI-powered workflows — from business problem to architecture and implementation.",
+    "Enterprise system design, technical delivery and AI-powered engineering workflows.",
   keywords: [
     "Senior System Analyst",
     "Systems Analyst",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Mansur Kakushkin", url: "https://mansur.club" }],
   twitter: {
     card: "summary",
-    title: "Mansur Kakushkin — Senior Systems Analyst / Systems & AI",
+    title: "Mansur Kakushkin — Senior Systems Analyst | Solution Design & AI Engineering",
     description: "Enterprise integration architecture, system design, and AI-assisted engineering.",
   },
   openGraph: {
-    title: "Mansur Kakushkin — Senior System Analyst / Systems & AI",
+    title: "Mansur Kakushkin — Senior Systems Analyst | Solution Design & AI Engineering",
     description:
-      "I design complex systems, integrations and AI-powered workflows — from business problem to architecture and implementation.",
+      "Enterprise system design, technical delivery and AI-powered engineering workflows.",
     type: "profile",
     url: "https://mansur.club/",
     images: [{ url: "/avatar.png", alt: "Mansur Kakushkin" }],
@@ -67,6 +67,7 @@ const profileStructuredData = {
     url: "https://mansur.club/",
     image: "https://mansur.club/avatar.png",
     jobTitle: "Senior Systems Analyst",
+    knowsLanguage: [{ "@type": "Language", name: "English", description: "CEFR B2 (self-assessed)" }],
     description: "Senior Systems Analyst working on enterprise system design, APIs, SAP integrations, data platforms, AI agents, RAG and MCP.",
     knowsAbout: [
       "Systems Analysis",

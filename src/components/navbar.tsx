@@ -13,10 +13,11 @@ export function Navbar() {
   const { t, language } = useLanguage();
 
   const navItems = [
-    { href: "#about", label: t("nav.about") },
-    { href: "#experience", label: t("nav.experience") },
-    { href: "#projects", label: t("nav.projects") },
-    { href: "#contact", label: t("nav.contact") },
+    { href: "/#about", label: t("nav.about") },
+    { href: "/#expertise", label: t("nav.expertise") },
+    { href: "/#experience", label: t("nav.experience") },
+    { href: "/#projects", label: t("nav.projects") },
+    { href: "/#contact", label: t("nav.contact") },
   ];
 
   return (
@@ -28,7 +29,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
@@ -44,13 +45,12 @@ export function Navbar() {
         </ul>
 
         {/* Toggles & CTA */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <LanguageToggle />
           <ThemeToggle />
           <a
-            href={language === 'ru' ? '/CV_Rus_v1.pdf' : '/CV_Eng_v1.pdf'}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={language === 'ru' ? '/Mansur_Kakushkin_CV_RU.pdf' : '/Mansur_Kakushkin_CV_EN.pdf'}
+            download
             className="inline-flex h-9 items-center rounded-lg border border-border bg-background px-4 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground"
           >
             {t("hero.downloadCV")}
@@ -58,11 +58,13 @@ export function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <LanguageToggle />
           <ThemeToggle />
           <button
             className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-foreground"
+            aria-label={language === "ru" ? "Меню" : "Menu"}
+            aria-expanded={mobileOpen}
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -72,7 +74,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-border/40 bg-background/95 backdrop-blur-md md:hidden">
+        <div className="border-t border-border/40 bg-background/95 backdrop-blur-md lg:hidden">
           <ul className="flex flex-col gap-1 px-6 py-4">
             {navItems.map((item) => (
               <li key={item.href}>
@@ -87,9 +89,8 @@ export function Navbar() {
             ))}
             <li className="pt-2">
               <a
-                href={language === 'ru' ? '/CV_Rus_v1.pdf' : '/CV_Eng_v1.pdf'}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={language === 'ru' ? '/Mansur_Kakushkin_CV_RU.pdf' : '/Mansur_Kakushkin_CV_EN.pdf'}
+                download
                 className="block w-full rounded-md border border-border bg-background px-3 py-2 text-center text-sm font-medium transition-colors hover:bg-muted"
               >
                 {t("hero.downloadCV")}

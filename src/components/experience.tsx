@@ -12,6 +12,7 @@ export function Experience() {
   const experiences = [
     {
       company: t("experience.x5tech.company") || "X5 Tech",
+      additionalProject: { title: t("experience.x5tech.payment.title"), description: t("experience.x5tech.payment.description") },
       roles: [
         {
           role: t("experience.x5tech.senior.role"),
@@ -22,7 +23,6 @@ export function Experience() {
             t("experience.x5tech.senior.highlight2"),
             t("experience.x5tech.senior.highlight3"),
             t("experience.x5tech.senior.highlight4"),
-            t("experience.x5tech.senior.highlight5"),
             t("experience.x5tech.senior.highlight6"),
             t("experience.x5tech.senior.highlight7"),
           ],
@@ -61,7 +61,6 @@ export function Experience() {
         {
           role: t("experience.extrum.role"),
           period: t("experience.extrum.period"),
-          location: t("experience.extrum.location"),
           highlights: [
             t("experience.extrum.highlight1"),
             t("experience.extrum.highlight2"),
@@ -82,7 +81,6 @@ export function Experience() {
         {
           role: t("experience.smartauto.role"),
           period: t("experience.smartauto.period"),
-          location: t("experience.smartauto.location"),
           highlights: [
             t("experience.smartauto.highlight1"),
             t("experience.smartauto.highlight2"),
@@ -175,10 +173,12 @@ export function Experience() {
                             <Calendar className="h-3.5 w-3.5" />
                             {roleData.period}
                           </div>
-                          <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                            <MapPin className="h-3.5 w-3.5" />
-                            {roleData.location}
-                          </div>
+                          {"location" in roleData && roleData.location && (
+                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                              <MapPin className="h-3.5 w-3.5" />
+                              {roleData.location}
+                            </div>
+                          )}
                         </div>
                       </div>
                       <ul className="mb-4 space-y-2">
@@ -194,6 +194,12 @@ export function Experience() {
                       </ul>
                     </div>
                   ))}
+                  {"additionalProject" in exp && exp.additionalProject && (
+                    <div className="mt-6 border-t border-border/30 pt-4">
+                      <h3 className="mb-2 font-semibold">{exp.additionalProject.title}</h3>
+                      <p className="text-sm text-muted-foreground">{exp.additionalProject.description}</p>
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-1.5 mt-4 pt-4 border-t border-border/30">
                     {exp.technologies.map((tech) => (
                       <Badge

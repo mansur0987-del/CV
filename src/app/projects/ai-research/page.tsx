@@ -77,6 +77,7 @@ export default function AIResearchPage() {
       subtitle="Graph RAG / AI Agents / MCP / Knowledge Graph"
       sections={sections}
       technologies={technologies}
+      flow={t("case.ai.flow").split("|")}
     />
   );
 }

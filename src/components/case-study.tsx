@@ -16,6 +16,7 @@ interface CaseStudyProps {
   subtitle: string;
   sections: CaseStudySection[];
   technologies: string[];
+  flow?: string[];
 }
 
 export function CaseStudyPage({
@@ -23,6 +24,7 @@ export function CaseStudyPage({
   subtitle,
   sections,
   technologies,
+  flow,
 }: CaseStudyProps) {
   const { t } = useLanguage();
   return (
@@ -50,6 +52,20 @@ export function CaseStudyPage({
         <p className="mb-12 text-lg text-muted-foreground">{subtitle}</p>
       </motion.div>
 
+      {flow && (
+        <figure className="mb-12 rounded-lg border border-border/50 bg-muted/20 p-5">
+          <figcaption className="mb-4 font-semibold">{t("case.flow")}</figcaption>
+          <ol className="grid gap-2 sm:grid-cols-5">
+            {flow.map((step, index) => (
+              <li key={step} className="rounded-md border border-border/60 bg-background p-3 text-sm">
+                <span className="mb-1 block text-xs text-muted-foreground">{String(index + 1).padStart(2, "0")}</span>
+                {step}
+              </li>
+            ))}
+          </ol>
+          <p className="mt-3 text-xs text-muted-foreground">{t("case.flow.note")}</p>
+        </figure>
+      )}
       <div className="space-y-12">
         {sections.map((section, index) => (
           <motion.div
@@ -83,7 +99,7 @@ export function CaseStudyPage({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: sections.length * 0.1 }}
         >
-          <h2 className="mb-4 text-2xl font-bold">Technologies</h2>
+          <h2 className="mb-4 text-2xl font-bold">{t("casestudy.technologies")}</h2>
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech) => (
               <Badge key={tech} variant="secondary">
