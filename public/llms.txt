@@ -11,6 +11,8 @@
 - [AI Code Knowledge Platform](https://mansur.club/projects/ai-research): graph RAG, knowledge extraction, AI agents and MCP.
 - [AI Delivery Transformation](https://mansur.club/projects/ai-delivery): AI-assisted specifications, skill-packs and delivery workflows.
 
+- [SBP Payment Routing & Bank Redundancy](https://mansur.club/projects/payment-routing): conceptual payment integration design, agent bank switching, UML sequence diagrams and QR code data exchange.
+
 ## Resume and identity
 
 - [English PDF CV](https://mansur.club/Mansur_Kakushkin_CV_EN.pdf)

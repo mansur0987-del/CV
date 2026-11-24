@@ -7,7 +7,7 @@ LinkedIn: https://www.linkedin.com/in/mansur-nailevich-kakushkin-00a399235/
 Senior Systems Analyst with 7+ years of enterprise IT experience in retail and banking, specializing in system design, integrations, data flows, technical delivery and AI engineering. Open to international remote work and relocation.
 
 ## Core skills
-System design, microservices, requirements analysis, API contracts, REST API, SAP, data modeling, PostgreSQL, ClickHouse, SQL, Airflow, Python, React, XSD, JSON Schema, Grafana, Git, LLM, RAG, Graph RAG, AI agents, MCP, Memgraph.
+System design, microservices, requirements analysis, API contracts, UML, payment integrations, REST API, SAP, data modeling, PostgreSQL, ClickHouse, SQL, Airflow, Python, React, XSD, JSON Schema, Grafana, Git, LLM, RAG, Graph RAG, AI agents, MCP, Memgraph.
 
 ## Professional experience
 ### X5 Tech — Senior Systems Analyst | Sep 2025 – Present
@@ -19,7 +19,7 @@ System design, microservices, requirements analysis, API contracts, REST API, SA
 ### X5 Tech — Systems Analyst | Oct 2023 – Aug 2025
 - Designed a tax monitoring platform now serving 13 legal entities and 40+ users, integrating SAP, the Federal Tax Service (FNS) and corporate systems.
 - Designed API contracts, data flows and schema-driven forms (XSD to JSON Schema); automated reporting to save approximately 2 FTE in manual effort.
-- Implemented Grafana monitoring and alerting for production systems.
+Additional X5 Tech project: Designed conceptual SBP payment routing between agent banks, defining system responsibilities, UML sequence diagrams, QR code storage and data exchange.
 
 ### Extrum — Business / Systems Analyst | Nov 2022 – Sep 2023
 - Gathered requirements, coordinated architecture decisions, managed backlog priorities and functional testing.

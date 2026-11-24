@@ -16,6 +16,7 @@ const projectPaths = [
   "schema-automation",
   "ai-research",
   "ai-delivery",
+  "payment-routing",
 ];
 
 const robots = read("robots.txt");
@@ -43,6 +44,7 @@ assert.ok(llms.includes("https://mansur.club/resume.txt"));
 assert.ok(resume.includes("Mansur Kakushkin"));
 assert.ok(resume.includes("X5 Tech"));
 assert.ok(resume.includes("AI Code Knowledge Platform"));
+assert.ok(resume.includes("SBP payment routing"), "Missing payment integration experience");
 
 const printResume = read("resume-print.html");
 assert.ok(printResume.includes("Mansur Kakushkin"));

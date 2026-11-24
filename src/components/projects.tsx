@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ArrowRight, Database, Cpu, Brain } from "lucide-react";
+import { ArrowRight, Database, Cpu, Brain, CreditCard } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/lib/language-context";
 
@@ -80,6 +80,15 @@ export function Projects() {
         t("projects.tax.metric3"),
       ],
       slug: "tax-monitoring",
+    },
+    {
+      title: t("projects.payment.title"),
+      subtitle: t("projects.payment.subtitle"),
+      description: t("projects.payment.description"),
+      icon: <CreditCard className="h-6 w-6" />,
+      technologies: ["SBP", "Payment Routing", "UML", "Integration Architecture", "QR Codes"],
+      metrics: [t("projects.payment.metric1"), t("projects.payment.metric2")],
+      slug: "payment-routing",
     },
     {
       title: t("projects.schema.title"),

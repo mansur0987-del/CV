@@ -12,6 +12,7 @@ export function Experience() {
   const experiences = [
     {
       company: t("experience.x5tech.company") || "X5 Tech",
+      additionalProject: { title: t("experience.x5tech.payment.title"), description: t("experience.x5tech.payment.description") },
       roles: [
         {
           role: t("experience.x5tech.senior.role"),
@@ -193,6 +194,12 @@ export function Experience() {
                       </ul>
                     </div>
                   ))}
+                  {"additionalProject" in exp && exp.additionalProject && (
+                    <div className="mt-6 border-t border-border/30 pt-4">
+                      <h3 className="mb-2 font-semibold">{exp.additionalProject.title}</h3>
+                      <p className="text-sm text-muted-foreground">{exp.additionalProject.description}</p>
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-1.5 mt-4 pt-4 border-t border-border/30">
                     {exp.technologies.map((tech) => (
                       <Badge

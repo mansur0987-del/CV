@@ -21,7 +21,7 @@ try {
     assert.match(info, /^Pages:\s+1\s*$/m, html + " must fit on one page");
     assert.match(info, /^Page size:.*A4/m, html + " must use A4");
     const text = execFileSync("pdftotext", [pdf, "-"], { encoding: "utf8" }).replace(/\s+/g, " ");
-    for (const token of ["Kakushkin.mansur@gmail.com", "X5 Tech", "AICKP", "PostgreSQL", "RNCP Level 6", "RU2732071C1", "B2", scope]) assert.ok(text.includes(token), html + " missing extractable " + token);
+    for (const token of ["Kakushkin.mansur@gmail.com", "X5 Tech", "AICKP", "PostgreSQL", "RNCP Level 6", "RU2732071C1", "B2", "UML", scope]) assert.ok(text.includes(token), html + " missing extractable " + token);
     let previous = -1;
     for (const section of sections) {
       const position = text.indexOf(section);
