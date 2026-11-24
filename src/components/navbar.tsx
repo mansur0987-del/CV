@@ -29,7 +29,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
@@ -45,7 +45,7 @@ export function Navbar() {
         </ul>
 
         {/* Toggles & CTA */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <LanguageToggle />
           <ThemeToggle />
           <a
@@ -59,11 +59,13 @@ export function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <LanguageToggle />
           <ThemeToggle />
           <button
             className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-foreground"
+            aria-label={language === "ru" ? "Меню" : "Menu"}
+            aria-expanded={mobileOpen}
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -73,7 +75,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-border/40 bg-background/95 backdrop-blur-md md:hidden">
+        <div className="border-t border-border/40 bg-background/95 backdrop-blur-md lg:hidden">
           <ul className="flex flex-col gap-1 px-6 py-4">
             {navItems.map((item) => (
               <li key={item.href}>

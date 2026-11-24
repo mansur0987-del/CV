@@ -60,7 +60,6 @@ export function Experience() {
         {
           role: t("experience.extrum.role"),
           period: t("experience.extrum.period"),
-          location: t("experience.extrum.location"),
           highlights: [
             t("experience.extrum.highlight1"),
             t("experience.extrum.highlight2"),
@@ -81,7 +80,6 @@ export function Experience() {
         {
           role: t("experience.smartauto.role"),
           period: t("experience.smartauto.period"),
-          location: t("experience.smartauto.location"),
           highlights: [
             t("experience.smartauto.highlight1"),
             t("experience.smartauto.highlight2"),
@@ -176,7 +174,7 @@ export function Experience() {
                           </div>
                           <div className="flex items-center gap-1 text-sm text-muted-foreground">
                             <MapPin className="h-3.5 w-3.5" />
-                            {roleData.location}
+                            {"location" in roleData ? roleData.location : null}
                           </div>
                         </div>
                       </div>

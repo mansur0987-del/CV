@@ -63,6 +63,7 @@ for (const html of [printResume, printResumeRu]) {
   assert.equal((html.match(/<h1>/g) || []).length, 1);
 }
 const home = read("index.html");
+assert.ok(home.includes("Senior Systems Analyst"), "Missing consistent role title");
 assert.ok(home.includes("Core expertise"));
 assert.ok(home.includes("resume-print.html"));
 assert.ok(home.includes("13 legal entities"));

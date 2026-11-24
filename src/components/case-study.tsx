@@ -99,7 +99,7 @@ export function CaseStudyPage({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: sections.length * 0.1 }}
         >
-          <h2 className="mb-4 text-2xl font-bold">Technologies</h2>
+          <h2 className="mb-4 text-2xl font-bold">{t("casestudy.technologies")}</h2>
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech) => (
               <Badge key={tech} variant="secondary">
