@@ -101,7 +101,7 @@ export function Hero() {
         </motion.div>
 
         <div className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
-          <a href="/resume.txt" className="underline underline-offset-4 hover:text-foreground">{t("hero.textCV")}</a>
+          <a href={language === "ru" ? "/resume-ru.md" : "/resume.txt"} className="underline underline-offset-4 hover:text-foreground">{t("hero.textCV")}</a>
         </div>
 
         {/* Scroll indicator */}

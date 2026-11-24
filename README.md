@@ -31,7 +31,7 @@ The SEO check reads the generated `out/` directory, so run it after building. CI
 - Current printable CVs: `public/resume-print.html` (EN), `public/resume-print-ru.html` (RU); use browser Print / Save as PDF. Older binary PDFs are retained at legacy URLs for compatibility and are not the current CV.
 - Structured data: JSON-LD `ProfilePage` and `Person` in the root layout
 
-When updating career facts, keep the visible page, structured data and Markdown resume consistent. Search crawler access does **not** guarantee search-engine indexing or recommendations.
+The English and Russian Markdown CVs are the one-page resume source files. After editing them, run `node scripts/generate-resume.mjs` to regenerate both print pages and the English text version. SEO validation checks that generated files are current. For PDF export use A4, scale 100%, and disable browser headers and footers. To validate actual PDF pagination and text extraction, install Chromium/Chrome and Poppler (pdfinfo, pdftotext), then run `CV_CHROME=chromium node scripts/check-resume-pdf.mjs` (defaults to google-chrome). Detailed project case studies remain on the portfolio. When updating career facts, keep the visible page, structured data and Markdown resume consistent. Search crawler access does **not** guarantee search-engine indexing or recommendations.
 
 ## Agent guidance
 

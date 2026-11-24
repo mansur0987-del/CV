@@ -5,7 +5,7 @@
 ## Key pages
 
 - [Professional profile](https://mansur.club/): experience, technologies, achievements and contact information.
-- [Markdown-formatted text resume](https://mansur.club/resume.txt): structured English resume suitable for reading and citation.
+- [Markdown-formatted text resume](https://mansur.club/resume.txt): concise one-page English resume suitable for reading and citation.
 - [Tax Monitoring System](https://mansur.club/projects/tax-monitoring): SAP, FNS, microservices, PostgreSQL, ClickHouse and Airflow; 13 legal entities.
 - [Schema-driven Automation](https://mansur.club/projects/schema-automation): XSD, JSON Schema, UI generation and Python.
 - [AI Code Knowledge Platform](https://mansur.club/projects/ai-research): graph RAG, knowledge extraction, AI agents and MCP.

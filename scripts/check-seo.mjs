@@ -1,4 +1,7 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
+
+execFileSync(process.execPath, ["scripts/generate-resume.mjs", "--check"], { stdio: "inherit" });
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -54,6 +57,11 @@ for (const content of [resume, printResume, printResumeRu, read("resume-ru.md")]
 }
 assert.ok(printResume.includes("qualification in progress"));
 assert.ok(printResumeRu.includes("в процессе получения"));
+for (const html of [printResume, printResumeRu]) {
+  assert.match(html, /@page\{size:A4/);
+  assert.ok(!/<(?:table|img|svg|canvas)\b/i.test(html), "Resume must stay text-based and single-column");
+  assert.equal((html.match(/<h1>/g) || []).length, 1);
+}
 const home = read("index.html");
 assert.ok(home.includes("Core expertise"));
 assert.ok(home.includes("resume-print.html"));
