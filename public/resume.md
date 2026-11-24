@@ -1,6 +1,6 @@
 # Mansur Kakushkin
 
-**Senior Systems Analyst | Solution Architecture | Systems & AI**
+**Senior Systems Analyst | Solution Design & AI Engineering**
 
 Website: https://mansur.club/  
 GitHub: https://github.com/mansur0987-del  
@@ -11,7 +11,7 @@ Email: Kakushkin.mansur@gmail.com
 
 Senior Systems Analyst with 7+ years of experience designing enterprise systems, integrations, APIs and data workflows. Experience spans requirements analysis, architecture, technical specifications, cross-team coordination and production support. Recent focus includes AI-assisted engineering workflows, AI agents, retrieval-augmented generation (RAG), knowledge graphs and the Model Context Protocol (MCP).
 
-Interested in Senior Systems Analyst, Solution Architect and AI-focused engineering positions involving enterprise-scale systems and integrations.
+Open to senior systems analysis, solution design and AI-focused engineering roles, including international remote work and relocation.
 
 ## Core competencies
 
@@ -23,12 +23,12 @@ Interested in Senior Systems Analyst, Solution Architect and AI-focused engineer
 
 ## Professional experience
 
-### X5 Tech — Senior System Analyst (September 2025–present, per portfolio)
+### X5 Tech — Senior System Analyst (September 2025–present)
 
 - Coordinate work across two project teams and one product team, including priorities, technical decisions and delivery.
 - Redesigned AI-assisted analysis and specification workflows with Git-based documentation, test generation and reviews. Reported result: 30–40% shorter idea-to-feature delivery cycle.
-- Introduced AI-assisted production incident investigation and structured context for support, shortening time to resolution.
-- Designed and built an AI Code Knowledge Platform using Python, React, MCP and Memgraph. The system extracts codebase knowledge, generates documentation and supports AI-powered exploration.
+- Introduced AI-assisted production incident investigation and structured context for support, reducing resolution time from 2–3 days to under one day.
+- Designed and built an AI Code Knowledge Platform using Python, React, MCP and Memgraph. The system extracts codebase knowledge, generates documentation and supports AI-powered exploration. Currently in user testing across analysts, developers, support and QA.
 - Helped standardize technical documentation and share AI engineering practices across teams.
 
 ### X5 Tech — System Analyst (October 2023–August 2025)
@@ -72,9 +72,11 @@ https://mansur.club/projects/ai-delivery
 
 AI-assisted requirements, specifications, skills, context engineering and engineering workflows. Portfolio reports a 30–40% reduction in idea-to-feature cycle time.
 
-## Other
+## Education and credentials
+
+- 42 School — Common Core completed; RNCP Level 6 qualification not yet awarded.
 
 - Contributed to an automated legal analysis product associated with patent RU2732071C1.
 - Public English and Russian PDF versions: https://mansur.club/CV_Eng_v1.pdf and https://mansur.club/CV_Rus_v1.pdf.
 
-This Markdown version mirrors the public portfolio and should be updated alongside any changes to the site's career history or project results.
+Print-ready English CV: https://mansur.club/resume-print.html

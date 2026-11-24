@@ -22,7 +22,6 @@ export function Experience() {
             t("experience.x5tech.senior.highlight2"),
             t("experience.x5tech.senior.highlight3"),
             t("experience.x5tech.senior.highlight4"),
-            t("experience.x5tech.senior.highlight5"),
             t("experience.x5tech.senior.highlight6"),
             t("experience.x5tech.senior.highlight7"),
           ],

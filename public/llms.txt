@@ -1,4 +1,4 @@
-# Mansur Kakushkin - Senior Systems Analyst / Systems & AI
+# Mansur Kakushkin - Senior Systems Analyst | Solution Design & AI Engineering
 
 > Public professional portfolio: enterprise systems analysis, integration architecture, data platforms, AI agents, RAG and MCP. English-language content is available at the links below.
 
@@ -13,6 +13,7 @@
 
 ## Resume and identity
 
+- [Print-ready English CV](https://mansur.club/resume-print.html)
 - [English PDF CV](https://mansur.club/CV_Eng_v1.pdf)
 - [Russian PDF CV](https://mansur.club/CV_Rus_v1.pdf)
 - [GitHub](https://github.com/mansur0987-del)

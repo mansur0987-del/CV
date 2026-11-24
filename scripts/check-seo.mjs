@@ -41,7 +41,14 @@ assert.ok(resume.includes("Mansur Kakushkin"));
 assert.ok(resume.includes("X5 Tech"));
 assert.ok(resume.includes("AI Code Knowledge Platform"));
 
+const printResume = read("resume-print.html");
+assert.ok(printResume.includes("Mansur Kakushkin"));
+assert.ok(printResume.includes("Professional experience"));
+assert.ok(printResume.includes("Print / Save as PDF"));
 const home = read("index.html");
+assert.ok(home.includes("Core expertise"));
+assert.ok(home.includes("resume-print.html"));
+assert.ok(home.includes("Education &amp; credentials") || home.includes("Education & credentials"));
 assert.ok(home.includes("https://mansur.club/"), "Missing home canonical");
 const match = home.match(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/);
 assert.ok(match, "Missing server-rendered JSON-LD");

@@ -10,7 +10,7 @@ export function Hero() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
+    <section className="relative flex min-h-[75vh] py-24 items-center justify-center overflow-hidden px-6">
       {/* Background gradient */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-0 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
@@ -100,12 +100,17 @@ export function Hero() {
           </a>
         </motion.div>
 
+        <div className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
+          <a href="/resume.txt" className="underline underline-offset-4 hover:text-foreground">{t("hero.textCV")}</a>
+          <a href="/resume-print.html" className="underline underline-offset-4 hover:text-foreground">{t("hero.printCV")}</a>
+        </div>
+
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="mt-20"
+          className="mt-10"
         >
           <Link
             href="#about"
